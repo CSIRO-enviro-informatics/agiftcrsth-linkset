@@ -1,0 +1,18 @@
+# Inserts 'flattened' - un-reified - Linkset links into a new Named Graph
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+INSERT {
+    GRAPH <http://linked.data.gov.au/linkset/agiftcrsth-flat> {
+    	?s ?p ?o .
+    }
+}
+WHERE {
+    GRAPH <http://linked.data.gov.au/linkset/agiftcrsth> {
+        ?x a rdf:Statement ;
+           rdf:subject ?s ;
+           rdf:predicate ?p ;
+           rdf:object ?o .
+	}
+}

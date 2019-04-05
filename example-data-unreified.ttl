@@ -1,0 +1,14 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix agift: <https://data.naa.gov.au/def/agift/> .
+@prefix crsth: <http://linked.data.gov.au/def/crsth/> .
+
+
+agift:Accommodation-services skos:closeMatch crsth:accommodation .
+
+agift:Accommodation-services skos:narrowMatch crsth:government-accommodation-and-catering .
+
+agift:Accommodation-services skos:narrowMatch crsth:migrant-accommodation .
+
+agift:Administrative-decision-appeal skos:broadMatch crsth:administrative-law .
+
+agift:Administrative-law skos:exactMatch crsth:administrative-law .

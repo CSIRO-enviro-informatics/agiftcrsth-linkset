@@ -1,10 +1,81 @@
-<https://data.naa.gov.au/def/agift/Accommodation-services> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/accommodation> .
-<https://data.naa.gov.au/def/agift/Accommodation-services> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/government-accommodation-and-catering> .
-<https://data.naa.gov.au/def/agift/Accommodation-services> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/migrant-accommodation> .
-<https://data.naa.gov.au/def/agift/Administrative-decision-appeal> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/administrative-law> .
-<https://data.naa.gov.au/def/agift/Administrative-decision-review> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/administrative-law> .
-<https://data.naa.gov.au/def/agift/Administrative-law> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/administrative-law> .
-<https://data.naa.gov.au/def/agift/Adoption-services> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/adoption-services> .
-<https://data.naa.gov.au/def/agift/Advertising-campaigns_2> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/advertising> .
-<https://data.naa.gov.au/def/agift/Advertising-standards> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/advertising> .
-<https://data.naa.gov.au/def/agift/Air-Force> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/air-force> .
+@prefix : <http://linked.data.gov.au/linkset/agiftcrsth/statement/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix time: <http://www.w3.org/2006/time> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix agift: <https://data.naa.gov.au/def/agift/> .
+@prefix crsth: <http://linked.data.gov.au/def/crsth/> .
+@prefix loci: <http://linked.data.gov.au/def/loci#> .
+@prefix m1: <http://linked.data.gov.au/linkset/agiftcrsth/method/1> .
+
+
+:s1
+  a rdf:Statement ;
+  rdf:subject agift:Accommodation-services ;
+  rdf:predicate skos:closeMatch ;
+  rdf:object crsth:accommodation ;
+  dct:created "2019-04-05"^^xsd:date ;
+  loci:validFor [
+    time:hasBeginning [
+      time:inXSDDate "1901-01-01"^^xsd:date ;
+    ] ;
+  ] ;
+  loci:hadGenerationMethod m1: ;
+.
+
+:s2
+  a rdf:Statement ;
+  rdf:subject agift:Accommodation-services ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:object crsth:government-accommodation-and-catering ;
+  dct:created "2019-04-05"^^xsd:date ;
+  loci:validFor [
+    time:hasBeginning [
+      time:inXSDDate "1901-01-01"^^xsd:date ;
+    ] ;
+  ] ;
+  loci:hadGenerationMethod m1: ;
+.
+
+:s3
+  a rdf:Statement ;
+  rdf:subject agift:Accommodation-services ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:object crsth:migrant-accommodation ;
+  dct:created "2019-04-05"^^xsd:date ;
+  loci:validFor [
+    time:hasBeginning [
+      time:inXSDDate "1901-01-01"^^xsd:date ;
+    ] ;
+  ] ;
+  loci:hadGenerationMethod m1: ;
+.
+
+:s4
+  a rdf:Statement ;
+  rdf:subject agift:Administrative-decision-appeal ;
+  rdf:predicate skos:broadMatch ;
+  rdf:object crsth:administrative-law ;
+  dct:created "2019-04-05"^^xsd:date ;
+  loci:validFor [
+    time:hasBeginning [
+      time:inXSDDate "1901-01-01"^^xsd:date ;
+    ] ;
+  ] ;
+  loci:hadGenerationMethod m1: ;
+.
+
+:s5
+  a rdf:Statement ;
+  rdf:subject agift:Administrative-law ;
+  rdf:predicate skos:exactMatch ;
+  rdf:object crsth:administrative-law ;
+  dct:created "2019-04-05"^^xsd:date ;
+  loci:validFor [
+    time:hasBeginning [
+      time:inXSDDate "1901-01-01"^^xsd:date ;
+    ] ;
+  ] ;
+  loci:hadGenerationMethod m1: ;
+.

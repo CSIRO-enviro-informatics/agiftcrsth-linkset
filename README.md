@@ -28,8 +28,8 @@ The formal definition of what this form of a Linkset is, is provided by the [Loc
 ## Repository Contents  
 * [data.ttl](data.ttl) - this Linkset’s main data file. It is an RDF turtle file and contains individual links and also the contens of header.ttl
 * [header.ttl](header.ttl) - this Linkset’s data.ttl header information, stored separately for ease of access
-* [example-data.ttl](example-data.ttl) - 10 Statements from the Linkset for ease of access, in RDF (turtle) format, as per the main data file
-* [example-data-unreified.ttl](example-data-unreified.ttl) - 10 Statements from the Linkset but 'unreified' for even easier use
+* [example-data.ttl](example-data.ttl) - 5 Statements from the Linkset for ease of access, in RDF (turtle) format, as per the main data file but none of the whole-of-Linkset information
+* [example-data-unreified.ttl](example-data-unreified.ttl) - 5 Statements from the Linkset but flattened, 'unreified', for even easier use
 * [README.md](README.md) - this file
 * [LICENSE](LICENSE) - the data license assigned to this Linkset’s content
 * [methods/](methods/) - a folder containing information (prose and code) about how this Linkset was generated
@@ -107,7 +107,6 @@ A complete example of a link from this Linkset is, echoing a short example at th
 ```
 @prefix : <http://linked.data.gov.au/linkset/agiftcrsth/statement/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix time: <http://www.w3.org/2006/time> .
@@ -118,13 +117,13 @@ A complete example of a link from this Linkset is, echoing a short example at th
 @prefix m1: <http://linked.data.gov.au/linkset/agiftcrsth/method/1> .
 
 :s6
-  a rdfs:Statement ;
+  a rdf:Statement ;
   rdf:subject agift:Administrative-law ;
   rdf:predicate skos:exactMatch ;
   rdf:object crsth:administrative-law ;
   dct:created "2019-04-05"^^xsd:date ;
-  time:hasTime [  # the claim here is that this relation 
-                  #has been true since the Federation of Australia
+  loci:validFor [  # the claim here is that this relation
+                   #has been true since the Federation of Australia
     time:hasBeginning [
       time:inXSDDate "1901-01-01"^^xsd:date ;
     ] ;
