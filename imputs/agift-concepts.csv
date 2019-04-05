@@ -1,0 +1,584 @@
+c,rb,pl
+https://data.naa.gov.au/def/agift/Accommodation-services,https://data.naa.gov.au/def/agift/COMMUNITY-SERVICES,Accommodation services
+https://data.naa.gov.au/def/agift/Administrative-decision-appeal,https://data.naa.gov.au/def/agift/Administrative-law,Administrative decision appeal
+https://data.naa.gov.au/def/agift/Administrative-decision-review,https://data.naa.gov.au/def/agift/Administrative-law,Administrative decision review
+https://data.naa.gov.au/def/agift/Administrative-law,https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,Administrative law
+https://data.naa.gov.au/def/agift/Adoption-services,https://data.naa.gov.au/def/agift/Community-support,Adoption services
+https://data.naa.gov.au/def/agift/Adult-education-programs,https://data.naa.gov.au/def/agift/Community-education,Adult education programs
+https://data.naa.gov.au/def/agift/Adult-migrant-education,https://data.naa.gov.au/def/agift/Community-education,Adult migrant education
+https://data.naa.gov.au/def/agift/Advertising-campaigns_2,https://data.naa.gov.au/def/agift/Tourist-event-promotion,Advertising campaigns
+https://data.naa.gov.au/def/agift/Advertising-standards,https://data.naa.gov.au/def/agift/COMMUNICATIONS,Advertising standards
+https://data.naa.gov.au/def/agift/Aged-care-services,https://data.naa.gov.au/def/agift/Community-support,Aged care services
+https://data.naa.gov.au/def/agift/Agreement-bargaining-processes,https://data.naa.gov.au/def/agift/Workplace-agreement-processes,Agreement bargaining processes
+https://data.naa.gov.au/def/agift/Agreement-dispute-mediation,https://data.naa.gov.au/def/agift/Workplace-agreement-processes,Agreement dispute mediation
+https://data.naa.gov.au/def/agift/Agricultural-industry,https://data.naa.gov.au/def/agift/Marine-and-rural-regulation,Agricultural industry
+https://data.naa.gov.au/def/agift/Agricultural-sciences,https://data.naa.gov.au/def/agift/SCIENCE,Agricultural sciences
+https://data.naa.gov.au/def/agift/Air-Force,https://data.naa.gov.au/def/agift/Australian-Defence-Forces,Air Force
+https://data.naa.gov.au/def/agift/Air-transport,https://data.naa.gov.au/def/agift/TRANSPORT,Air transport
+https://data.naa.gov.au/def/agift/Air-transport-safety,https://data.naa.gov.au/def/agift/Air-transport,Air transport safety
+https://data.naa.gov.au/def/agift/Aircraft-standards,https://data.naa.gov.au/def/agift/Air-transport,Aircraft standards
+https://data.naa.gov.au/def/agift/Airport-services,https://data.naa.gov.au/def/agift/Air-transport,Airport services
+https://data.naa.gov.au/def/agift/Ambulance-services,https://data.naa.gov.au/def/agift/Emergency-services,Ambulance services
+https://data.naa.gov.au/def/agift/Animal-and-veterinary-sciences,https://data.naa.gov.au/def/agift/SCIENCE,Animal and veterinary sciences
+https://data.naa.gov.au/def/agift/Apparatus-licensing,https://data.naa.gov.au/def/agift/Radio-communication,Apparatus licensing
+https://data.naa.gov.au/def/agift/Applied-sciences,https://data.naa.gov.au/def/agift/SCIENCE,Applied sciences
+https://data.naa.gov.au/def/agift/Appointment-management,https://data.naa.gov.au/def/agift/GOVERNANCE,Appointment management
+https://data.naa.gov.au/def/agift/Apprenticeship-programs,https://data.naa.gov.au/def/agift/Vocational-education,Apprenticeship programs
+https://data.naa.gov.au/def/agift/Aquaculture-industry,https://data.naa.gov.au/def/agift/Marine-and-rural-support,Aquaculture industry
+https://data.naa.gov.au/def/agift/Architectural-services,https://data.naa.gov.au/def/agift/Civic-management,Architectural services
+https://data.naa.gov.au/def/agift/Army,https://data.naa.gov.au/def/agift/Australian-Defence-Forces,Army
+https://data.naa.gov.au/def/agift/Army-reserve-training,https://data.naa.gov.au/def/agift/Military-education-and-training,Army reserve training
+https://data.naa.gov.au/def/agift/Artefact-export-regulation--,https://data.naa.gov.au/def/agift/Collection-management--,Artefact export regulation
+https://data.naa.gov.au/def/agift/Arts-development--,https://data.naa.gov.au/def/agift/CULTURAL-AFFAIRS_2,Arts development
+https://data.naa.gov.au/def/agift/Arts-education,https://data.naa.gov.au/def/agift/EDUCATION-AND-TRAINING,Arts education
+https://data.naa.gov.au/def/agift/Arts-funding--,https://data.naa.gov.au/def/agift/Arts-development--,Arts funding
+https://data.naa.gov.au/def/agift/Arts-incentive-schemes--,https://data.naa.gov.au/def/agift/Arts-development--,Arts incentive schemes
+https://data.naa.gov.au/def/agift/Arts-promotion--,https://data.naa.gov.au/def/agift/Arts-development--,Arts promotion
+https://data.naa.gov.au/def/agift/Asset-assessment,https://data.naa.gov.au/def/agift/Retirement-income,Asset assessment
+https://data.naa.gov.au/def/agift/Associations-and-corporate-law,https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,Associations and corporate law
+https://data.naa.gov.au/def/agift/Astronomical-sciences,https://data.naa.gov.au/def/agift/Physical-sciences,Astronomical sciences
+https://data.naa.gov.au/def/agift/Athlete-scholarship-programs,https://data.naa.gov.au/def/agift/Sport-and-fitness-development,Athlete scholarship programs
+https://data.naa.gov.au/def/agift/Atmospheric-sciences,https://data.naa.gov.au/def/agift/Earth-sciences,Atmospheric sciences
+https://data.naa.gov.au/def/agift/Atomic-and-molecular-sciences,https://data.naa.gov.au/def/agift/Physical-sciences,Atomic and molecular sciences
+https://data.naa.gov.au/def/agift/Australian-Defence-Forces,https://data.naa.gov.au/def/agift/DEFENCE,Australian Defence Forces
+https://data.naa.gov.au/def/agift/Australian-theatre-of-war,https://data.naa.gov.au/def/agift/Military-operations,Australian theatre of war
+https://data.naa.gov.au/def/agift/Authentication,https://data.naa.gov.au/def/agift/Electronic-commerce,Authentication
+https://data.naa.gov.au/def/agift/Award-conditions,https://data.naa.gov.au/def/agift/Industrial-awards-and-conditions,Award conditions
+https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,,BUSINESS SUPPORT AND REGULATION
+https://data.naa.gov.au/def/agift/Badges-and-insignia,https://data.naa.gov.au/def/agift/Australian-Defence-Forces,Badges and insignia
+https://data.naa.gov.au/def/agift/Bankruptcy-proceedings,https://data.naa.gov.au/def/agift/Associations-and-corporate-law,Bankruptcy proceedings
+https://data.naa.gov.au/def/agift/Benefits,https://data.naa.gov.au/def/agift/Financial-assistance,Benefits
+https://data.naa.gov.au/def/agift/Biochemistry,https://data.naa.gov.au/def/agift/Biological-sciences,Biochemistry
+https://data.naa.gov.au/def/agift/Biodiversity-preservation,https://data.naa.gov.au/def/agift/Biological-sciences,Biodiversity preservation
+https://data.naa.gov.au/def/agift/Biological-sciences,https://data.naa.gov.au/def/agift/SCIENCE,Biological sciences
+https://data.naa.gov.au/def/agift/Biotechnology-development,https://data.naa.gov.au/def/agift/Biological-sciences,Biotechnology development
+https://data.naa.gov.au/def/agift/Blood-and-organ-donation-management,https://data.naa.gov.au/def/agift/Public-health-services,Blood and organ donation management
+https://data.naa.gov.au/def/agift/Border-protection,https://data.naa.gov.au/def/agift/National-security,Border protection
+https://data.naa.gov.au/def/agift/Botany,https://data.naa.gov.au/def/agift/Biological-sciences,Botany
+https://data.naa.gov.au/def/agift/Broadcasting,https://data.naa.gov.au/def/agift/COMMUNICATIONS,Broadcasting
+https://data.naa.gov.au/def/agift/Broadcasting-standards,https://data.naa.gov.au/def/agift/Broadcasting,Broadcasting standards
+https://data.naa.gov.au/def/agift/Building-acoustics,https://data.naa.gov.au/def/agift/Built-environment,Building acoustics
+https://data.naa.gov.au/def/agift/Building-approval-services,https://data.naa.gov.au/def/agift/Civic-management,Building approval services
+https://data.naa.gov.au/def/agift/Building-preservation,https://data.naa.gov.au/def/agift/Built-environment,Building preservation
+https://data.naa.gov.au/def/agift/Building-regulations-and-standards,https://data.naa.gov.au/def/agift/Civic-management,Building regulations and standards
+https://data.naa.gov.au/def/agift/Built-environment,https://data.naa.gov.au/def/agift/ENVIRONMENT,Built environment
+https://data.naa.gov.au/def/agift/Burial-ground-management,https://data.naa.gov.au/def/agift/Public-land-management,Burial ground management
+https://data.naa.gov.au/def/agift/Business-association,https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,Business association
+https://data.naa.gov.au/def/agift/Business-process-auditing_2,https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,Business process auditing
+https://data.naa.gov.au/def/agift/Business-registration-and-licensing,https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,Business registration and licensing
+https://data.naa.gov.au/def/agift/Business-sponsorship,https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,Business sponsorship
+https://data.naa.gov.au/def/agift/CIVIC-INFRASTRUCTURE,,CIVIC INFRASTRUCTURE
+https://data.naa.gov.au/def/agift/COMMUNICATIONS,,COMMUNICATIONS
+https://data.naa.gov.au/def/agift/COMMUNITY-SERVICES,,COMMUNITY SERVICES
+https://data.naa.gov.au/def/agift/CULTURAL-AFFAIRS_2,,CULTURAL AFFAIRS
+https://data.naa.gov.au/def/agift/Cadets,https://data.naa.gov.au/def/agift/Australian-Defence-Forces,Cadets
+https://data.naa.gov.au/def/agift/Call-centre-administration,https://data.naa.gov.au/def/agift/COMMUNICATIONS,Call centre administration
+https://data.naa.gov.au/def/agift/Capital-equipment-programs,https://data.naa.gov.au/def/agift/Defence-strategic-support,Capital equipment programs
+https://data.naa.gov.au/def/agift/Caravan-and-camping-services,https://data.naa.gov.au/def/agift/SPORT-AND-RECREATION,Caravan and camping services
+https://data.naa.gov.au/def/agift/Cargo-control,https://data.naa.gov.au/def/agift/MARITIME-SERVICES,Cargo control
+https://data.naa.gov.au/def/agift/Carriage-service-providers,https://data.naa.gov.au/def/agift/Telecommunications,Carriage service providers
+https://data.naa.gov.au/def/agift/Carrier-licensing,https://data.naa.gov.au/def/agift/Telecommunications,Carrier licensing
+https://data.naa.gov.au/def/agift/Censorship-standards,https://data.naa.gov.au/def/agift/Administrative-law,Censorship standards
+https://data.naa.gov.au/def/agift/Ceremonial-events-and-representation,https://data.naa.gov.au/def/agift/Official-protocol,Ceremonial events and representation
+https://data.naa.gov.au/def/agift/Certified-employment-conditions,https://data.naa.gov.au/def/agift/Workplace-agreement-processes,Certified employment conditions
+https://data.naa.gov.au/def/agift/Charting-sea-lanes,https://data.naa.gov.au/def/agift/Navigation,Charting sea lanes
+https://data.naa.gov.au/def/agift/Chemical-and-pesticide-regulation,https://data.naa.gov.au/def/agift/PRIMARY-INDUSTRIES_2,Chemical and pesticide regulation
+https://data.naa.gov.au/def/agift/Child-and-youth-support,https://data.naa.gov.au/def/agift/Community-support,Child and youth support
+https://data.naa.gov.au/def/agift/Child-care-services,https://data.naa.gov.au/def/agift/Community-support,Child-care services
+https://data.naa.gov.au/def/agift/Citizenship,https://data.naa.gov.au/def/agift/IMMIGRATION,Citizenship
+https://data.naa.gov.au/def/agift/Civic-celebrations,https://data.naa.gov.au/def/agift/GOVERNANCE,Civic celebrations
+https://data.naa.gov.au/def/agift/Civic-management,https://data.naa.gov.au/def/agift/CIVIC-INFRASTRUCTURE,Civic management
+https://data.naa.gov.au/def/agift/Civil-community-assistance,https://data.naa.gov.au/def/agift/Emergency-management,Civil community assistance
+https://data.naa.gov.au/def/agift/Civil-law,https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,Civil law
+https://data.naa.gov.au/def/agift/Civil-registration,https://data.naa.gov.au/def/agift/Civil-law,Civil registration
+https://data.naa.gov.au/def/agift/Climate-information-services,https://data.naa.gov.au/def/agift/ENVIRONMENT,Climate information services
+https://data.naa.gov.au/def/agift/Clinical-health-services,https://data.naa.gov.au/def/agift/Community-health-services,Clinical health services
+https://data.naa.gov.au/def/agift/Collection-access--,https://data.naa.gov.au/def/agift/CULTURAL-AFFAIRS_2,Collection access
+https://data.naa.gov.au/def/agift/Collection-accessioning--,https://data.naa.gov.au/def/agift/Collection-management--,Collection accessioning
+https://data.naa.gov.au/def/agift/Collection-acquisition--,https://data.naa.gov.au/def/agift/Collection-management--,Collection acquisition
+https://data.naa.gov.au/def/agift/Collection-management--,https://data.naa.gov.au/def/agift/CULTURAL-AFFAIRS_2,Collection management
+https://data.naa.gov.au/def/agift/Collection-promotion--,https://data.naa.gov.au/def/agift/CULTURAL-AFFAIRS_2,Collection promotion
+https://data.naa.gov.au/def/agift/Collection-storage--,https://data.naa.gov.au/def/agift/Collection-management--,Collection storage
+https://data.naa.gov.au/def/agift/Commissions-of-inquiry,https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,Commissions of inquiry
+https://data.naa.gov.au/def/agift/Commonwealth-State-funding,https://data.naa.gov.au/def/agift/FINANCE-MANAGEMENT,Commonwealth State funding
+https://data.naa.gov.au/def/agift/Communications-infrastructure,https://data.naa.gov.au/def/agift/Telecommunications,Communications infrastructure
+https://data.naa.gov.au/def/agift/Community-based-corrections,https://data.naa.gov.au/def/agift/Corrective-services,Community based corrections
+https://data.naa.gov.au/def/agift/Community-education,https://data.naa.gov.au/def/agift/EDUCATION-AND-TRAINING,Community education
+https://data.naa.gov.au/def/agift/Community-engagement,https://data.naa.gov.au/def/agift/COMMUNITY-SERVICES,Community engagement
+https://data.naa.gov.au/def/agift/Community-health-services,https://data.naa.gov.au/def/agift/HEALTH-CARE,Community health services
+https://data.naa.gov.au/def/agift/Community-housing,https://data.naa.gov.au/def/agift/Public-housing,Community housing
+https://data.naa.gov.au/def/agift/Community-policing,https://data.naa.gov.au/def/agift/Law-enforcement,Community policing
+https://data.naa.gov.au/def/agift/Community-recreational-programs,https://data.naa.gov.au/def/agift/SPORT-AND-RECREATION,Community recreational programs
+https://data.naa.gov.au/def/agift/Community-support,https://data.naa.gov.au/def/agift/COMMUNITY-SERVICES,Community support
+https://data.naa.gov.au/def/agift/Conservation-programs,https://data.naa.gov.au/def/agift/ENVIRONMENT,Conservation programs
+https://data.naa.gov.au/def/agift/Constitutional-conventions,https://data.naa.gov.au/def/agift/Constitutional-matters,Constitutional conventions
+https://data.naa.gov.au/def/agift/Constitutional-matters,https://data.naa.gov.au/def/agift/GOVERNANCE,Constitutional matters
+https://data.naa.gov.au/def/agift/Constitutional-referenda,https://data.naa.gov.au/def/agift/Constitutional-matters,Constitutional referenda
+https://data.naa.gov.au/def/agift/Consular-services,https://data.naa.gov.au/def/agift/INTERNATIONAL-RELATIONS,Consular services
+https://data.naa.gov.au/def/agift/Consumer-protection,https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,Consumer protection
+https://data.naa.gov.au/def/agift/Contract-management,https://data.naa.gov.au/def/agift/Resource-management,Contract management
+https://data.naa.gov.au/def/agift/Conveyancing,https://data.naa.gov.au/def/agift/Civil-law,Conveyancing
+https://data.naa.gov.au/def/agift/Copyright-regulation,https://data.naa.gov.au/def/agift/Administrative-law,Copyright regulation
+https://data.naa.gov.au/def/agift/Coronial-law,https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,Coronial law
+https://data.naa.gov.au/def/agift/Corrective-services,https://data.naa.gov.au/def/agift/SECURITY,Corrective services
+https://data.naa.gov.au/def/agift/Corruption-prevention,https://data.naa.gov.au/def/agift/Public-administration,Corruption prevention
+https://data.naa.gov.au/def/agift/Counselling-services,https://data.naa.gov.au/def/agift/COMMUNITY-SERVICES,Counselling services
+https://data.naa.gov.au/def/agift/Counterfeiting-control,https://data.naa.gov.au/def/agift/Currency,Counterfeiting control
+https://data.naa.gov.au/def/agift/Courier-services,https://data.naa.gov.au/def/agift/Postal-services,Courier services
+https://data.naa.gov.au/def/agift/Court-reporting,https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,Court reporting
+https://data.naa.gov.au/def/agift/Criminal-law,https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,Criminal law
+https://data.naa.gov.au/def/agift/Criminology,https://data.naa.gov.au/def/agift/Law-enforcement,Criminology
+https://data.naa.gov.au/def/agift/Cross-border-cooperation,https://data.naa.gov.au/def/agift/Intergovernmental-relations,Cross-border cooperation
+https://data.naa.gov.au/def/agift/Crown-land-administration,https://data.naa.gov.au/def/agift/NATURAL-RESOURCES,Crown land administration
+https://data.naa.gov.au/def/agift/Cultural-artefact-repatriation,https://data.naa.gov.au/def/agift/Indigenous-cultural-heritage,Cultural artefact repatriation
+https://data.naa.gov.au/def/agift/Cultural-awards-and-scholarships--,https://data.naa.gov.au/def/agift/CULTURAL-AFFAIRS_2,Cultural awards and scholarships
+https://data.naa.gov.au/def/agift/Cultural-centre-management,https://data.naa.gov.au/def/agift/Public-land-management,Cultural centre management
+https://data.naa.gov.au/def/agift/Cultural-festivals--,https://data.naa.gov.au/def/agift/CULTURAL-AFFAIRS_2,Cultural festivals
+https://data.naa.gov.au/def/agift/Cultural-gifts-programs--,https://data.naa.gov.au/def/agift/CULTURAL-AFFAIRS_2,Cultural gifts programs
+https://data.naa.gov.au/def/agift/Currency,https://data.naa.gov.au/def/agift/FINANCE-MANAGEMENT,Currency
+https://data.naa.gov.au/def/agift/Curriculum-development,https://data.naa.gov.au/def/agift/EDUCATION-AND-TRAINING,Curriculum development
+https://data.naa.gov.au/def/agift/Cybersafety,https://data.naa.gov.au/def/agift/Internet,Cybersafety
+https://data.naa.gov.au/def/agift/DEFENCE,,DEFENCE
+https://data.naa.gov.au/def/agift/Data-management,https://data.naa.gov.au/def/agift/Information-management-standards,Data management
+https://data.naa.gov.au/def/agift/Declaration-of-interests,https://data.naa.gov.au/def/agift/Electoral-matters,Declaration of interests
+https://data.naa.gov.au/def/agift/Defence-attaches,https://data.naa.gov.au/def/agift/Defence-liaison,Defence attaches
+https://data.naa.gov.au/def/agift/Defence-career-development,https://data.naa.gov.au/def/agift/Defence-force-careers,Defence career development
+https://data.naa.gov.au/def/agift/Defence-college-training,https://data.naa.gov.au/def/agift/Military-education-and-training,Defence college training
+https://data.naa.gov.au/def/agift/Defence-community-programs,https://data.naa.gov.au/def/agift/Community-support,Defence community programs
+https://data.naa.gov.au/def/agift/Defence-cooperation-programs,https://data.naa.gov.au/def/agift/Defence-liaison,Defence cooperation programs
+https://data.naa.gov.au/def/agift/Defence-efficiency-review,https://data.naa.gov.au/def/agift/Defence-strategic-development,Defence efficiency review
+https://data.naa.gov.au/def/agift/Defence-estate-management,https://data.naa.gov.au/def/agift/DEFENCE,Defence estate management
+https://data.naa.gov.au/def/agift/Defence-force-careers,https://data.naa.gov.au/def/agift/DEFENCE,Defence force careers
+https://data.naa.gov.au/def/agift/Defence-force-commands,https://data.naa.gov.au/def/agift/Australian-Defence-Forces,Defence force commands
+https://data.naa.gov.au/def/agift/Defence-housing,https://data.naa.gov.au/def/agift/Accommodation-services,Defence housing
+https://data.naa.gov.au/def/agift/Defence-industry,https://data.naa.gov.au/def/agift/Defence-strategic-support,Defence industry
+https://data.naa.gov.au/def/agift/Defence-liaison,https://data.naa.gov.au/def/agift/INTERNATIONAL-RELATIONS,Defence liaison
+https://data.naa.gov.au/def/agift/Defence-personnel-exchanges,https://data.naa.gov.au/def/agift/Defence-liaison,Defence personnel exchanges
+https://data.naa.gov.au/def/agift/Defence-reform-program,https://data.naa.gov.au/def/agift/Defence-strategic-development,Defence reform program
+https://data.naa.gov.au/def/agift/Defence-science-and-technology,https://data.naa.gov.au/def/agift/Defence-strategic-support,Defence science and technology
+https://data.naa.gov.au/def/agift/Defence-strategic-development,https://data.naa.gov.au/def/agift/DEFENCE,Defence strategic development
+https://data.naa.gov.au/def/agift/Defence-strategic-policy,https://data.naa.gov.au/def/agift/DEFENCE,Defence strategic policy
+https://data.naa.gov.au/def/agift/Defence-strategic-support,https://data.naa.gov.au/def/agift/DEFENCE,Defence strategic support
+https://data.naa.gov.au/def/agift/Dental-health-services,https://data.naa.gov.au/def/agift/Special-needs-services,Dental health services
+https://data.naa.gov.au/def/agift/Deportation,https://data.naa.gov.au/def/agift/IMMIGRATION,Deportation
+https://data.naa.gov.au/def/agift/Descriptive-standards--,https://data.naa.gov.au/def/agift/Collection-access--,Descriptive standards
+https://data.naa.gov.au/def/agift/Design-rights-management,https://data.naa.gov.au/def/agift/Intellectual-property-management,Design rights management
+https://data.naa.gov.au/def/agift/Detention-centre-management,https://data.naa.gov.au/def/agift/Corrective-services,Detention centre management
+https://data.naa.gov.au/def/agift/Detention-programs,https://data.naa.gov.au/def/agift/IMMIGRATION,Detention programs
+https://data.naa.gov.au/def/agift/Development-assistance-programs,https://data.naa.gov.au/def/agift/Overseas-aid-programs,Development assistance programs
+https://data.naa.gov.au/def/agift/Diplomatic-missions,https://data.naa.gov.au/def/agift/INTERNATIONAL-RELATIONS,Diplomatic missions
+https://data.naa.gov.au/def/agift/Disarmament-and-arms-control,https://data.naa.gov.au/def/agift/International-affairs,Disarmament and arms control
+https://data.naa.gov.au/def/agift/Disaster-recovery,https://data.naa.gov.au/def/agift/Natural-disasters,Disaster recovery
+https://data.naa.gov.au/def/agift/Disaster-relief,https://data.naa.gov.au/def/agift/Natural-disasters,Disaster relief
+https://data.naa.gov.au/def/agift/Disaster-support,https://data.naa.gov.au/def/agift/Emergency-management,Disaster support
+https://data.naa.gov.au/def/agift/Discipline-programs,https://data.naa.gov.au/def/agift/School-education,Discipline programs
+https://data.naa.gov.au/def/agift/Dispute-mediation-programs,https://data.naa.gov.au/def/agift/Civil-law,Dispute mediation programs
+https://data.naa.gov.au/def/agift/Doping-detection-research,https://data.naa.gov.au/def/agift/Sports-drugs-monitoring,Doping detection research
+https://data.naa.gov.au/def/agift/Draft-Bill-amendment-process,https://data.naa.gov.au/def/agift/Legislative-drafting,Draft Bill amendment process
+https://data.naa.gov.au/def/agift/Driving-licences-administration,https://data.naa.gov.au/def/agift/Road-transport,Driving licences administration
+https://data.naa.gov.au/def/agift/Drugs-and-poisons-regulation,https://data.naa.gov.au/def/agift/Health-protocol-administration,Drugs and poisons regulation
+https://data.naa.gov.au/def/agift/EDUCATION-AND-TRAINING,,EDUCATION AND TRAINING
+https://data.naa.gov.au/def/agift/EMPLOYMENT,,EMPLOYMENT
+https://data.naa.gov.au/def/agift/ENVIRONMENT,,ENVIRONMENT
+https://data.naa.gov.au/def/agift/Early-childhood-education,https://data.naa.gov.au/def/agift/EDUCATION-AND-TRAINING,Early childhood education
+https://data.naa.gov.au/def/agift/Earth-sciences,https://data.naa.gov.au/def/agift/SCIENCE,Earth sciences
+https://data.naa.gov.au/def/agift/Economic-research,https://data.naa.gov.au/def/agift/FINANCE-MANAGEMENT,Economic research
+https://data.naa.gov.au/def/agift/Election-campaigning,https://data.naa.gov.au/def/agift/Electoral-matters,Election campaigning
+https://data.naa.gov.au/def/agift/Electoral-boundary-assessment,https://data.naa.gov.au/def/agift/Electoral-matters,Electoral boundary assessment
+https://data.naa.gov.au/def/agift/Electoral-matters,https://data.naa.gov.au/def/agift/GOVERNANCE,Electoral matters
+https://data.naa.gov.au/def/agift/Electronic-commerce,https://data.naa.gov.au/def/agift/COMMUNICATIONS,Electronic commerce
+https://data.naa.gov.au/def/agift/Electronic-postal-services,https://data.naa.gov.au/def/agift/Postal-services,Electronic postal services
+https://data.naa.gov.au/def/agift/Electronic-publishing,https://data.naa.gov.au/def/agift/Publishing,Electronic publishing
+https://data.naa.gov.au/def/agift/Emergency-accommodation,https://data.naa.gov.au/def/agift/Accommodation-services,Emergency accommodation
+https://data.naa.gov.au/def/agift/Emergency-funding,https://data.naa.gov.au/def/agift/Emergency-services,Emergency funding
+https://data.naa.gov.au/def/agift/Emergency-management,https://data.naa.gov.au/def/agift/DEFENCE,Emergency management
+https://data.naa.gov.au/def/agift/Emergency-services,https://data.naa.gov.au/def/agift/COMMUNITY-SERVICES,Emergency services
+https://data.naa.gov.au/def/agift/Employment-advocacy-services,https://data.naa.gov.au/def/agift/Workplace-agreement-processes,Employment advocacy services
+https://data.naa.gov.au/def/agift/Employment-services-marketing,https://data.naa.gov.au/def/agift/Labour-market-programs,Employment services marketing
+https://data.naa.gov.au/def/agift/Endangered-species-protection,https://data.naa.gov.au/def/agift/Conservation-programs,Endangered species protection
+https://data.naa.gov.au/def/agift/Energy-resources,https://data.naa.gov.au/def/agift/NATURAL-RESOURCES,Energy resources
+https://data.naa.gov.au/def/agift/Energy-supply,https://data.naa.gov.au/def/agift/CIVIC-INFRASTRUCTURE,Energy supply
+https://data.naa.gov.au/def/agift/Engineering-and-technology-sciences,https://data.naa.gov.au/def/agift/Applied-sciences,Engineering and technology sciences
+https://data.naa.gov.au/def/agift/Engineering-services,https://data.naa.gov.au/def/agift/Civic-management,Engineering services
+https://data.naa.gov.au/def/agift/Entomology,https://data.naa.gov.au/def/agift/Biological-sciences,Entomology
+https://data.naa.gov.au/def/agift/Environmental-impact-assessment,https://data.naa.gov.au/def/agift/ENVIRONMENT,Environmental impact assessment
+https://data.naa.gov.au/def/agift/Epidemiology,https://data.naa.gov.au/def/agift/Public-health-services,Epidemiology
+https://data.naa.gov.au/def/agift/Equipment-licensing,https://data.naa.gov.au/def/agift/Telecommunications,Equipment licensing
+https://data.naa.gov.au/def/agift/Ethical-compliance,https://data.naa.gov.au/def/agift/SCIENCE,Ethical compliance
+https://data.naa.gov.au/def/agift/Exchange-rates,https://data.naa.gov.au/def/agift/Monetary-policy,Exchange rates
+https://data.naa.gov.au/def/agift/Exhibition-programs--,https://data.naa.gov.au/def/agift/Collection-promotion--,Exhibition programs
+https://data.naa.gov.au/def/agift/Export-promotion,https://data.naa.gov.au/def/agift/Export-regulation,Export promotion
+https://data.naa.gov.au/def/agift/Export-regulation,https://data.naa.gov.au/def/agift/TRADE,Export regulation
+https://data.naa.gov.au/def/agift/External-security,https://data.naa.gov.au/def/agift/SECURITY,External security
+https://data.naa.gov.au/def/agift/FINANCE-MANAGEMENT,,FINANCE MANAGEMENT
+https://data.naa.gov.au/def/agift/Fair-trading-compliance,https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,Fair trading compliance
+https://data.naa.gov.au/def/agift/Family-law-proceedings,https://data.naa.gov.au/def/agift/Civil-law,Family law proceedings
+https://data.naa.gov.au/def/agift/Family-reunion-programs,https://data.naa.gov.au/def/agift/Community-support,Family reunion programs
+https://data.naa.gov.au/def/agift/Feral-pest-control,https://data.naa.gov.au/def/agift/Natural-heritage-protection,Feral pest control
+https://data.naa.gov.au/def/agift/Financial-administration,https://data.naa.gov.au/def/agift/Resource-management,Financial administration
+https://data.naa.gov.au/def/agift/Financial-assistance,https://data.naa.gov.au/def/agift/COMMUNITY-SERVICES,Financial assistance
+https://data.naa.gov.au/def/agift/Financial-budgeting,https://data.naa.gov.au/def/agift/Resource-management,Financial budgeting
+https://data.naa.gov.au/def/agift/Financial-institutions-regulation,https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,Financial institutions regulation
+https://data.naa.gov.au/def/agift/Financial-investment,https://data.naa.gov.au/def/agift/FINANCE-MANAGEMENT,Financial investment
+https://data.naa.gov.au/def/agift/Financial-system-management,https://data.naa.gov.au/def/agift/FINANCE-MANAGEMENT,Financial system management
+https://data.naa.gov.au/def/agift/Financial-system-monitoring,https://data.naa.gov.au/def/agift/Financial-system-management,Financial system monitoring
+https://data.naa.gov.au/def/agift/Finding-aids-development--,https://data.naa.gov.au/def/agift/Collection-access--,Finding aids development
+https://data.naa.gov.au/def/agift/Firefighting-services,https://data.naa.gov.au/def/agift/Emergency-services,Firefighting services
+https://data.naa.gov.au/def/agift/Fiscal-policy,https://data.naa.gov.au/def/agift/FINANCE-MANAGEMENT,Fiscal policy
+https://data.naa.gov.au/def/agift/Fisheries-industry,https://data.naa.gov.au/def/agift/Marine-and-rural-regulation,Fisheries industry
+https://data.naa.gov.au/def/agift/Food-hygiene-regulation,https://data.naa.gov.au/def/agift/Health-protocol-administration,Food hygiene regulation
+https://data.naa.gov.au/def/agift/Food-quality-assurance,https://data.naa.gov.au/def/agift/Marine-and-rural-regulation,Food quality assurance
+https://data.naa.gov.au/def/agift/Foreign-investment-control,https://data.naa.gov.au/def/agift/FINANCE-MANAGEMENT,Foreign investment control
+https://data.naa.gov.au/def/agift/Forensic-analysis,https://data.naa.gov.au/def/agift/Intelligence,Forensic analysis
+https://data.naa.gov.au/def/agift/Forestry-industry,https://data.naa.gov.au/def/agift/Marine-and-rural-regulation,Forestry industry
+https://data.naa.gov.au/def/agift/Fossil-fuel-management,https://data.naa.gov.au/def/agift/Energy-resources,Fossil fuel management
+https://data.naa.gov.au/def/agift/Freedom-of-information,https://data.naa.gov.au/def/agift/Administrative-law,Freedom of information
+https://data.naa.gov.au/def/agift/Freight-movement-regulation,https://data.naa.gov.au/def/agift/TRANSPORT,Freight movement regulation
+https://data.naa.gov.au/def/agift/Fundraising-and-donation-schemes,https://data.naa.gov.au/def/agift/Sport-and-fitness-development,Fundraising and donation schemes
+https://data.naa.gov.au/def/agift/GOVERNANCE,,GOVERNANCE
+https://data.naa.gov.au/def/agift/Gambling-support-services,https://data.naa.gov.au/def/agift/Community-recreational-programs,Gambling support services
+https://data.naa.gov.au/def/agift/Games-administration,https://data.naa.gov.au/def/agift/Sport-and-fitness-development,Games administration
+https://data.naa.gov.au/def/agift/Games-promotion,https://data.naa.gov.au/def/agift/Sport-and-fitness-development,Games promotion
+https://data.naa.gov.au/def/agift/Gaming-industry-regulation,https://data.naa.gov.au/def/agift/SPORT-AND-RECREATION,Gaming industry regulation
+https://data.naa.gov.au/def/agift/Garden-management,https://data.naa.gov.au/def/agift/Public-land-management,Garden management
+https://data.naa.gov.au/def/agift/General-insurance,https://data.naa.gov.au/def/agift/Insurance-regulation,General insurance
+https://data.naa.gov.au/def/agift/Genetic-engineering,https://data.naa.gov.au/def/agift/Biological-sciences,Genetic engineering
+https://data.naa.gov.au/def/agift/Government-auditing,https://data.naa.gov.au/def/agift/Public-administration,Government auditing
+https://data.naa.gov.au/def/agift/Government-media,https://data.naa.gov.au/def/agift/COMMUNICATIONS,Government media
+https://data.naa.gov.au/def/agift/Government-procurement-regulation,https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,Government procurement regulation
+https://data.naa.gov.au/def/agift/HEALTH-CARE,,HEALTH CARE
+https://data.naa.gov.au/def/agift/Hansard-services,https://data.naa.gov.au/def/agift/Parliamentary-chamber-support,Hansard services
+https://data.naa.gov.au/def/agift/Harbour-management,https://data.naa.gov.au/def/agift/MARITIME-SERVICES,Harbour management
+https://data.naa.gov.au/def/agift/Head-of-Government-protocol,https://data.naa.gov.au/def/agift/Official-protocol,Head of Government protocol
+https://data.naa.gov.au/def/agift/Health-disaster-preparedness,https://data.naa.gov.au/def/agift/Public-health-services,Health disaster preparedness
+https://data.naa.gov.au/def/agift/Health-hazard-prevention,https://data.naa.gov.au/def/agift/Public-health-services,Health hazard prevention
+https://data.naa.gov.au/def/agift/Health-insurance-schemes,https://data.naa.gov.au/def/agift/HEALTH-CARE,Health insurance schemes
+https://data.naa.gov.au/def/agift/Health-promotion,https://data.naa.gov.au/def/agift/Community-health-services,Health promotion
+https://data.naa.gov.au/def/agift/Health-protocol-administration,https://data.naa.gov.au/def/agift/HEALTH-CARE,Health protocol administration
+https://data.naa.gov.au/def/agift/Historic-relic-protection,https://data.naa.gov.au/def/agift/ENVIRONMENT,Historic relic protection
+https://data.naa.gov.au/def/agift/Honours-and-awards-programs,https://data.naa.gov.au/def/agift/GOVERNANCE,Honours and awards programs
+https://data.naa.gov.au/def/agift/Horticultural-industry,https://data.naa.gov.au/def/agift/Marine-and-rural-support,Horticultural industry
+https://data.naa.gov.au/def/agift/Hospital-administration,https://data.naa.gov.au/def/agift/Hospital-services,Hospital administration
+https://data.naa.gov.au/def/agift/Hospital-services,https://data.naa.gov.au/def/agift/HEALTH-CARE,Hospital services
+https://data.naa.gov.au/def/agift/Hospital-teaching-programs,https://data.naa.gov.au/def/agift/Vocational-education,Hospital teaching programs
+https://data.naa.gov.au/def/agift/Housing-industry-policy,https://data.naa.gov.au/def/agift/CIVIC-INFRASTRUCTURE,Housing industry policy
+https://data.naa.gov.au/def/agift/Human-resources-development,https://data.naa.gov.au/def/agift/EMPLOYMENT,Human resources development
+https://data.naa.gov.au/def/agift/Human-rights-obligations,https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,Human rights obligations
+https://data.naa.gov.au/def/agift/Hydrology,https://data.naa.gov.au/def/agift/Earth-sciences,Hydrology
+https://data.naa.gov.au/def/agift/IMMIGRATION,,IMMIGRATION
+https://data.naa.gov.au/def/agift/INDIGENOUS-AFFAIRS,,INDIGENOUS AFFAIRS
+https://data.naa.gov.au/def/agift/INTERNATIONAL-RELATIONS,,INTERNATIONAL RELATIONS
+https://data.naa.gov.au/def/agift/Import-regulation,https://data.naa.gov.au/def/agift/TRADE,Import regulation
+https://data.naa.gov.au/def/agift/Income-assessment,https://data.naa.gov.au/def/agift/Taxation,Income assessment
+https://data.naa.gov.au/def/agift/Income-support-schemes,https://data.naa.gov.au/def/agift/Financial-assistance,Income support schemes
+https://data.naa.gov.au/def/agift/Independent-living-services,https://data.naa.gov.au/def/agift/Special-needs-services,Independent living services
+https://data.naa.gov.au/def/agift/Indigenous-advocacy,https://data.naa.gov.au/def/agift/INDIGENOUS-AFFAIRS,Indigenous advocacy
+https://data.naa.gov.au/def/agift/Indigenous-cultural-heritage,https://data.naa.gov.au/def/agift/INDIGENOUS-AFFAIRS,Indigenous cultural heritage
+https://data.naa.gov.au/def/agift/Indigenous-enterprise-development,https://data.naa.gov.au/def/agift/INDIGENOUS-AFFAIRS,Indigenous enterprise development
+https://data.naa.gov.au/def/agift/Indigenous-health-services,https://data.naa.gov.au/def/agift/INDIGENOUS-AFFAIRS,Indigenous health services
+https://data.naa.gov.au/def/agift/Indigenous-heritage-conservation,https://data.naa.gov.au/def/agift/Indigenous-land-management,Indigenous heritage conservation
+https://data.naa.gov.au/def/agift/Indigenous-land-management,https://data.naa.gov.au/def/agift/INDIGENOUS-AFFAIRS,Indigenous land management
+https://data.naa.gov.au/def/agift/Indigenous-reconciliation,https://data.naa.gov.au/def/agift/INDIGENOUS-AFFAIRS,Indigenous reconciliation
+https://data.naa.gov.au/def/agift/Indigenous-welfare-programs,https://data.naa.gov.au/def/agift/INDIGENOUS-AFFAIRS,Indigenous welfare programs
+https://data.naa.gov.au/def/agift/Industrial-awards-and-conditions,https://data.naa.gov.au/def/agift/EMPLOYMENT,Industrial awards and conditions
+https://data.naa.gov.au/def/agift/Industry-assistance-schemes,https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,Industry assistance schemes
+https://data.naa.gov.au/def/agift/Industry-collaboration,https://data.naa.gov.au/def/agift/Vocational-education,Industry collaboration
+https://data.naa.gov.au/def/agift/Industry-development,https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,Industry development
+https://data.naa.gov.au/def/agift/Inflation,https://data.naa.gov.au/def/agift/Monetary-policy,Inflation
+https://data.naa.gov.au/def/agift/Information-dissemination,https://data.naa.gov.au/def/agift/Information-management-standards,Information dissemination
+https://data.naa.gov.au/def/agift/Information-management-standards,https://data.naa.gov.au/def/agift/COMMUNICATIONS,Information management standards
+https://data.naa.gov.au/def/agift/Information-security,https://data.naa.gov.au/def/agift/SECURITY,Information security
+https://data.naa.gov.au/def/agift/Information-technology-standards,https://data.naa.gov.au/def/agift/Information-management-standards,Information technology standards
+https://data.naa.gov.au/def/agift/Infrastructure-planning,https://data.naa.gov.au/def/agift/CIVIC-INFRASTRUCTURE,Infrastructure planning
+https://data.naa.gov.au/def/agift/Insurance-regulation,https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,Insurance regulation
+https://data.naa.gov.au/def/agift/Integrated-services-planning,https://data.naa.gov.au/def/agift/CIVIC-INFRASTRUCTURE,Integrated services planning
+https://data.naa.gov.au/def/agift/Integrity-compliance,https://data.naa.gov.au/def/agift/Public-administration,Integrity compliance
+https://data.naa.gov.au/def/agift/Intellectual-property-management,https://data.naa.gov.au/def/agift/TRADE,Intellectual property management
+https://data.naa.gov.au/def/agift/Intelligence,https://data.naa.gov.au/def/agift/SECURITY,Intelligence
+https://data.naa.gov.au/def/agift/Intelligence-liaison,https://data.naa.gov.au/def/agift/Intelligence,Intelligence liaison
+https://data.naa.gov.au/def/agift/Intelligence-support,https://data.naa.gov.au/def/agift/Intelligence,Intelligence support
+https://data.naa.gov.au/def/agift/Interest-rates,https://data.naa.gov.au/def/agift/Monetary-policy,Interest rates
+https://data.naa.gov.au/def/agift/Intergovernment-policy-dissemination,https://data.naa.gov.au/def/agift/Intergovernmental-relations,Intergovernment policy dissemination
+https://data.naa.gov.au/def/agift/Intergovernmental-relations,https://data.naa.gov.au/def/agift/GOVERNANCE,Intergovernmental relations
+https://data.naa.gov.au/def/agift/International-affairs,https://data.naa.gov.au/def/agift/INTERNATIONAL-RELATIONS,International affairs
+https://data.naa.gov.au/def/agift/International-monetary-regulation,https://data.naa.gov.au/def/agift/FINANCE-MANAGEMENT,International monetary regulation
+https://data.naa.gov.au/def/agift/International-trade-agreements,https://data.naa.gov.au/def/agift/TRADE,International trade agreements
+https://data.naa.gov.au/def/agift/International-treaties,https://data.naa.gov.au/def/agift/INTERNATIONAL-RELATIONS,International treaties
+https://data.naa.gov.au/def/agift/Internet,https://data.naa.gov.au/def/agift/COMMUNICATIONS,Internet
+https://data.naa.gov.au/def/agift/Interpreter-services,https://data.naa.gov.au/def/agift/Migrant-services,Interpreter services
+https://data.naa.gov.au/def/agift/Interstate-trade-agreements,https://data.naa.gov.au/def/agift/TRADE,Interstate trade agreements
+https://data.naa.gov.au/def/agift/Investment-scheme-regulation,https://data.naa.gov.au/def/agift/Financial-investment,Investment scheme regulation
+https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,,JUSTICE ADMINISTRATION
+https://data.naa.gov.au/def/agift/Job-placement-programs,https://data.naa.gov.au/def/agift/Labour-market-programs,Job placement programs
+https://data.naa.gov.au/def/agift/Job-vacancy-data-management,https://data.naa.gov.au/def/agift/Labour-market-programs,Job vacancy data management
+https://data.naa.gov.au/def/agift/Juvenile-justice,https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,Juvenile justice
+https://data.naa.gov.au/def/agift/Labour-market-programs,https://data.naa.gov.au/def/agift/EMPLOYMENT,Labour market programs
+https://data.naa.gov.au/def/agift/Land-councils,https://data.naa.gov.au/def/agift/Indigenous-land-management,Land councils
+https://data.naa.gov.au/def/agift/Land-rehabilitation-programs,https://data.naa.gov.au/def/agift/Mineral-resources,Land rehabilitation programs
+https://data.naa.gov.au/def/agift/Land-use-planning,https://data.naa.gov.au/def/agift/NATURAL-RESOURCES,Land use planning
+https://data.naa.gov.au/def/agift/Land-use-zoning,https://data.naa.gov.au/def/agift/Land-use-planning,Land use zoning
+https://data.naa.gov.au/def/agift/Land-valuation,https://data.naa.gov.au/def/agift/NATURAL-RESOURCES,Land valuation
+https://data.naa.gov.au/def/agift/Landcare-programs,https://data.naa.gov.au/def/agift/Conservation-programs,Landcare programs
+https://data.naa.gov.au/def/agift/Law-enforcement,https://data.naa.gov.au/def/agift/SECURITY,Law enforcement
+https://data.naa.gov.au/def/agift/Legal-aid-services,https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,Legal aid services
+https://data.naa.gov.au/def/agift/Legislation-review,https://data.naa.gov.au/def/agift/Legislative-drafting,Legislation review
+https://data.naa.gov.au/def/agift/Legislative-drafting,https://data.naa.gov.au/def/agift/GOVERNANCE,Legislative drafting
+https://data.naa.gov.au/def/agift/Life-insurance,https://data.naa.gov.au/def/agift/Insurance-regulation,Life insurance
+https://data.naa.gov.au/def/agift/Light-station-maintenance,https://data.naa.gov.au/def/agift/Navigation,Light station maintenance
+https://data.naa.gov.au/def/agift/Local-laws-and-ordinances,https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,Local laws and ordinances
+https://data.naa.gov.au/def/agift/Logistics,https://data.naa.gov.au/def/agift/Defence-strategic-support,Logistics
+https://data.naa.gov.au/def/agift/MARITIME-SERVICES,,MARITIME SERVICES
+https://data.naa.gov.au/def/agift/Marina-management,https://data.naa.gov.au/def/agift/MARITIME-SERVICES,Marina management
+https://data.naa.gov.au/def/agift/Marine-and-rural-regulation,https://data.naa.gov.au/def/agift/PRIMARY-INDUSTRIES_2,Marine and rural regulation
+https://data.naa.gov.au/def/agift/Marine-and-rural-support,https://data.naa.gov.au/def/agift/PRIMARY-INDUSTRIES_2,Marine and rural support
+https://data.naa.gov.au/def/agift/Marine-life-protection-programs,https://data.naa.gov.au/def/agift/ENVIRONMENT,Marine life protection programs
+https://data.naa.gov.au/def/agift/Mathematical-sciences,https://data.naa.gov.au/def/agift/SCIENCE,Mathematical sciences
+https://data.naa.gov.au/def/agift/Media-ownership-regulation,https://data.naa.gov.au/def/agift/COMMUNICATIONS,Media ownership regulation
+https://data.naa.gov.au/def/agift/Medical-aids-regulation,https://data.naa.gov.au/def/agift/Medical-research,Medical aids regulation
+https://data.naa.gov.au/def/agift/Medical-and-health-sciences,https://data.naa.gov.au/def/agift/SCIENCE,Medical and health sciences
+https://data.naa.gov.au/def/agift/Medical-quarantine-services,https://data.naa.gov.au/def/agift/Public-health-services,Medical quarantine services
+https://data.naa.gov.au/def/agift/Medical-radiation-services,https://data.naa.gov.au/def/agift/Public-health-services,Medical radiation services
+https://data.naa.gov.au/def/agift/Medical-research,https://data.naa.gov.au/def/agift/HEALTH-CARE,Medical research
+https://data.naa.gov.au/def/agift/Medical-research-funding,https://data.naa.gov.au/def/agift/Medical-research,Medical research funding
+https://data.naa.gov.au/def/agift/Memorial-maintenance,https://data.naa.gov.au/def/agift/Public-land-management,Memorial maintenance
+https://data.naa.gov.au/def/agift/Mental-health-services,https://data.naa.gov.au/def/agift/Special-needs-services,Mental health services
+https://data.naa.gov.au/def/agift/Merger-regulation,https://data.naa.gov.au/def/agift/Associations-and-corporate-law,Merger regulation
+https://data.naa.gov.au/def/agift/Migrant-accommodation-services,https://data.naa.gov.au/def/agift/Migrant-services,Migrant accommodation services
+https://data.naa.gov.au/def/agift/Migrant-services,https://data.naa.gov.au/def/agift/IMMIGRATION,Migrant services
+https://data.naa.gov.au/def/agift/Migrant-settlement-programs,https://data.naa.gov.au/def/agift/Migrant-services,Migrant settlement programs
+https://data.naa.gov.au/def/agift/Military-advisors,https://data.naa.gov.au/def/agift/Defence-liaison,Military advisors
+https://data.naa.gov.au/def/agift/Military-bands,https://data.naa.gov.au/def/agift/Australian-Defence-Forces,Military bands
+https://data.naa.gov.au/def/agift/Military-education-and-training,https://data.naa.gov.au/def/agift/EDUCATION-AND-TRAINING,Military education and training
+https://data.naa.gov.au/def/agift/Military-employment-services,https://data.naa.gov.au/def/agift/Defence-force-careers,Military employment services
+https://data.naa.gov.au/def/agift/Military-exercises,https://data.naa.gov.au/def/agift/Military-operations,Military exercises
+https://data.naa.gov.au/def/agift/Military-law,https://data.naa.gov.au/def/agift/DEFENCE,Military law
+https://data.naa.gov.au/def/agift/Military-operations,https://data.naa.gov.au/def/agift/DEFENCE,Military operations
+https://data.naa.gov.au/def/agift/Mineral-exploration,https://data.naa.gov.au/def/agift/Earth-sciences,Mineral exploration
+https://data.naa.gov.au/def/agift/Mineral-resources,https://data.naa.gov.au/def/agift/NATURAL-RESOURCES,Mineral resources
+https://data.naa.gov.au/def/agift/Mining-regulations,https://data.naa.gov.au/def/agift/Mineral-resources,Mining regulations
+https://data.naa.gov.au/def/agift/Mobile-telephone-services,https://data.naa.gov.au/def/agift/Telecommunications,Mobile telephone services
+https://data.naa.gov.au/def/agift/Monetary-policy,https://data.naa.gov.au/def/agift/FINANCE-MANAGEMENT,Monetary policy
+https://data.naa.gov.au/def/agift/Multicultural-festivals--,https://data.naa.gov.au/def/agift/Multicultural-heritage-promotion--,Multicultural festivals
+https://data.naa.gov.au/def/agift/Multicultural-heritage-promotion--,https://data.naa.gov.au/def/agift/CULTURAL-AFFAIRS_2,Multicultural heritage promotion
+https://data.naa.gov.au/def/agift/Multicultural-services--,https://data.naa.gov.au/def/agift/Multicultural-heritage-promotion--,Multicultural services
+https://data.naa.gov.au/def/agift/NATURAL-RESOURCES,,NATURAL RESOURCES
+https://data.naa.gov.au/def/agift/National-park-management,https://data.naa.gov.au/def/agift/Natural-heritage-protection,National park management
+https://data.naa.gov.au/def/agift/National-referral-laboratory-services,https://data.naa.gov.au/def/agift/Medical-research,National referral laboratory services
+https://data.naa.gov.au/def/agift/National-security,https://data.naa.gov.au/def/agift/SECURITY,National security
+https://data.naa.gov.au/def/agift/Native-title-claims,https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,Native title claims
+https://data.naa.gov.au/def/agift/Native-title-mediation-programs,https://data.naa.gov.au/def/agift/Native-title-claims,Native title mediation programs
+https://data.naa.gov.au/def/agift/Native-title-settlement-negotiations,https://data.naa.gov.au/def/agift/Native-title-claims,Native title settlement negotiations
+https://data.naa.gov.au/def/agift/Natural-disasters,https://data.naa.gov.au/def/agift/COMMUNITY-SERVICES,Natural disasters
+https://data.naa.gov.au/def/agift/Natural-heritage-protection,https://data.naa.gov.au/def/agift/ENVIRONMENT,Natural heritage protection
+https://data.naa.gov.au/def/agift/Naturalisation-assessment,https://data.naa.gov.au/def/agift/Citizenship,Naturalisation assessment
+https://data.naa.gov.au/def/agift/Nature-reserve-management,https://data.naa.gov.au/def/agift/Natural-heritage-protection,Nature reserve management
+https://data.naa.gov.au/def/agift/Navigation,https://data.naa.gov.au/def/agift/MARITIME-SERVICES,Navigation
+https://data.naa.gov.au/def/agift/Navigation-systems-development,https://data.naa.gov.au/def/agift/Navigation,Navigation systems development
+https://data.naa.gov.au/def/agift/Navy,https://data.naa.gov.au/def/agift/Australian-Defence-Forces,Navy
+https://data.naa.gov.au/def/agift/Notifiable-disease-management,https://data.naa.gov.au/def/agift/Public-health-services,Notifiable disease management
+https://data.naa.gov.au/def/agift/Nuclear-safeguards,https://data.naa.gov.au/def/agift/International-affairs,Nuclear safeguards
+https://data.naa.gov.au/def/agift/Nuclear-sciences,https://data.naa.gov.au/def/agift/Physical-sciences,Nuclear sciences
+https://data.naa.gov.au/def/agift/Occupational-health-and-safety,https://data.naa.gov.au/def/agift/Human-resources-development,Occupational health and safety
+https://data.naa.gov.au/def/agift/Oceanography,https://data.naa.gov.au/def/agift/Earth-sciences,Oceanography
+https://data.naa.gov.au/def/agift/Oceans-governance,https://data.naa.gov.au/def/agift/ENVIRONMENT,Oceans governance
+https://data.naa.gov.au/def/agift/Official-establishment-management,https://data.naa.gov.au/def/agift/Official-protocol,Official establishment management
+https://data.naa.gov.au/def/agift/Official-hospitality,https://data.naa.gov.au/def/agift/Official-protocol,Official hospitality
+https://data.naa.gov.au/def/agift/Official-protocol,https://data.naa.gov.au/def/agift/GOVERNANCE,Official protocol
+https://data.naa.gov.au/def/agift/Official-visits,https://data.naa.gov.au/def/agift/Official-protocol,Official visits
+https://data.naa.gov.au/def/agift/Online-transaction-standards,https://data.naa.gov.au/def/agift/Electronic-commerce,Online transaction standards
+https://data.naa.gov.au/def/agift/Open-government,https://data.naa.gov.au/def/agift/GOVERNANCE,Open government
+https://data.naa.gov.au/def/agift/Overseas-aid-programs,https://data.naa.gov.au/def/agift/INTERNATIONAL-RELATIONS,Overseas aid programs
+https://data.naa.gov.au/def/agift/Overseas-promotion,https://data.naa.gov.au/def/agift/INTERNATIONAL-RELATIONS,Overseas promotion
+https://data.naa.gov.au/def/agift/Overseas-skills-recognition,https://data.naa.gov.au/def/agift/EDUCATION-AND-TRAINING,Overseas skills recognition
+https://data.naa.gov.au/def/agift/Overseas-student-scholarship-programs,https://data.naa.gov.au/def/agift/Overseas-aid-programs,Overseas student scholarship programs
+https://data.naa.gov.au/def/agift/PRIMARY-INDUSTRIES_2,,PRIMARY INDUSTRIES
+https://data.naa.gov.au/def/agift/Park-and-reserve-services,https://data.naa.gov.au/def/agift/SPORT-AND-RECREATION,Park and reserve services
+https://data.naa.gov.au/def/agift/Parliamentary-chamber-support,https://data.naa.gov.au/def/agift/GOVERNANCE,Parliamentary chamber support
+https://data.naa.gov.au/def/agift/Parliamentary-committee-and-member-support,https://data.naa.gov.au/def/agift/GOVERNANCE,Parliamentary committee and member support
+https://data.naa.gov.au/def/agift/Parliamentary-papers,https://data.naa.gov.au/def/agift/Parliamentary-chamber-support,Parliamentary papers
+https://data.naa.gov.au/def/agift/Passenger-services,https://data.naa.gov.au/def/agift/TRANSPORT,Passenger services
+https://data.naa.gov.au/def/agift/Passport-services,https://data.naa.gov.au/def/agift/INTERNATIONAL-RELATIONS,Passport services
+https://data.naa.gov.au/def/agift/Pastoral-industry,https://data.naa.gov.au/def/agift/Marine-and-rural-support,Pastoral industry
+https://data.naa.gov.au/def/agift/Patent-rights-management,https://data.naa.gov.au/def/agift/Intellectual-property-management,Patent rights management
+https://data.naa.gov.au/def/agift/Patient-care,https://data.naa.gov.au/def/agift/Hospital-services,Patient care
+https://data.naa.gov.au/def/agift/Payments-management,https://data.naa.gov.au/def/agift/Financial-system-management,Payments management
+https://data.naa.gov.au/def/agift/Peacekeeping-forces,https://data.naa.gov.au/def/agift/External-security,Peacekeeping forces
+https://data.naa.gov.au/def/agift/Permanent-entry-arrangements,https://data.naa.gov.au/def/agift/Travel-authorisation,Permanent entry arrangements
+https://data.naa.gov.au/def/agift/Personnel-safety-standards,https://data.naa.gov.au/def/agift/Ship-personnel,Personnel safety standards
+https://data.naa.gov.au/def/agift/Pharmaceutical-and-drug-support,https://data.naa.gov.au/def/agift/Hospital-services,Pharmaceutical and drug support
+https://data.naa.gov.au/def/agift/Physical-sciences,https://data.naa.gov.au/def/agift/SCIENCE,Physical sciences
+https://data.naa.gov.au/def/agift/Physiology,https://data.naa.gov.au/def/agift/Biological-sciences,Physiology
+https://data.naa.gov.au/def/agift/Pilotage-management,https://data.naa.gov.au/def/agift/MARITIME-SERVICES,Pilotage management
+https://data.naa.gov.au/def/agift/Place-names,https://data.naa.gov.au/def/agift/CIVIC-INFRASTRUCTURE,Place names
+https://data.naa.gov.au/def/agift/Plant-breeders-rights-management,https://data.naa.gov.au/def/agift/Intellectual-property-management,Plant breeders' rights management
+https://data.naa.gov.au/def/agift/Police-administration,https://data.naa.gov.au/def/agift/Law-enforcement,Police administration
+https://data.naa.gov.au/def/agift/Pollutant-prevention-programs,https://data.naa.gov.au/def/agift/ENVIRONMENT,Pollutant prevention programs
+https://data.naa.gov.au/def/agift/Pollution-emission-control,https://data.naa.gov.au/def/agift/NATURAL-RESOURCES,Pollution emission control
+https://data.naa.gov.au/def/agift/Population-based-research,https://data.naa.gov.au/def/agift/Medical-research,Population-based research
+https://data.naa.gov.au/def/agift/Port-regulation,https://data.naa.gov.au/def/agift/MARITIME-SERVICES,Port regulation
+https://data.naa.gov.au/def/agift/Postal-services,https://data.naa.gov.au/def/agift/COMMUNICATIONS,Postal services
+https://data.naa.gov.au/def/agift/Practitioner-discipline,https://data.naa.gov.au/def/agift/Health-protocol-administration,Practitioner discipline
+https://data.naa.gov.au/def/agift/Practitioner-registration,https://data.naa.gov.au/def/agift/Health-protocol-administration,Practitioner registration
+https://data.naa.gov.au/def/agift/Preparation-of-legislative-regulations,https://data.naa.gov.au/def/agift/Legislative-drafting,Preparation of legislative regulations
+https://data.naa.gov.au/def/agift/Presentation-arrangements,https://data.naa.gov.au/def/agift/Citizenship,Presentation arrangements
+https://data.naa.gov.au/def/agift/Preservation-services--,https://data.naa.gov.au/def/agift/Collection-management--,Preservation services
+https://data.naa.gov.au/def/agift/Prices-surveillance,https://data.naa.gov.au/def/agift/Fair-trading-compliance,Prices surveillance
+https://data.naa.gov.au/def/agift/Primary-health-care,https://data.naa.gov.au/def/agift/Community-health-services,Primary health care
+https://data.naa.gov.au/def/agift/Privacy,https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,Privacy
+https://data.naa.gov.au/def/agift/Probate-applications,https://data.naa.gov.au/def/agift/Civil-law,Probate applications
+https://data.naa.gov.au/def/agift/Product-safety,https://data.naa.gov.au/def/agift/Fair-trading-compliance,Product safety
+https://data.naa.gov.au/def/agift/Productivity,https://data.naa.gov.au/def/agift/Resource-management,Productivity
+https://data.naa.gov.au/def/agift/Professional-accreditation,https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,Professional accreditation
+https://data.naa.gov.au/def/agift/Prohibited-export-control,https://data.naa.gov.au/def/agift/Export-regulation,Prohibited export control
+https://data.naa.gov.au/def/agift/Prohibited-import-control,https://data.naa.gov.au/def/agift/Import-regulation,Prohibited import control
+https://data.naa.gov.au/def/agift/Prosecution-services,https://data.naa.gov.au/def/agift/JUSTICE-ADMINISTRATION,Prosecution services
+https://data.naa.gov.au/def/agift/Protective-services,https://data.naa.gov.au/def/agift/Law-enforcement,Protective services
+https://data.naa.gov.au/def/agift/Public-administration,https://data.naa.gov.au/def/agift/GOVERNANCE,Public administration
+https://data.naa.gov.au/def/agift/Public-borrowing,https://data.naa.gov.au/def/agift/Fiscal-policy,Public borrowing
+https://data.naa.gov.au/def/agift/Public-debt,https://data.naa.gov.au/def/agift/Fiscal-policy,Public debt
+https://data.naa.gov.au/def/agift/Public-expenditure,https://data.naa.gov.au/def/agift/Fiscal-policy,Public expenditure
+https://data.naa.gov.au/def/agift/Public-fitness-promotion,https://data.naa.gov.au/def/agift/Community-recreational-programs,Public fitness promotion
+https://data.naa.gov.au/def/agift/Public-health-services,https://data.naa.gov.au/def/agift/HEALTH-CARE,Public health services
+https://data.naa.gov.au/def/agift/Public-housing,https://data.naa.gov.au/def/agift/CIVIC-INFRASTRUCTURE,Public housing
+https://data.naa.gov.au/def/agift/Public-housing-construction,https://data.naa.gov.au/def/agift/Public-housing,Public housing construction
+https://data.naa.gov.au/def/agift/Public-housing-design,https://data.naa.gov.au/def/agift/Public-housing,Public housing design
+https://data.naa.gov.au/def/agift/Public-housing-entitlements,https://data.naa.gov.au/def/agift/Accommodation-services,Public housing entitlements
+https://data.naa.gov.au/def/agift/Public-housing-maintenance,https://data.naa.gov.au/def/agift/Public-housing,Public housing maintenance
+https://data.naa.gov.au/def/agift/Public-land-management,https://data.naa.gov.au/def/agift/CIVIC-INFRASTRUCTURE,Public land management
+https://data.naa.gov.au/def/agift/Public-service,https://data.naa.gov.au/def/agift/Public-administration,Public service
+https://data.naa.gov.au/def/agift/Public-transport,https://data.naa.gov.au/def/agift/TRANSPORT,Public transport
+https://data.naa.gov.au/def/agift/Publicity-programs--,https://data.naa.gov.au/def/agift/Collection-promotion--,Publicity programs
+https://data.naa.gov.au/def/agift/Publishing,https://data.naa.gov.au/def/agift/COMMUNICATIONS,Publishing
+https://data.naa.gov.au/def/agift/Publishing-standards,https://data.naa.gov.au/def/agift/Publishing,Publishing standards
+https://data.naa.gov.au/def/agift/Quarantine,https://data.naa.gov.au/def/agift/PRIMARY-INDUSTRIES_2,Quarantine
+https://data.naa.gov.au/def/agift/Radiation-protection,https://data.naa.gov.au/def/agift/Public-health-services,Radiation protection
+https://data.naa.gov.au/def/agift/Radio-broadcasting,https://data.naa.gov.au/def/agift/Broadcasting,Radio broadcasting
+https://data.naa.gov.au/def/agift/Radio-communication,https://data.naa.gov.au/def/agift/COMMUNICATIONS,Radio communication
+https://data.naa.gov.au/def/agift/Rail-harmonisation-standards,https://data.naa.gov.au/def/agift/Rail-transport,Rail harmonisation standards
+https://data.naa.gov.au/def/agift/Rail-land-acquisition-regulation,https://data.naa.gov.au/def/agift/Rail-transport,Rail land acquisition regulation
+https://data.naa.gov.au/def/agift/Rail-transport,https://data.naa.gov.au/def/agift/TRANSPORT,Rail transport
+https://data.naa.gov.au/def/agift/Rail-transport-safety,https://data.naa.gov.au/def/agift/Rail-transport,Rail transport safety
+https://data.naa.gov.au/def/agift/Railway-maintenance,https://data.naa.gov.au/def/agift/Rail-transport,Railway maintenance
+https://data.naa.gov.au/def/agift/Recordkeeping-standards,https://data.naa.gov.au/def/agift/Administrative-law,Recordkeeping standards
+https://data.naa.gov.au/def/agift/Recreational-park-management,https://data.naa.gov.au/def/agift/Public-land-management,Recreational park management
+https://data.naa.gov.au/def/agift/Recruitment-programs,https://data.naa.gov.au/def/agift/Human-resources-development,Recruitment programs
+https://data.naa.gov.au/def/agift/Reference-services--,https://data.naa.gov.au/def/agift/Collection-access--,Reference services
+https://data.naa.gov.au/def/agift/Refuge-support,https://data.naa.gov.au/def/agift/Accommodation-services,Refuge support
+https://data.naa.gov.au/def/agift/Refugee-services,https://data.naa.gov.au/def/agift/IMMIGRATION,Refugee services
+https://data.naa.gov.au/def/agift/Regional-development,https://data.naa.gov.au/def/agift/CIVIC-INFRASTRUCTURE,Regional development
+https://data.naa.gov.au/def/agift/Remuneration-review,https://data.naa.gov.au/def/agift/Industrial-awards-and-conditions,Remuneration review
+https://data.naa.gov.au/def/agift/Renewable-energy-development,https://data.naa.gov.au/def/agift/Energy-resources,Renewable energy development
+https://data.naa.gov.au/def/agift/Rescue-coordination,https://data.naa.gov.au/def/agift/Search-and-rescue,Rescue coordination
+https://data.naa.gov.au/def/agift/Reserves,https://data.naa.gov.au/def/agift/Australian-Defence-Forces,Reserves
+https://data.naa.gov.au/def/agift/Residential-services,https://data.naa.gov.au/def/agift/Special-needs-services,Residential services
+https://data.naa.gov.au/def/agift/Resource-management,https://data.naa.gov.au/def/agift/FINANCE-MANAGEMENT,Resource management
+https://data.naa.gov.au/def/agift/Retail-postal-services,https://data.naa.gov.au/def/agift/Postal-services,Retail postal services
+https://data.naa.gov.au/def/agift/Retirement-income,https://data.naa.gov.au/def/agift/FINANCE-MANAGEMENT,Retirement income
+https://data.naa.gov.au/def/agift/Retirement-saving,https://data.naa.gov.au/def/agift/Retirement-income,Retirement saving
+https://data.naa.gov.au/def/agift/Revenue-raising,https://data.naa.gov.au/def/agift/Taxation,Revenue raising
+https://data.naa.gov.au/def/agift/Road-safety-awareness,https://data.naa.gov.au/def/agift/Community-education,Road safety awareness
+https://data.naa.gov.au/def/agift/Road-surface-maintenance,https://data.naa.gov.au/def/agift/Road-transport,Road surface maintenance
+https://data.naa.gov.au/def/agift/Road-traffic-regulation,https://data.naa.gov.au/def/agift/Road-transport,Road traffic regulation
+https://data.naa.gov.au/def/agift/Road-transport,https://data.naa.gov.au/def/agift/TRANSPORT,Road transport
+https://data.naa.gov.au/def/agift/Road-transport-safety,https://data.naa.gov.au/def/agift/Road-transport,Road transport safety
+https://data.naa.gov.au/def/agift/Rolling-stock-regulation,https://data.naa.gov.au/def/agift/Rail-transport,Rolling stock regulation
+https://data.naa.gov.au/def/agift/Rural-community-development,https://data.naa.gov.au/def/agift/COMMUNITY-SERVICES,Rural community development
+https://data.naa.gov.au/def/agift/Rural-field-day-promotion,https://data.naa.gov.au/def/agift/PRIMARY-INDUSTRIES_2,Rural field day promotion
+https://data.naa.gov.au/def/agift/Rural-partnership-programs,https://data.naa.gov.au/def/agift/PRIMARY-INDUSTRIES_2,Rural partnership programs
+https://data.naa.gov.au/def/agift/SCIENCE,,SCIENCE
+https://data.naa.gov.au/def/agift/SECURITY,,SECURITY
+https://data.naa.gov.au/def/agift/SPORT-AND-RECREATION,,SPORT AND RECREATION
+https://data.naa.gov.au/def/agift/STATISTICAL-SERVICES,,STATISTICAL SERVICES
+https://data.naa.gov.au/def/agift/Satellite-communication,https://data.naa.gov.au/def/agift/COMMUNICATIONS,Satellite communication
+https://data.naa.gov.au/def/agift/School-education,https://data.naa.gov.au/def/agift/EDUCATION-AND-TRAINING,School education
+https://data.naa.gov.au/def/agift/School-transport-regulation,https://data.naa.gov.au/def/agift/School-education,School transport regulation
+https://data.naa.gov.au/def/agift/Sea-passengers,https://data.naa.gov.au/def/agift/MARITIME-SERVICES,Sea passengers
+https://data.naa.gov.au/def/agift/Search-and-rescue,https://data.naa.gov.au/def/agift/MARITIME-SERVICES,Search and rescue
+https://data.naa.gov.au/def/agift/Search-technology-development,https://data.naa.gov.au/def/agift/Search-and-rescue,Search technology development
+https://data.naa.gov.au/def/agift/Seaworthiness,https://data.naa.gov.au/def/agift/Ship-safety,Seaworthiness
+https://data.naa.gov.au/def/agift/Seismology,https://data.naa.gov.au/def/agift/Earth-sciences,Seismology
+https://data.naa.gov.au/def/agift/Ship-commissioning,https://data.naa.gov.au/def/agift/Ship-safety,Ship commissioning
+https://data.naa.gov.au/def/agift/Ship-inspection,https://data.naa.gov.au/def/agift/Ship-safety,Ship inspection
+https://data.naa.gov.au/def/agift/Ship-personnel,https://data.naa.gov.au/def/agift/MARITIME-SERVICES,Ship personnel
+https://data.naa.gov.au/def/agift/Ship-safety,https://data.naa.gov.au/def/agift/MARITIME-SERVICES,Ship safety
+https://data.naa.gov.au/def/agift/Silvicultural-industry,https://data.naa.gov.au/def/agift/Marine-and-rural-support,Silvicultural industry
+https://data.naa.gov.au/def/agift/Small-business-advocacy,https://data.naa.gov.au/def/agift/Small-business-services,Small business advocacy
+https://data.naa.gov.au/def/agift/Small-business-development,https://data.naa.gov.au/def/agift/Small-business-services,Small business development
+https://data.naa.gov.au/def/agift/Small-business-services,https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,Small business services
+https://data.naa.gov.au/def/agift/Social-club-support,https://data.naa.gov.au/def/agift/Community-recreational-programs,Social club support
+https://data.naa.gov.au/def/agift/Social-justice-and-equity,https://data.naa.gov.au/def/agift/COMMUNITY-SERVICES,Social justice and equity
+https://data.naa.gov.au/def/agift/Social-media,https://data.naa.gov.au/def/agift/Internet,Social media
+https://data.naa.gov.au/def/agift/Social-research,https://data.naa.gov.au/def/agift/COMMUNITY-SERVICES,Social research
+https://data.naa.gov.au/def/agift/Soil-preservation-programs,https://data.naa.gov.au/def/agift/Conservation-programs,Soil preservation programs
+https://data.naa.gov.au/def/agift/Spatial-information-research,https://data.naa.gov.au/def/agift/SCIENCE,Spatial information research
+https://data.naa.gov.au/def/agift/Special-needs-programs,https://data.naa.gov.au/def/agift/School-education,Special needs programs
+https://data.naa.gov.au/def/agift/Special-needs-services,https://data.naa.gov.au/def/agift/HEALTH-CARE,Special needs services
+https://data.naa.gov.au/def/agift/Special-operations,https://data.naa.gov.au/def/agift/Military-operations,Special operations
+https://data.naa.gov.au/def/agift/Spectrum-management,https://data.naa.gov.au/def/agift/Radio-communication,Spectrum management
+https://data.naa.gov.au/def/agift/Sport-and-fitness-development,https://data.naa.gov.au/def/agift/SPORT-AND-RECREATION,Sport and fitness development
+https://data.naa.gov.au/def/agift/Sporting-facilities-management,https://data.naa.gov.au/def/agift/Public-land-management,Sporting facilities management
+https://data.naa.gov.au/def/agift/Sporting-grants-administration,https://data.naa.gov.au/def/agift/Sport-and-fitness-development,Sporting grants administration
+https://data.naa.gov.au/def/agift/Sports-drugs-monitoring,https://data.naa.gov.au/def/agift/SPORT-AND-RECREATION,Sports drugs monitoring
+https://data.naa.gov.au/def/agift/Statistical-collection,https://data.naa.gov.au/def/agift/STATISTICAL-SERVICES,Statistical collection
+https://data.naa.gov.au/def/agift/Statistical-design,https://data.naa.gov.au/def/agift/STATISTICAL-SERVICES,Statistical design
+https://data.naa.gov.au/def/agift/Statistical-standards,https://data.naa.gov.au/def/agift/STATISTICAL-SERVICES,Statistical standards
+https://data.naa.gov.au/def/agift/Statistics-dissemination,https://data.naa.gov.au/def/agift/STATISTICAL-SERVICES,Statistics dissemination
+https://data.naa.gov.au/def/agift/Stock-market-regulation,https://data.naa.gov.au/def/agift/BUSINESS-SUPPORT-AND-REGULATION,Stock market regulation
+https://data.naa.gov.au/def/agift/Strategic-decisions,https://data.naa.gov.au/def/agift/Defence-strategic-policy,Strategic decisions
+https://data.naa.gov.au/def/agift/Strategic-planning,https://data.naa.gov.au/def/agift/Defence-strategic-policy,Strategic planning
+https://data.naa.gov.au/def/agift/Superannuation-regulation,https://data.naa.gov.au/def/agift/Retirement-income,Superannuation regulation
+https://data.naa.gov.au/def/agift/TOURISM,,TOURISM
+https://data.naa.gov.au/def/agift/TRADE,,TRADE
+https://data.naa.gov.au/def/agift/TRANSPORT,,TRANSPORT
+https://data.naa.gov.au/def/agift/Tabling-of-official-documents,https://data.naa.gov.au/def/agift/Parliamentary-chamber-support,Tabling of official documents
+https://data.naa.gov.au/def/agift/Tariff-regulation,https://data.naa.gov.au/def/agift/Import-regulation,Tariff regulation
+https://data.naa.gov.au/def/agift/Taxation,https://data.naa.gov.au/def/agift/FINANCE-MANAGEMENT,Taxation
+https://data.naa.gov.au/def/agift/Taxation-compliance,https://data.naa.gov.au/def/agift/Taxation,Taxation compliance
+https://data.naa.gov.au/def/agift/Telecommunications,https://data.naa.gov.au/def/agift/COMMUNICATIONS,Telecommunications
+https://data.naa.gov.au/def/agift/Telephone-services,https://data.naa.gov.au/def/agift/Telecommunications,Telephone services
+https://data.naa.gov.au/def/agift/Television-broadcasting,https://data.naa.gov.au/def/agift/Broadcasting,Television broadcasting
+https://data.naa.gov.au/def/agift/Temporary-entry-arrangements,https://data.naa.gov.au/def/agift/Travel-authorisation,Temporary entry arrangements
+https://data.naa.gov.au/def/agift/Termination-processes,https://data.naa.gov.au/def/agift/Human-resources-development,Termination processes
+https://data.naa.gov.au/def/agift/Territories-administration,https://data.naa.gov.au/def/agift/Public-administration,Territories administration
+https://data.naa.gov.au/def/agift/Tertiary-education,https://data.naa.gov.au/def/agift/EDUCATION-AND-TRAINING,Tertiary education
+https://data.naa.gov.au/def/agift/Tourism-industry-development,https://data.naa.gov.au/def/agift/TOURISM,Tourism industry development
+https://data.naa.gov.au/def/agift/Tourist-event-promotion,https://data.naa.gov.au/def/agift/TOURISM,Tourist event promotion
+https://data.naa.gov.au/def/agift/Town-planning,https://data.naa.gov.au/def/agift/Civic-management,Town planning
+https://data.naa.gov.au/def/agift/Trade-development-programs,https://data.naa.gov.au/def/agift/TRADE,Trade development programs
+https://data.naa.gov.au/def/agift/Trade-expositions,https://data.naa.gov.au/def/agift/TRADE,Trade expositions
+https://data.naa.gov.au/def/agift/Trade-measurement-compliance,https://data.naa.gov.au/def/agift/TRADE,Trade measurement compliance
+https://data.naa.gov.au/def/agift/Trade-practices-compliance,https://data.naa.gov.au/def/agift/Fair-trading-compliance,Trade practices compliance
+https://data.naa.gov.au/def/agift/Trademark-registration,https://data.naa.gov.au/def/agift/Intellectual-property-management,Trademark registration
+https://data.naa.gov.au/def/agift/Trainee-programs,https://data.naa.gov.au/def/agift/Vocational-education,Trainee programs
+https://data.naa.gov.au/def/agift/Transport-access-schemes,https://data.naa.gov.au/def/agift/COMMUNITY-SERVICES,Transport access schemes
+https://data.naa.gov.au/def/agift/Transport-accessibility,https://data.naa.gov.au/def/agift/Public-transport,Transport accessibility
+https://data.naa.gov.au/def/agift/Transport-infrastructure-development,https://data.naa.gov.au/def/agift/TRANSPORT,Transport infrastructure development
+https://data.naa.gov.au/def/agift/Transport-network-maintenance,https://data.naa.gov.au/def/agift/CIVIC-INFRASTRUCTURE,Transport network maintenance
+https://data.naa.gov.au/def/agift/Travel-authorisation,https://data.naa.gov.au/def/agift/IMMIGRATION,Travel authorisation
+https://data.naa.gov.au/def/agift/Travel-missions,https://data.naa.gov.au/def/agift/TOURISM,Travel missions
+https://data.naa.gov.au/def/agift/Treaty-administration,https://data.naa.gov.au/def/agift/International-treaties,Treaty administration
+https://data.naa.gov.au/def/agift/Vehicle-registration,https://data.naa.gov.au/def/agift/Road-transport,Vehicle registration
+https://data.naa.gov.au/def/agift/Vehicle-standards,https://data.naa.gov.au/def/agift/Road-transport,Vehicle standards
+https://data.naa.gov.au/def/agift/Veterans-entitlements,https://data.naa.gov.au/def/agift/Community-support,Veterans' entitlements
+https://data.naa.gov.au/def/agift/Veterans-health-services,https://data.naa.gov.au/def/agift/HEALTH-CARE,Veterans' health services
+https://data.naa.gov.au/def/agift/Viticultural-industry,https://data.naa.gov.au/def/agift/Marine-and-rural-support,Viticultural industry
+https://data.naa.gov.au/def/agift/Vocational-education,https://data.naa.gov.au/def/agift/EDUCATION-AND-TRAINING,Vocational education
+https://data.naa.gov.au/def/agift/Volunteer-support-programs,https://data.naa.gov.au/def/agift/Community-recreational-programs,Volunteer support programs
+https://data.naa.gov.au/def/agift/Warfare,https://data.naa.gov.au/def/agift/Military-operations,Warfare
+https://data.naa.gov.au/def/agift/Waste-management,https://data.naa.gov.au/def/agift/CIVIC-INFRASTRUCTURE,Waste management
+https://data.naa.gov.au/def/agift/Water-conservation-plans,https://data.naa.gov.au/def/agift/Water-resources,Water conservation plans
+https://data.naa.gov.au/def/agift/Water-quality-monitoring,https://data.naa.gov.au/def/agift/Water-resources,Water quality monitoring
+https://data.naa.gov.au/def/agift/Water-resources,https://data.naa.gov.au/def/agift/NATURAL-RESOURCES,Water resources
+https://data.naa.gov.au/def/agift/Water-usage-management,https://data.naa.gov.au/def/agift/Water-resources,Water usage management
+https://data.naa.gov.au/def/agift/Waterway-management,https://data.naa.gov.au/def/agift/Water-resources,Waterway management
+https://data.naa.gov.au/def/agift/Website-development,https://data.naa.gov.au/def/agift/Publishing,Website development
+https://data.naa.gov.au/def/agift/Weights-and-measures-standards,https://data.naa.gov.au/def/agift/Applied-sciences,Weights and measures standards
+https://data.naa.gov.au/def/agift/Whistleblowing,https://data.naa.gov.au/def/agift/Public-administration,Whistleblowing
+https://data.naa.gov.au/def/agift/Wilderness-area-management,https://data.naa.gov.au/def/agift/Natural-heritage-protection,Wilderness area management
+https://data.naa.gov.au/def/agift/Wildlife-sanctuary-management,https://data.naa.gov.au/def/agift/Natural-heritage-protection,Wildlife sanctuary management
+https://data.naa.gov.au/def/agift/Workers-compensation-schemes,https://data.naa.gov.au/def/agift/Human-resources-development,Workers compensation schemes
+https://data.naa.gov.au/def/agift/Workplace-agreement-processes,https://data.naa.gov.au/def/agift/EMPLOYMENT,Workplace agreement processes
+https://data.naa.gov.au/def/agift/Workplace-discrimination-monitoring,https://data.naa.gov.au/def/agift/Human-resources-development,Workplace discrimination monitoring
+https://data.naa.gov.au/def/agift/Workplace-equity-and-justice-programs,https://data.naa.gov.au/def/agift/Human-resources-development,Workplace equity and justice programs
+https://data.naa.gov.au/def/agift/Workplace-training,https://data.naa.gov.au/def/agift/Vocational-education,Workplace training
+https://data.naa.gov.au/def/agift/World-heritage-listings,https://data.naa.gov.au/def/agift/ENVIRONMENT,World heritage listings

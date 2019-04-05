@@ -1,0 +1,171 @@
+@prefix loci: <http://linked.data.gov.au/def/loci#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+@prefix : <http://linked.data.gov.au/linkset/agiftcrsth/statement/> .
+@prefix s: <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> .
+@prefix p: <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> .
+@prefix o: <http://www.w3.org/1999/02/22-rdf-syntax-ns#object> .
+@prefix m: <http://linked.data.gov.au/def/loci/hadGenerationMethod> .
+@prefix m1: <http://linked.data.gov.au/linkset/agiftcrsth/method/1> .
+
+@prefix agift: <https://data.naa.gov.au/def/agift/> .
+@prefix crs-th: <http://linked.data.gov.au/def/crs-th/> .
+
+<http://linked.data.gov.au/linkset/0854185c-a5d9-463b-b833-585dc82588f2>
+  a loci:Linkset ;
+  dct:title "AGIFT CRS Thesuarus Linkset" ;
+  dct:description """"""@en ;
+  dct:publisher <http://catalogue.linked.data.gov.au/org/O-000790> ;
+  dc:publisher "National Archives of Australia" ;
+  dcat:contactPoint _:marcus ;
+  dct:created "2019-04-05"^^xsd:date ;
+  dct:issued "2019-04-05"^^xsd:date ;
+  dct:modified "2019-04-05"^^xsd:date ;
+  dct:contributor _:shane ;
+  void:subjectsTarget <https://data.naa.gov.au/def/agift/> ;
+  void:objectsTarget <http://linked.data.gov.au/def/crs-th> ;
+  prov:wasGeneratedBy _:act .
+
+_:act a prov:Activity;
+    prov:qualifiedAssociation [
+        a prov:Association;
+        prov:agent   _:nick;
+        prov:hadPlan _:m1
+    ] .
+
+m1: a prov:Plan ;
+    rdfs:label "coded and manual label comparison" ;
+    prov:value <https://github.com/CSIRO-enviro-informatics/agiftcrsth-linkset/method> ;
+    rdfs:comment "The method used to create this linkset, described in text." ;
+    prov:wasAttributedTo _:nick ;
+    prov:generatedAtTime "2019-04-05"^^xsd:date .
+
+_:marcus a vcard:Individual ;
+    vcard:fn "Nicholas Car" ;
+    vcard:hasEmail <mailto:nicholas.car@csiro.au> .
+
+
+
+<https://data.naa.gov.au/def/agift/Accommodation-services> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/accommodation> .
+<https://data.naa.gov.au/def/agift/Accommodation-services> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/government-accommodation-and-catering> .
+<https://data.naa.gov.au/def/agift/Accommodation-services> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/migrant-accommodation> .
+<https://data.naa.gov.au/def/agift/Administrative-decision-appeal> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/administrative-law> .
+<https://data.naa.gov.au/def/agift/Administrative-decision-review> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/administrative-law> .
+<https://data.naa.gov.au/def/agift/Administrative-law> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/administrative-law> .
+<https://data.naa.gov.au/def/agift/Adoption-services> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/adoption-services> .
+<https://data.naa.gov.au/def/agift/Advertising-campaigns_2> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/advertising> .
+<https://data.naa.gov.au/def/agift/Advertising-standards> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/advertising> .
+<https://data.naa.gov.au/def/agift/Air-Force> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/air-force> .
+<https://data.naa.gov.au/def/agift/Air-Force> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/air-force-administration> .
+<https://data.naa.gov.au/def/agift/Air-Force> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/air-force-administration> .
+<https://data.naa.gov.au/def/agift/Air-Force> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/air-force-commands> .
+<https://data.naa.gov.au/def/agift/Air-Force> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/air-force-commands> .
+<https://data.naa.gov.au/def/agift/Air-transport> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/air-navigation> .
+<https://data.naa.gov.au/def/agift/Air-transport> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/air-operations> .
+<https://data.naa.gov.au/def/agift/Air-transport> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/air-safety> .
+<https://data.naa.gov.au/def/agift/Air-transport> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/air-training-units> .
+<https://data.naa.gov.au/def/agift/Air-transport> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/air-transport> .
+<https://data.naa.gov.au/def/agift/Air-transport-safety> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/air-safety> .
+<https://data.naa.gov.au/def/agift/Air-transport-safety> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/air-transport> .
+<https://data.naa.gov.au/def/agift/Aircraft-standards> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/aircraft> .
+<https://data.naa.gov.au/def/agift/Airport-services> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/airport-services> .
+<https://data.naa.gov.au/def/agift/Animal-and-veterinary-sciences> skos:relatedMatch <http://test.linked.data.gov.au/def/crs-th/animal-quarantine> .
+<https://data.naa.gov.au/def/agift/Army> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/army> .
+<https://data.naa.gov.au/def/agift/Army> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/army-administration> .
+<https://data.naa.gov.au/def/agift/Army> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/army-aviation> .
+<https://data.naa.gov.au/def/agift/Army> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/army-commands> .
+<https://data.naa.gov.au/def/agift/Army-reserve-training> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/army> .
+<https://data.naa.gov.au/def/agift/Arts-development--> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/arts> .
+<https://data.naa.gov.au/def/agift/Arts-development--> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/arts-development> .
+<https://data.naa.gov.au/def/agift/Arts-development--> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/arts-subsidies> .
+<https://data.naa.gov.au/def/agift/Arts-education> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/arts> .
+<https://data.naa.gov.au/def/agift/Arts-funding--> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/arts> .
+<https://data.naa.gov.au/def/agift/Arts-funding--> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/arts-development> .
+<https://data.naa.gov.au/def/agift/Arts-funding--> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/arts-subsidies> .
+<https://data.naa.gov.au/def/agift/Arts-incentive-schemes--> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/arts> .
+<https://data.naa.gov.au/def/agift/Arts-incentive-schemes--> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/arts-development> .
+<https://data.naa.gov.au/def/agift/Arts-incentive-schemes--> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/arts-subsidies> .
+<https://data.naa.gov.au/def/agift/Arts-promotion--> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/arts> .
+<https://data.naa.gov.au/def/agift/Arts-promotion--> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/arts-development> .
+<https://data.naa.gov.au/def/agift/Arts-promotion--> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/arts-subsidies> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/armed-forces> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/defence> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/defence-administration> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/defence-committees> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/defence-cooperation> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/defence-coordination> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/defence-forces> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/defence-forces> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/defence-industries> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/defence-intelligence> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/defence-research> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/defence-security> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/defence-service-home-schemes> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/expeditionary-forces> .
+<https://data.naa.gov.au/def/agift/Australian-Defence-Forces> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/peace-keeping-forces> .
+<https://data.naa.gov.au/def/agift/Bankruptcy-proceedings> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/bankruptcy> .
+<https://data.naa.gov.au/def/agift/Benefits> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/benefits> .
+<https://data.naa.gov.au/def/agift/Benefits> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/benefits-for-students> .
+<https://data.naa.gov.au/def/agift/Benefits> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/funeral-benefits> .
+<https://data.naa.gov.au/def/agift/Benefits> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/hospital-benefits> .
+<https://data.naa.gov.au/def/agift/Benefits> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/mental-institutions-benefits> .
+<https://data.naa.gov.au/def/agift/Benefits> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits> .
+<https://data.naa.gov.au/def/agift/Benefits> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/sickness-benefits> .
+<https://data.naa.gov.au/def/agift/Benefits> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/unemployment-benefits> .
+<https://data.naa.gov.au/def/agift/Botany> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/botany> .
+<https://data.naa.gov.au/def/agift/Broadcasting> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/broadcasting> .
+<https://data.naa.gov.au/def/agift/Broadcasting> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/radio-broadcasting> .
+<https://data.naa.gov.au/def/agift/Broadcasting> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/television-broadcasting> .
+<https://data.naa.gov.au/def/agift/Broadcasting-standards> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/broadcasting> .
+<https://data.naa.gov.au/def/agift/Building-acoustics> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/building> .
+<https://data.naa.gov.au/def/agift/Building-approval-services> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/building> .
+<https://data.naa.gov.au/def/agift/Building-preservation> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/building> .
+<https://data.naa.gov.au/def/agift/Building-regulations-and-standards> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/building> .
+<https://data.naa.gov.au/def/agift/Censorship-standards> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/censorship> .
+<https://data.naa.gov.au/def/agift/Censorship-standards> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/film-censorship> .
+<https://data.naa.gov.au/def/agift/Censorship-standards> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/literature-censorship> .
+<https://data.naa.gov.au/def/agift/Censorship-standards> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/press-censorship> .
+<https://data.naa.gov.au/def/agift/Censorship-standards> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/radio-censorship> .
+<https://data.naa.gov.au/def/agift/Censorship-standards> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/television-censorship> .
+<https://data.naa.gov.au/def/agift/Ceremonial-events-and-representation> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/ceremonial-functions> .
+<https://data.naa.gov.au/def/agift/Citizenship> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/citizenship> .
+<https://data.naa.gov.au/def/agift/Collection-access--> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/collection-management> .
+<https://data.naa.gov.au/def/agift/Collection-accessioning--> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/collection-management> .
+<https://data.naa.gov.au/def/agift/Collection-acquisition--> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/collection-management> .
+<https://data.naa.gov.au/def/agift/Collection-management--> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/collection-management> .
+<https://data.naa.gov.au/def/agift/Collection-promotion--> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/collection-management> .
+<https://data.naa.gov.au/def/agift/Collection-storage--> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/collection-management> .
+<https://data.naa.gov.au/def/agift/Commissions-of-inquiry> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/high-commissions> .
+<https://data.naa.gov.au/def/agift/Commissions-of-inquiry> skos:narrowMatch <http://test.linked.data.gov.au/def/crs-th/royal-commissions> .
+<https://data.naa.gov.au/def/agift/Commonwealth-State-funding> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/commonwealth-state-relations> .
+<https://data.naa.gov.au/def/agift/Commonwealth-State-funding> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/commonwealth-state-relations> .
+<https://data.naa.gov.au/def/agift/Commonwealth-State-funding> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/state-commonwealth-relations> .
+<https://data.naa.gov.au/def/agift/Commonwealth-State-funding> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/state-commonwealth-relations> .
+<https://data.naa.gov.au/def/agift/Communications-infrastructure> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/communications> .
+<https://data.naa.gov.au/def/agift/Community-health-services> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/community-services> .
+<https://data.naa.gov.au/def/agift/Community-housing> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/community-services> .
+<https://data.naa.gov.au/def/agift/Community-policing> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/community-services> .
+<https://data.naa.gov.au/def/agift/Community-recreational-programs> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/community-services> .
+<https://data.naa.gov.au/def/agift/Community-support> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/community-services> .
+<https://data.naa.gov.au/def/agift/Conservation-programs> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/conservation> .
+<https://data.naa.gov.au/def/agift/Consular-services> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/consular-services> .
+<https://data.naa.gov.au/def/agift/Consumer-protection> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/consumer-affairs> .
+<https://data.naa.gov.au/def/agift/Copyright-regulation> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/copyright> .
+<https://data.naa.gov.au/def/agift/Corrective-services> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/corrective-services> .
+<https://data.naa.gov.au/def/agift/Court-reporting> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/court-reporting> .
+<https://data.naa.gov.au/def/agift/Criminology> skos:exactMatch <http://test.linked.data.gov.au/def/crs-th/criminology> .
+<https://data.naa.gov.au/def/agift/Cultural-artefact-repatriation> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/cultural-affairs> .
+<https://data.naa.gov.au/def/agift/Cultural-artefact-repatriation> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/cultural-institutions> .
+<https://data.naa.gov.au/def/agift/Cultural-awards-and-scholarships--> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/cultural-affairs> .
+<https://data.naa.gov.au/def/agift/Cultural-centre-management> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/cultural-affairs> .
+<https://data.naa.gov.au/def/agift/Cultural-centre-management> skos:closeMatch <http://test.linked.data.gov.au/def/crs-th/cultural-institutions> .
+<https://data.naa.gov.au/def/agift/Cultural-festivals--> skos:broadMatch <http://test.linked.data.gov.au/def/crs-th/cultural-affairs> .

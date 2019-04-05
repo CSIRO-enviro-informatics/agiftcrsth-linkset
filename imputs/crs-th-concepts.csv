@@ -1,0 +1,727 @@
+http://test.linked.data.gov.au/def/crs-th/aboriginal-affairs,http://test.linked.data.gov.au/def/crs-th/indigenous-affairs,Aboriginal Affairs
+http://test.linked.data.gov.au/def/crs-th/aboriginal-enterprises,http://test.linked.data.gov.au/def/crs-th/indigenous-enterprises,Aboriginal Enterprises
+http://test.linked.data.gov.au/def/crs-th/aboriginal-land-rights,http://test.linked.data.gov.au/def/crs-th/indigenous-land-rights,Aboriginal Land Rights
+http://test.linked.data.gov.au/def/crs-th/aboriginal-missions,http://test.linked.data.gov.au/def/crs-th/indigenous-settlements,Aboriginal Missions
+http://test.linked.data.gov.au/def/crs-th/aboriginal-reserves,http://test.linked.data.gov.au/def/crs-th/indigenous-settlements,Aboriginal Reserves
+http://test.linked.data.gov.au/def/crs-th/aboriginal-welfare,http://test.linked.data.gov.au/def/crs-th/indigenous-affairs,Aboriginal Welfare
+http://test.linked.data.gov.au/def/crs-th/aboriginals,http://test.linked.data.gov.au/def/crs-th/indigenous-affairs,Aboriginals
+http://test.linked.data.gov.au/def/crs-th/aborigines,http://test.linked.data.gov.au/def/crs-th/indigenous-affairs,Aborigines
+http://test.linked.data.gov.au/def/crs-th/accommodation,http://test.linked.data.gov.au/def/crs-th/government-accommodation-and-catering,Accommodation
+http://test.linked.data.gov.au/def/crs-th/accounting,,Accounting
+http://test.linked.data.gov.au/def/crs-th/accreditation,,Accreditation
+http://test.linked.data.gov.au/def/crs-th/acquisition,,Acquisition
+http://test.linked.data.gov.au/def/crs-th/act-police,,Act Police
+http://test.linked.data.gov.au/def/crs-th/administrative-law,,Administrative Law
+http://test.linked.data.gov.au/def/crs-th/administrative-services,,Administrative Services
+http://test.linked.data.gov.au/def/crs-th/adoption-services,http://test.linked.data.gov.au/def/crs-th/community-services,Adoption Services
+http://test.linked.data.gov.au/def/crs-th/advertising,http://test.linked.data.gov.au/def/crs-th/government-media,Advertising
+http://test.linked.data.gov.au/def/crs-th/aerial-surveillance,http://test.linked.data.gov.au/def/crs-th/defence-intelligence,Aerial Surveillance
+http://test.linked.data.gov.au/def/crs-th/aerodrome,http://test.linked.data.gov.au/def/crs-th/air-transport,Aerodrome
+http://test.linked.data.gov.au/def/crs-th/affirmative-action,http://test.linked.data.gov.au/def/crs-th/public-service,Affirmative Action
+http://test.linked.data.gov.au/def/crs-th/agriculture,,Agriculture
+http://test.linked.data.gov.au/def/crs-th/aid-programs,http://test.linked.data.gov.au/def/crs-th/overseas-aid-programs,Aid Programs
+http://test.linked.data.gov.au/def/crs-th/air-force,,Air Force
+http://test.linked.data.gov.au/def/crs-th/air-force-administration,,Air Force Administration
+http://test.linked.data.gov.au/def/crs-th/air-force-commands,,Air Force Commands
+http://test.linked.data.gov.au/def/crs-th/air-navigation,http://test.linked.data.gov.au/def/crs-th/air-transport,Air Navigation
+http://test.linked.data.gov.au/def/crs-th/air-operations,,Air Operations
+http://test.linked.data.gov.au/def/crs-th/air-safety,,Air Safety
+http://test.linked.data.gov.au/def/crs-th/air-training-units,http://test.linked.data.gov.au/def/crs-th/training-air-force,Air Training Units
+http://test.linked.data.gov.au/def/crs-th/air-transport,,Air Transport
+http://test.linked.data.gov.au/def/crs-th/aircraft,http://test.linked.data.gov.au/def/crs-th/defence-industries,Aircraft
+http://test.linked.data.gov.au/def/crs-th/airlines,http://test.linked.data.gov.au/def/crs-th/air-transport,Airlines
+http://test.linked.data.gov.au/def/crs-th/airport-services,,Airport Services
+http://test.linked.data.gov.au/def/crs-th/airports,http://test.linked.data.gov.au/def/crs-th/airport-services,Airports
+http://test.linked.data.gov.au/def/crs-th/airways,http://test.linked.data.gov.au/def/crs-th/air-transport,Airways
+http://test.linked.data.gov.au/def/crs-th/aliens,http://test.linked.data.gov.au/def/crs-th/migration,Aliens
+http://test.linked.data.gov.au/def/crs-th/allied-cooperation,http://test.linked.data.gov.au/def/crs-th/defence-forces,Allied Cooperation
+http://test.linked.data.gov.au/def/crs-th/analytical-services,,Analytical Services
+http://test.linked.data.gov.au/def/crs-th/animal-quarantine,http://test.linked.data.gov.au/def/crs-th/quarantine,Animal Quarantine
+http://test.linked.data.gov.au/def/crs-th/antidiscrimination,http://test.linked.data.gov.au/def/crs-th/human-rights,Antidiscrimination
+http://test.linked.data.gov.au/def/crs-th/arbitration,,Arbitration
+http://test.linked.data.gov.au/def/crs-th/archives,http://test.linked.data.gov.au/def/crs-th/archives-administration,Archives
+http://test.linked.data.gov.au/def/crs-th/archives-administration,,Archives Administration
+http://test.linked.data.gov.au/def/crs-th/armament,http://test.linked.data.gov.au/def/crs-th/defence-industries,Armament
+http://test.linked.data.gov.au/def/crs-th/armed-forces,http://test.linked.data.gov.au/def/crs-th/defence-forces,Armed Forces
+http://test.linked.data.gov.au/def/crs-th/armed-services,http://test.linked.data.gov.au/def/crs-th/defence-forces,Armed Services
+http://test.linked.data.gov.au/def/crs-th/armour,http://test.linked.data.gov.au/def/crs-th/army-commands,Armour
+http://test.linked.data.gov.au/def/crs-th/army,,Army
+http://test.linked.data.gov.au/def/crs-th/army-administration,,Army Administration
+http://test.linked.data.gov.au/def/crs-th/army-aviation,http://test.linked.data.gov.au/def/crs-th/army-commands,Army Aviation
+http://test.linked.data.gov.au/def/crs-th/army-commands,,Army Commands
+http://test.linked.data.gov.au/def/crs-th/arrivals,http://test.linked.data.gov.au/def/crs-th/passenger-entry-control,Arrivals
+http://test.linked.data.gov.au/def/crs-th/artillery,http://test.linked.data.gov.au/def/crs-th/army-commands,Artillery
+http://test.linked.data.gov.au/def/crs-th/arts,http://test.linked.data.gov.au/def/crs-th/arts-development,Arts
+http://test.linked.data.gov.au/def/crs-th/arts-and-crafts,http://test.linked.data.gov.au/def/crs-th/arts,Arts And Crafts
+http://test.linked.data.gov.au/def/crs-th/arts-development,,Arts Development
+http://test.linked.data.gov.au/def/crs-th/arts-subsidies,http://test.linked.data.gov.au/def/crs-th/arts-development,Arts Subsidies
+http://test.linked.data.gov.au/def/crs-th/ashmore-and-cartier-islands,http://test.linked.data.gov.au/def/crs-th/territory-administration,Ashmore And Cartier Islands
+http://test.linked.data.gov.au/def/crs-th/assisted-migration,http://test.linked.data.gov.au/def/crs-th/migration,Assisted Migration
+http://test.linked.data.gov.au/def/crs-th/astronomy,http://test.linked.data.gov.au/def/crs-th/space-science,Astronomy
+http://test.linked.data.gov.au/def/crs-th/attache,http://test.linked.data.gov.au/def/crs-th/government-representation-overseas,Attache
+http://test.linked.data.gov.au/def/crs-th/audit,,Audit
+http://test.linked.data.gov.au/def/crs-th/australia-card,http://test.linked.data.gov.au/def/crs-th/citizenship,Australia Card
+http://test.linked.data.gov.au/def/crs-th/australian-antarctic-territory,http://test.linked.data.gov.au/def/crs-th/territory-administration,Australian Antarctic Territory
+http://test.linked.data.gov.au/def/crs-th/australian-capital-territory,,Australian Capital Territory
+http://test.linked.data.gov.au/def/crs-th/aviation,http://test.linked.data.gov.au/def/crs-th/defence-industries,Aviation
+http://test.linked.data.gov.au/def/crs-th/awards,http://test.linked.data.gov.au/def/crs-th/ceremonial-functions,Awards
+http://test.linked.data.gov.au/def/crs-th/ballet,http://test.linked.data.gov.au/def/crs-th/arts-development,Ballet
+http://test.linked.data.gov.au/def/crs-th/bank-notes,http://test.linked.data.gov.au/def/crs-th/currency,Bank Notes
+http://test.linked.data.gov.au/def/crs-th/banking,,Banking
+http://test.linked.data.gov.au/def/crs-th/bankruptcy,,Bankruptcy
+http://test.linked.data.gov.au/def/crs-th/banks,http://test.linked.data.gov.au/def/crs-th/banking,Banks
+http://test.linked.data.gov.au/def/crs-th/battalion,http://test.linked.data.gov.au/def/crs-th/army-commands,Battalion
+http://test.linked.data.gov.au/def/crs-th/battery,http://test.linked.data.gov.au/def/crs-th/army-commands,Battery
+http://test.linked.data.gov.au/def/crs-th/benefits,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,Benefits
+http://test.linked.data.gov.au/def/crs-th/benefits-for-students,http://test.linked.data.gov.au/def/crs-th/student-assistance,Benefits For Students
+http://test.linked.data.gov.au/def/crs-th/births,http://test.linked.data.gov.au/def/crs-th/citizenship,Births
+http://test.linked.data.gov.au/def/crs-th/bonds,http://test.linked.data.gov.au/def/crs-th/currency,Bonds
+http://test.linked.data.gov.au/def/crs-th/botany,,Botany
+http://test.linked.data.gov.au/def/crs-th/bounties,,Bounties
+http://test.linked.data.gov.au/def/crs-th/bridges,http://test.linked.data.gov.au/def/crs-th/civil-engineering,Bridges
+http://test.linked.data.gov.au/def/crs-th/brigade,http://test.linked.data.gov.au/def/crs-th/army-commands,Brigade
+http://test.linked.data.gov.au/def/crs-th/british-new-guinea,http://test.linked.data.gov.au/def/crs-th/territory-administration,British New Guinea
+http://test.linked.data.gov.au/def/crs-th/broadcasting,,Broadcasting
+http://test.linked.data.gov.au/def/crs-th/building,,Building
+http://test.linked.data.gov.au/def/crs-th/cabinet,,Cabinet
+http://test.linked.data.gov.au/def/crs-th/cabinet-secretariat,http://test.linked.data.gov.au/def/crs-th/cabinet,Cabinet Secretariat
+http://test.linked.data.gov.au/def/crs-th/cable-services,http://test.linked.data.gov.au/def/crs-th/telecommunications,Cable Services
+http://test.linked.data.gov.au/def/crs-th/cable-television,http://test.linked.data.gov.au/def/crs-th/television-broadcasting,Cable Television
+http://test.linked.data.gov.au/def/crs-th/campaigns,http://test.linked.data.gov.au/def/crs-th/defence-forces,Campaigns
+http://test.linked.data.gov.au/def/crs-th/canberra,,Canberra
+http://test.linked.data.gov.au/def/crs-th/cartier-islands,http://test.linked.data.gov.au/def/crs-th/territory-administration,Cartier Islands
+http://test.linked.data.gov.au/def/crs-th/catering,http://test.linked.data.gov.au/def/crs-th/government-accommodation-and-catering,Catering
+http://test.linked.data.gov.au/def/crs-th/celebrations,http://test.linked.data.gov.au/def/crs-th/national-events,Celebrations
+http://test.linked.data.gov.au/def/crs-th/censorship,,Censorship
+http://test.linked.data.gov.au/def/crs-th/census,http://test.linked.data.gov.au/def/crs-th/social-and-economic-research,Census
+http://test.linked.data.gov.au/def/crs-th/ceremonial-functions,,Ceremonial Functions
+http://test.linked.data.gov.au/def/crs-th/chemical-analysis,http://test.linked.data.gov.au/def/crs-th/analytical-services,Chemical Analysis
+http://test.linked.data.gov.au/def/crs-th/chemical-warfare-experiments,http://test.linked.data.gov.au/def/crs-th/defence-research,Chemical Warfare Experiments
+http://test.linked.data.gov.au/def/crs-th/child-endowment,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,Child Endowment
+http://test.linked.data.gov.au/def/crs-th/child-welfare,,Child Welfare
+http://test.linked.data.gov.au/def/crs-th/christmas-island,http://test.linked.data.gov.au/def/crs-th/territory-administration,Christmas Island
+http://test.linked.data.gov.au/def/crs-th/citizenship,,Citizenship
+http://test.linked.data.gov.au/def/crs-th/civil-aviation,http://test.linked.data.gov.au/def/crs-th/air-transport,Civil Aviation
+http://test.linked.data.gov.au/def/crs-th/civil-defences,http://test.linked.data.gov.au/def/crs-th/defence-forces,Civil Defences
+http://test.linked.data.gov.au/def/crs-th/civil-engineering,,Civil Engineering
+http://test.linked.data.gov.au/def/crs-th/civil-liberties,http://test.linked.data.gov.au/def/crs-th/human-rights,Civil Liberties
+http://test.linked.data.gov.au/def/crs-th/civil-rights,http://test.linked.data.gov.au/def/crs-th/human-rights,Civil Rights
+http://test.linked.data.gov.au/def/crs-th/clinics,http://test.linked.data.gov.au/def/crs-th/hospitals-and-clinics,Clinics
+http://test.linked.data.gov.au/def/crs-th/clothing,http://test.linked.data.gov.au/def/crs-th/defence-industries,Clothing
+http://test.linked.data.gov.au/def/crs-th/coal,http://test.linked.data.gov.au/def/crs-th/energy,Coal
+http://test.linked.data.gov.au/def/crs-th/coastal-defences,http://test.linked.data.gov.au/def/crs-th/defence-forces,Coastal Defences
+http://test.linked.data.gov.au/def/crs-th/coastal-surveillance,,Coastal Surveillance
+http://test.linked.data.gov.au/def/crs-th/coastwatchers,http://test.linked.data.gov.au/def/crs-th/defence-intelligence,Coastwatchers
+http://test.linked.data.gov.au/def/crs-th/cocos-keeling-islands,http://test.linked.data.gov.au/def/crs-th/territory-administration,Cocos (Keeling) Islands
+http://test.linked.data.gov.au/def/crs-th/cocos-island,http://test.linked.data.gov.au/def/crs-th/territory-administration,Cocos Island
+http://test.linked.data.gov.au/def/crs-th/coinage,http://test.linked.data.gov.au/def/crs-th/currency,Coinage
+http://test.linked.data.gov.au/def/crs-th/coins,http://test.linked.data.gov.au/def/crs-th/currency,Coins
+http://test.linked.data.gov.au/def/crs-th/collection-management,,Collection Management
+http://test.linked.data.gov.au/def/crs-th/colonial-administration,,Colonial Administration
+http://test.linked.data.gov.au/def/crs-th/colonies,http://test.linked.data.gov.au/def/crs-th/colonial-administration,Colonies
+http://test.linked.data.gov.au/def/crs-th/commemorative-memorials,http://test.linked.data.gov.au/def/crs-th/historic-memorials,Commemorative Memorials
+http://test.linked.data.gov.au/def/crs-th/commerce,http://test.linked.data.gov.au/def/crs-th/trade,Commerce
+http://test.linked.data.gov.au/def/crs-th/committees,,Committees
+http://test.linked.data.gov.au/def/crs-th/committees-of-inquiry,,Committees Of Inquiry
+http://test.linked.data.gov.au/def/crs-th/commonwealth-police,http://test.linked.data.gov.au/def/crs-th/police-administration,Commonwealth Police
+http://test.linked.data.gov.au/def/crs-th/commonwealth-state-relations,,Commonwealth State Relations
+http://test.linked.data.gov.au/def/crs-th/communications,,Communications
+http://test.linked.data.gov.au/def/crs-th/communications-intelligence,http://test.linked.data.gov.au/def/crs-th/defence-intelligence,Communications Intelligence
+http://test.linked.data.gov.au/def/crs-th/communications-security,http://test.linked.data.gov.au/def/crs-th/defence-intelligence,Communications Security
+http://test.linked.data.gov.au/def/crs-th/community-services,,Community Services
+http://test.linked.data.gov.au/def/crs-th/compensation,http://test.linked.data.gov.au/def/crs-th/compensation-schemes,Compensation
+http://test.linked.data.gov.au/def/crs-th/compensation-schemes,,Compensation Schemes
+http://test.linked.data.gov.au/def/crs-th/conditions-of-service,http://test.linked.data.gov.au/def/crs-th/public-service,Conditions Of Service
+http://test.linked.data.gov.au/def/crs-th/conscription,http://test.linked.data.gov.au/def/crs-th/national-service,Conscription
+http://test.linked.data.gov.au/def/crs-th/conservation,,Conservation
+http://test.linked.data.gov.au/def/crs-th/constitution,http://test.linked.data.gov.au/def/crs-th/parliamentary-matters,Constitution
+http://test.linked.data.gov.au/def/crs-th/construction,,Construction
+http://test.linked.data.gov.au/def/crs-th/consular-services,,Consular Services
+http://test.linked.data.gov.au/def/crs-th/consulate-general,http://test.linked.data.gov.au/def/crs-th/consular-services,Consulate General
+http://test.linked.data.gov.au/def/crs-th/consulates,http://test.linked.data.gov.au/def/crs-th/consular-services,Consulates
+http://test.linked.data.gov.au/def/crs-th/consumer-affairs,,Consumer Affairs
+http://test.linked.data.gov.au/def/crs-th/copyright,,Copyright
+http://test.linked.data.gov.au/def/crs-th/coral-sea-islands,http://test.linked.data.gov.au/def/crs-th/territory-administration,Coral Sea Islands
+http://test.linked.data.gov.au/def/crs-th/corporate-affairs,,Corporate Affairs
+http://test.linked.data.gov.au/def/crs-th/corrective-services,,Corrective Services
+http://test.linked.data.gov.au/def/crs-th/council-of-defence,http://test.linked.data.gov.au/def/crs-th/defence-forces,Council Of Defence
+http://test.linked.data.gov.au/def/crs-th/counter-terrorism,http://test.linked.data.gov.au/def/crs-th/security-and-intelligence,Counter Terrorism
+http://test.linked.data.gov.au/def/crs-th/court-reporting,,Court Reporting
+http://test.linked.data.gov.au/def/crs-th/courts,http://test.linked.data.gov.au/def/crs-th/justice-administration,Courts
+http://test.linked.data.gov.au/def/crs-th/courts-and-tribunals,,Courts And Tribunals
+http://test.linked.data.gov.au/def/crs-th/courts-martial,,Courts Martial
+http://test.linked.data.gov.au/def/crs-th/criminology,,Criminology
+http://test.linked.data.gov.au/def/crs-th/cultural-affairs,,Cultural Affairs
+http://test.linked.data.gov.au/def/crs-th/cultural-institutions,http://test.linked.data.gov.au/def/crs-th/collection-management,Cultural Institutions
+http://test.linked.data.gov.au/def/crs-th/culture,http://test.linked.data.gov.au/def/crs-th/cultural-affairs,Culture
+http://test.linked.data.gov.au/def/crs-th/currency,,Currency
+http://test.linked.data.gov.au/def/crs-th/curriculum-development,,Curriculum Development
+http://test.linked.data.gov.au/def/crs-th/customs,,Customs
+http://test.linked.data.gov.au/def/crs-th/customs-duty,http://test.linked.data.gov.au/def/crs-th/tariffs,Customs Duty
+http://test.linked.data.gov.au/def/crs-th/dams,http://test.linked.data.gov.au/def/crs-th/civil-engineering,Dams
+http://test.linked.data.gov.au/def/crs-th/dance,http://test.linked.data.gov.au/def/crs-th/arts-development,Dance
+http://test.linked.data.gov.au/def/crs-th/deaths,http://test.linked.data.gov.au/def/crs-th/citizenship,Deaths
+http://test.linked.data.gov.au/def/crs-th/decentralisation,http://test.linked.data.gov.au/def/crs-th/regional-development,Decentralisation
+http://test.linked.data.gov.au/def/crs-th/defence,,Defence
+http://test.linked.data.gov.au/def/crs-th/defence-administration,,Defence Administration
+http://test.linked.data.gov.au/def/crs-th/defence-committees,http://test.linked.data.gov.au/def/crs-th/defence-administration,Defence Committees
+http://test.linked.data.gov.au/def/crs-th/defence-cooperation,http://test.linked.data.gov.au/def/crs-th/defence,Defence Cooperation
+http://test.linked.data.gov.au/def/crs-th/defence-coordination,,Defence Coordination
+http://test.linked.data.gov.au/def/crs-th/defence-forces,,Defence Forces
+http://test.linked.data.gov.au/def/crs-th/defence-industries,,Defence Industries
+http://test.linked.data.gov.au/def/crs-th/defence-intelligence,,Defence Intelligence
+http://test.linked.data.gov.au/def/crs-th/defence-research,,Defence Research
+http://test.linked.data.gov.au/def/crs-th/defence-security,http://test.linked.data.gov.au/def/crs-th/defence-intelligence,Defence Security
+http://test.linked.data.gov.au/def/crs-th/defence-service-home-schemes,,Defence Service Home Schemes
+http://test.linked.data.gov.au/def/crs-th/demographic-surveys,http://test.linked.data.gov.au/def/crs-th/social-and-economic-research,Demographic Surveys
+http://test.linked.data.gov.au/def/crs-th/dental-health,http://test.linked.data.gov.au/def/crs-th/dental-services,Dental Health
+http://test.linked.data.gov.au/def/crs-th/dental-services,,Dental Services
+http://test.linked.data.gov.au/def/crs-th/deportation,,Deportation
+http://test.linked.data.gov.au/def/crs-th/deportations,,Deportations
+http://test.linked.data.gov.au/def/crs-th/designs,http://test.linked.data.gov.au/def/crs-th/copyright,Designs
+http://test.linked.data.gov.au/def/crs-th/diplomacy,http://test.linked.data.gov.au/def/crs-th/government-representation-overseas,Diplomacy
+http://test.linked.data.gov.au/def/crs-th/diplomatic-corps,http://test.linked.data.gov.au/def/crs-th/government-representation-overseas,Diplomatic Corps
+http://test.linked.data.gov.au/def/crs-th/diplomatic-protection,http://test.linked.data.gov.au/def/crs-th/protective-services,Diplomatic Protection
+http://test.linked.data.gov.au/def/crs-th/disability-services,,Disability Services
+http://test.linked.data.gov.au/def/crs-th/disarmament,http://test.linked.data.gov.au/def/crs-th/international-relations,Disarmament
+http://test.linked.data.gov.au/def/crs-th/discrimination,http://test.linked.data.gov.au/def/crs-th/human-rights,Discrimination
+http://test.linked.data.gov.au/def/crs-th/diseases,http://test.linked.data.gov.au/def/crs-th/health-services,Diseases
+http://test.linked.data.gov.au/def/crs-th/disposals,http://test.linked.data.gov.au/def/crs-th/goods-and-services,Disposals
+http://test.linked.data.gov.au/def/crs-th/division,http://test.linked.data.gov.au/def/crs-th/army-commands,Division
+http://test.linked.data.gov.au/def/crs-th/drugs-manufacture,http://test.linked.data.gov.au/def/crs-th/pharmaceuticals-and-medical-aids,Drugs (Manufacture)
+http://test.linked.data.gov.au/def/crs-th/earth-sciences,,Earth Sciences
+http://test.linked.data.gov.au/def/crs-th/economic-research,http://test.linked.data.gov.au/def/crs-th/social-and-economic-research,Economic Research
+http://test.linked.data.gov.au/def/crs-th/education,,Education
+http://test.linked.data.gov.au/def/crs-th/elections,http://test.linked.data.gov.au/def/crs-th/electoral-matters,Elections
+http://test.linked.data.gov.au/def/crs-th/electoral-matters,,Electoral Matters
+http://test.linked.data.gov.au/def/crs-th/electricity-services,http://test.linked.data.gov.au/def/crs-th/public-utilities,Electricity Services
+http://test.linked.data.gov.au/def/crs-th/electronic-security,http://test.linked.data.gov.au/def/crs-th/defence-intelligence,Electronic Security
+http://test.linked.data.gov.au/def/crs-th/electronic-surveillance,http://test.linked.data.gov.au/def/crs-th/defence-intelligence,Electronic Surveillance
+http://test.linked.data.gov.au/def/crs-th/embassies,http://test.linked.data.gov.au/def/crs-th/government-representation-overseas,Embassies
+http://test.linked.data.gov.au/def/crs-th/emergency-services,,Emergency Services
+http://test.linked.data.gov.au/def/crs-th/employment,,Employment
+http://test.linked.data.gov.au/def/crs-th/enemy-aliens,http://test.linked.data.gov.au/def/crs-th/internees,Enemy Aliens
+http://test.linked.data.gov.au/def/crs-th/enemy-property,http://test.linked.data.gov.au/def/crs-th/wartime-security,Enemy Property
+http://test.linked.data.gov.au/def/crs-th/energy,,Energy
+http://test.linked.data.gov.au/def/crs-th/engineering,http://test.linked.data.gov.au/def/crs-th/civil-engineering,Engineering
+http://test.linked.data.gov.au/def/crs-th/engineers,http://test.linked.data.gov.au/def/crs-th/army-commands,Engineers
+http://test.linked.data.gov.au/def/crs-th/enquiries,http://test.linked.data.gov.au/def/crs-th/committees-of-inquiry,Enquiries
+http://test.linked.data.gov.au/def/crs-th/environment,,Environment
+http://test.linked.data.gov.au/def/crs-th/environmental-monitoring,,Environmental Monitoring
+http://test.linked.data.gov.au/def/crs-th/equal-employment,http://test.linked.data.gov.au/def/crs-th/equity-programs,Equal Employment
+http://test.linked.data.gov.au/def/crs-th/equity-programs,,Equity Programs
+http://test.linked.data.gov.au/def/crs-th/espionage,http://test.linked.data.gov.au/def/crs-th/internal-security,Espionage
+http://test.linked.data.gov.au/def/crs-th/ethnic-affairs,http://test.linked.data.gov.au/def/crs-th/multiculturalism,Ethnic Affairs
+http://test.linked.data.gov.au/def/crs-th/excise,,Excise
+http://test.linked.data.gov.au/def/crs-th/expatriates,http://test.linked.data.gov.au/def/crs-th/government-representation-overseas,Expatriates
+http://test.linked.data.gov.au/def/crs-th/expeditionary-forces,http://test.linked.data.gov.au/def/crs-th/defence-forces,Expeditionary Forces
+http://test.linked.data.gov.au/def/crs-th/export-incentives,http://test.linked.data.gov.au/def/crs-th/exports-and-imports,Export Incentives
+http://test.linked.data.gov.au/def/crs-th/export-insurance,http://test.linked.data.gov.au/def/crs-th/exports-and-imports,Export Insurance
+http://test.linked.data.gov.au/def/crs-th/export-marketing,http://test.linked.data.gov.au/def/crs-th/exports-and-imports,Export Marketing
+http://test.linked.data.gov.au/def/crs-th/export-support,http://test.linked.data.gov.au/def/crs-th/exports-and-imports,Export Support
+http://test.linked.data.gov.au/def/crs-th/exports,http://test.linked.data.gov.au/def/crs-th/exports-and-imports,Exports
+http://test.linked.data.gov.au/def/crs-th/exports-and-imports,,Exports And Imports
+http://test.linked.data.gov.au/def/crs-th/expositions,,Expositions
+http://test.linked.data.gov.au/def/crs-th/external-affairs,http://test.linked.data.gov.au/def/crs-th/foreign-policy,External Affairs
+http://test.linked.data.gov.au/def/crs-th/external-security,,External Security
+http://test.linked.data.gov.au/def/crs-th/extraditions,,Extraditions
+http://test.linked.data.gov.au/def/crs-th/family-courts,http://test.linked.data.gov.au/def/crs-th/family-law,Family Courts
+http://test.linked.data.gov.au/def/crs-th/family-law,,Family Law
+http://test.linked.data.gov.au/def/crs-th/federal-capital-territory,,Federal Capital Territory
+http://test.linked.data.gov.au/def/crs-th/federal-courts,http://test.linked.data.gov.au/def/crs-th/federal-law,Federal Courts
+http://test.linked.data.gov.au/def/crs-th/federal-executive-council,http://test.linked.data.gov.au/def/crs-th/parliamentary-matters,Federal Executive Council
+http://test.linked.data.gov.au/def/crs-th/federal-law,,Federal Law
+http://test.linked.data.gov.au/def/crs-th/federal-legislature,http://test.linked.data.gov.au/def/crs-th/parliamentary-matters,Federal Legislature
+http://test.linked.data.gov.au/def/crs-th/federal-police,http://test.linked.data.gov.au/def/crs-th/police-administration,Federal Police
+http://test.linked.data.gov.au/def/crs-th/federation,http://test.linked.data.gov.au/def/crs-th/colonial-administration,Federation
+http://test.linked.data.gov.au/def/crs-th/festivals,http://test.linked.data.gov.au/def/crs-th/national-events,Festivals
+http://test.linked.data.gov.au/def/crs-th/field-force-army,,Field Force (Army)
+http://test.linked.data.gov.au/def/crs-th/film,http://test.linked.data.gov.au/def/crs-th/film-production,Film
+http://test.linked.data.gov.au/def/crs-th/film-archives,http://test.linked.data.gov.au/def/crs-th/archives-administration,Film Archives
+http://test.linked.data.gov.au/def/crs-th/film-censorship,http://test.linked.data.gov.au/def/crs-th/censorship,Film Censorship
+http://test.linked.data.gov.au/def/crs-th/film-production,,Film Production
+http://test.linked.data.gov.au/def/crs-th/finance,http://test.linked.data.gov.au/def/crs-th/financial-matters,Finance
+http://test.linked.data.gov.au/def/crs-th/financial-matters,,Financial Matters
+http://test.linked.data.gov.au/def/crs-th/fine-arts,http://test.linked.data.gov.au/def/crs-th/arts-development,Fine Arts
+http://test.linked.data.gov.au/def/crs-th/fire-fighting-services,http://test.linked.data.gov.au/def/crs-th/public-utilities,Fire Fighting Services
+http://test.linked.data.gov.au/def/crs-th/fisheries,http://test.linked.data.gov.au/def/crs-th/fisheries-regulation,Fisheries
+http://test.linked.data.gov.au/def/crs-th/fisheries-regulation,,Fisheries Regulation
+http://test.linked.data.gov.au/def/crs-th/fleet-air-arm,http://test.linked.data.gov.au/def/crs-th/maritime-commands-navy,Fleet Air Arm
+http://test.linked.data.gov.au/def/crs-th/flight-regulation,,Flight Regulation
+http://test.linked.data.gov.au/def/crs-th/food-services,http://test.linked.data.gov.au/def/crs-th/government-accommodation-and-catering,Food Services
+http://test.linked.data.gov.au/def/crs-th/foreign-affairs,http://test.linked.data.gov.au/def/crs-th/foreign-policy,Foreign Affairs
+http://test.linked.data.gov.au/def/crs-th/foreign-exchange,http://test.linked.data.gov.au/def/crs-th/banking,Foreign Exchange
+http://test.linked.data.gov.au/def/crs-th/foreign-investment-control,,Foreign Investment Control
+http://test.linked.data.gov.au/def/crs-th/foreign-policy,,Foreign Policy
+http://test.linked.data.gov.au/def/crs-th/forestry,http://test.linked.data.gov.au/def/crs-th/forestry-regulation,Forestry
+http://test.linked.data.gov.au/def/crs-th/forestry-regulation,,Forestry Regulation
+http://test.linked.data.gov.au/def/crs-th/franchise,http://test.linked.data.gov.au/def/crs-th/electoral-matters,Franchise
+http://test.linked.data.gov.au/def/crs-th/freight,,Freight
+http://test.linked.data.gov.au/def/crs-th/freight-and-cartage,http://test.linked.data.gov.au/def/crs-th/freight,Freight And Cartage
+http://test.linked.data.gov.au/def/crs-th/fuels,http://test.linked.data.gov.au/def/crs-th/energy,Fuels
+http://test.linked.data.gov.au/def/crs-th/funding-for-literature,http://test.linked.data.gov.au/def/crs-th/literature-funding,Funding For Literature
+http://test.linked.data.gov.au/def/crs-th/funeral-benefits,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,Funeral Benefits
+http://test.linked.data.gov.au/def/crs-th/galleries,http://test.linked.data.gov.au/def/crs-th/collection-management,Galleries
+http://test.linked.data.gov.au/def/crs-th/gas,http://test.linked.data.gov.au/def/crs-th/energy,Gas
+http://test.linked.data.gov.au/def/crs-th/gas-services,http://test.linked.data.gov.au/def/crs-th/public-utilities,Gas Services
+http://test.linked.data.gov.au/def/crs-th/genetics,,Genetics
+http://test.linked.data.gov.au/def/crs-th/geography,http://test.linked.data.gov.au/def/crs-th/survey-and-mapping,Geography
+http://test.linked.data.gov.au/def/crs-th/geology,http://test.linked.data.gov.au/def/crs-th/earth-sciences,Geology
+http://test.linked.data.gov.au/def/crs-th/geophysics,http://test.linked.data.gov.au/def/crs-th/earth-sciences,Geophysics
+http://test.linked.data.gov.au/def/crs-th/german-new-guinea,http://test.linked.data.gov.au/def/crs-th/colonial-administration,German New Guinea
+http://test.linked.data.gov.au/def/crs-th/goods-and-services,,Goods And Services
+http://test.linked.data.gov.au/def/crs-th/government-accommodation-and-catering,,Government Accommodation And Catering
+http://test.linked.data.gov.au/def/crs-th/government-buildings,http://test.linked.data.gov.au/def/crs-th/building,Government Buildings
+http://test.linked.data.gov.au/def/crs-th/government-hospitality,http://test.linked.data.gov.au/def/crs-th/ceremonial-functions,Government Hospitality
+http://test.linked.data.gov.au/def/crs-th/government-hostels,http://test.linked.data.gov.au/def/crs-th/government-accommodation-and-catering,Government Hostels
+http://test.linked.data.gov.au/def/crs-th/government-laboratories,http://test.linked.data.gov.au/def/crs-th/analytical-services,Government Laboratories
+http://test.linked.data.gov.au/def/crs-th/government-media,,Government Media
+http://test.linked.data.gov.au/def/crs-th/government-railways,http://test.linked.data.gov.au/def/crs-th/rail-transport,Government Railways
+http://test.linked.data.gov.au/def/crs-th/government-records,http://test.linked.data.gov.au/def/crs-th/archives-administration,Government Records
+http://test.linked.data.gov.au/def/crs-th/government-representation-overseas,,Government Representation Overseas
+http://test.linked.data.gov.au/def/crs-th/government-steamship-lines,http://test.linked.data.gov.au/def/crs-th/sea-transport,Government Steamship Lines
+http://test.linked.data.gov.au/def/crs-th/governor-general,,Governor General
+http://test.linked.data.gov.au/def/crs-th/grants,http://test.linked.data.gov.au/def/crs-th/grants-administration,Grants
+http://test.linked.data.gov.au/def/crs-th/grants-administration,,Grants Administration
+http://test.linked.data.gov.au/def/crs-th/health,,Health
+http://test.linked.data.gov.au/def/crs-th/health-education,http://test.linked.data.gov.au/def/crs-th/health-services,Health Education
+http://test.linked.data.gov.au/def/crs-th/health-insurance,,Health Insurance
+http://test.linked.data.gov.au/def/crs-th/health-promotion,http://test.linked.data.gov.au/def/crs-th/health-services,Health Promotion
+http://test.linked.data.gov.au/def/crs-th/health-services,,Health Services
+http://test.linked.data.gov.au/def/crs-th/heard-and-mcdonald-islands,http://test.linked.data.gov.au/def/crs-th/territory-administration,Heard And Mcdonald Islands
+http://test.linked.data.gov.au/def/crs-th/hearing,http://test.linked.data.gov.au/def/crs-th/hearing-services,Hearing
+http://test.linked.data.gov.au/def/crs-th/hearing-services,,Hearing Services
+http://test.linked.data.gov.au/def/crs-th/high-commissions,http://test.linked.data.gov.au/def/crs-th/government-representation-overseas,High Commissions
+http://test.linked.data.gov.au/def/crs-th/high-court,http://test.linked.data.gov.au/def/crs-th/federal-law,High Court
+http://test.linked.data.gov.au/def/crs-th/historic-memorials,,Historic Memorials
+http://test.linked.data.gov.au/def/crs-th/home-savings-schemes,,Home Savings Schemes
+http://test.linked.data.gov.au/def/crs-th/honours-and-awards,http://test.linked.data.gov.au/def/crs-th/ceremonial-functions,Honours And Awards
+http://test.linked.data.gov.au/def/crs-th/horticulture,,Horticulture
+http://test.linked.data.gov.au/def/crs-th/hospital-benefits,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,Hospital Benefits
+http://test.linked.data.gov.au/def/crs-th/hospitals,http://test.linked.data.gov.au/def/crs-th/hospitals-and-clinics,Hospitals
+http://test.linked.data.gov.au/def/crs-th/hospitals-and-clinics,,Hospitals And Clinics
+http://test.linked.data.gov.au/def/crs-th/house-of-representatives,http://test.linked.data.gov.au/def/crs-th/parliamentary-chamber-administration,House Of Representatives
+http://test.linked.data.gov.au/def/crs-th/house-of-representatives-committees,,House Of Representatives Committees
+http://test.linked.data.gov.au/def/crs-th/housing,,Housing
+http://test.linked.data.gov.au/def/crs-th/housing-programs,http://test.linked.data.gov.au/def/crs-th/housing,Housing Programs
+http://test.linked.data.gov.au/def/crs-th/housing-research,http://test.linked.data.gov.au/def/crs-th/housing,Housing Research
+http://test.linked.data.gov.au/def/crs-th/human-quarantine,http://test.linked.data.gov.au/def/crs-th/quarantine,Human Quarantine
+http://test.linked.data.gov.au/def/crs-th/human-rights,,Human Rights
+http://test.linked.data.gov.au/def/crs-th/hydroelectric,,Hydroelectric
+http://test.linked.data.gov.au/def/crs-th/hydroelectric-power,http://test.linked.data.gov.au/def/crs-th/energy,Hydroelectric Power
+http://test.linked.data.gov.au/def/crs-th/hydroelectricity,http://test.linked.data.gov.au/def/crs-th/energy,Hydroelectricity
+http://test.linked.data.gov.au/def/crs-th/immigration,http://test.linked.data.gov.au/def/crs-th/migration,Immigration
+http://test.linked.data.gov.au/def/crs-th/imperial-relations,http://test.linked.data.gov.au/def/crs-th/governor-general,Imperial Relations
+http://test.linked.data.gov.au/def/crs-th/imports,http://test.linked.data.gov.au/def/crs-th/exports-and-imports,Imports
+http://test.linked.data.gov.au/def/crs-th/indigeneous-people,,Indigeneous People
+http://test.linked.data.gov.au/def/crs-th/indigenous-affairs,,Indigenous Affairs
+http://test.linked.data.gov.au/def/crs-th/indigenous-enterprises,,Indigenous Enterprises
+http://test.linked.data.gov.au/def/crs-th/indigenous-land-rights,,Indigenous Land Rights
+http://test.linked.data.gov.au/def/crs-th/indigenous-settlements,,Indigenous Settlements
+http://test.linked.data.gov.au/def/crs-th/industrial,http://test.linked.data.gov.au/def/crs-th/industrial-relations,Industrial
+http://test.linked.data.gov.au/def/crs-th/industrial-relations,,Industrial Relations
+http://test.linked.data.gov.au/def/crs-th/industries,,Industries
+http://test.linked.data.gov.au/def/crs-th/industry,http://test.linked.data.gov.au/def/crs-th/secondary-industries,Industry
+http://test.linked.data.gov.au/def/crs-th/infantry,http://test.linked.data.gov.au/def/crs-th/army-commands,Infantry
+http://test.linked.data.gov.au/def/crs-th/infectious-diseases,http://test.linked.data.gov.au/def/crs-th/quarantine,Infectious Diseases
+http://test.linked.data.gov.au/def/crs-th/information,http://test.linked.data.gov.au/def/crs-th/government-media,Information
+http://test.linked.data.gov.au/def/crs-th/inquiries,http://test.linked.data.gov.au/def/crs-th/committees-of-inquiry,Inquiries
+http://test.linked.data.gov.au/def/crs-th/inspection,,Inspection
+http://test.linked.data.gov.au/def/crs-th/inspection-services,,Inspection Services
+http://test.linked.data.gov.au/def/crs-th/insurance,,Insurance
+http://test.linked.data.gov.au/def/crs-th/intellectual-property,http://test.linked.data.gov.au/def/crs-th/copyright,Intellectual Property
+http://test.linked.data.gov.au/def/crs-th/intelligence,http://test.linked.data.gov.au/def/crs-th/security-and-intelligence,Intelligence
+http://test.linked.data.gov.au/def/crs-th/inter-government-relations,http://test.linked.data.gov.au/def/crs-th/commonwealth-state-relations,Inter Government Relations
+http://test.linked.data.gov.au/def/crs-th/internal-audit,http://test.linked.data.gov.au/def/crs-th/audit,Internal Audit
+http://test.linked.data.gov.au/def/crs-th/internal-security,,Internal Security
+http://test.linked.data.gov.au/def/crs-th/international-agreements,http://test.linked.data.gov.au/def/crs-th/international-relations,International Agreements
+http://test.linked.data.gov.au/def/crs-th/international-relations,,International Relations
+http://test.linked.data.gov.au/def/crs-th/internees,,Internees
+http://test.linked.data.gov.au/def/crs-th/internment,http://test.linked.data.gov.au/def/crs-th/internees,Internment
+http://test.linked.data.gov.au/def/crs-th/internment-camps,http://test.linked.data.gov.au/def/crs-th/internees,Internment Camps
+http://test.linked.data.gov.au/def/crs-th/interstate-transport,http://test.linked.data.gov.au/def/crs-th/land-transport,Interstate Transport
+http://test.linked.data.gov.au/def/crs-th/invalid-pensions,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,Invalid Pensions
+http://test.linked.data.gov.au/def/crs-th/investigation,,Investigation
+http://test.linked.data.gov.au/def/crs-th/ionospheric-prediction,http://test.linked.data.gov.au/def/crs-th/space-science,Ionospheric Prediction
+http://test.linked.data.gov.au/def/crs-th/islanders,http://test.linked.data.gov.au/def/crs-th/indigenous-affairs,Islanders
+http://test.linked.data.gov.au/def/crs-th/joint-committees,,Joint Committees
+http://test.linked.data.gov.au/def/crs-th/joint-consultative-bodies,http://test.linked.data.gov.au/def/crs-th/commonwealth-state-relations,Joint Consultative Bodies
+http://test.linked.data.gov.au/def/crs-th/joint-house,http://test.linked.data.gov.au/def/crs-th/parliamentary-chamber-administration,Joint House
+http://test.linked.data.gov.au/def/crs-th/joint-operations,http://test.linked.data.gov.au/def/crs-th/defence-forces,Joint Operations
+http://test.linked.data.gov.au/def/crs-th/justice,http://test.linked.data.gov.au/def/crs-th/justice-administration,Justice
+http://test.linked.data.gov.au/def/crs-th/justice-administration,,Justice Administration
+http://test.linked.data.gov.au/def/crs-th/keeling-island,http://test.linked.data.gov.au/def/crs-th/territory-administration,Keeling Island
+http://test.linked.data.gov.au/def/crs-th/kindergarten,http://test.linked.data.gov.au/def/crs-th/preschool-education,Kindergarten
+http://test.linked.data.gov.au/def/crs-th/laboratories,http://test.linked.data.gov.au/def/crs-th/analytical-services,Laboratories
+http://test.linked.data.gov.au/def/crs-th/labour,http://test.linked.data.gov.au/def/crs-th/employment,Labour
+http://test.linked.data.gov.au/def/crs-th/labour-market-programs,,Labour Market Programs
+http://test.linked.data.gov.au/def/crs-th/land,http://test.linked.data.gov.au/def/crs-th/land-use,Land
+http://test.linked.data.gov.au/def/crs-th/land-army,http://test.linked.data.gov.au/def/crs-th/field-force-army,Land (Army)
+http://test.linked.data.gov.au/def/crs-th/land-claims,http://test.linked.data.gov.au/def/crs-th/indigenous-land-rights,Land Claims
+http://test.linked.data.gov.au/def/crs-th/land-councils,http://test.linked.data.gov.au/def/crs-th/indigenous-land-rights,Land Councils
+http://test.linked.data.gov.au/def/crs-th/land-rights,http://test.linked.data.gov.au/def/crs-th/indigenous-land-rights,Land Rights
+http://test.linked.data.gov.au/def/crs-th/land-transport,,Land Transport
+http://test.linked.data.gov.au/def/crs-th/land-use,,Land Use
+http://test.linked.data.gov.au/def/crs-th/law,http://test.linked.data.gov.au/def/crs-th/administrative-law,Law
+http://test.linked.data.gov.au/def/crs-th/law-enforcement,,Law Enforcement
+http://test.linked.data.gov.au/def/crs-th/law-reform,http://test.linked.data.gov.au/def/crs-th/administrative-law,Law Reform
+http://test.linked.data.gov.au/def/crs-th/league-of-nations,http://test.linked.data.gov.au/def/crs-th/international-relations,League Of Nations
+http://test.linked.data.gov.au/def/crs-th/leasing,,Leasing
+http://test.linked.data.gov.au/def/crs-th/legacy,http://test.linked.data.gov.au/def/crs-th/veterans-affairs,Legacy
+http://test.linked.data.gov.au/def/crs-th/legal,,Legal
+http://test.linked.data.gov.au/def/crs-th/legal-aid,,Legal Aid
+http://test.linked.data.gov.au/def/crs-th/legal-services,,Legal Services
+http://test.linked.data.gov.au/def/crs-th/legal-tender,http://test.linked.data.gov.au/def/crs-th/currency,Legal Tender
+http://test.linked.data.gov.au/def/crs-th/legations,http://test.linked.data.gov.au/def/crs-th/government-representation-overseas,Legations
+http://test.linked.data.gov.au/def/crs-th/legislation,,Legislation
+http://test.linked.data.gov.au/def/crs-th/legislative-processes,http://test.linked.data.gov.au/def/crs-th/parliamentary-matters,Legislative Processes
+http://test.linked.data.gov.au/def/crs-th/legislature,http://test.linked.data.gov.au/def/crs-th/parliamentary-matters,Legislature
+http://test.linked.data.gov.au/def/crs-th/libraries,http://test.linked.data.gov.au/def/crs-th/collection-management,Libraries
+http://test.linked.data.gov.au/def/crs-th/licensing,,Licensing
+http://test.linked.data.gov.au/def/crs-th/lighthouses,,Lighthouses
+http://test.linked.data.gov.au/def/crs-th/liquid-fuels,http://test.linked.data.gov.au/def/crs-th/energy,Liquid Fuels
+http://test.linked.data.gov.au/def/crs-th/literature,http://test.linked.data.gov.au/def/crs-th/literature-funding,Literature
+http://test.linked.data.gov.au/def/crs-th/literature-censorship,http://test.linked.data.gov.au/def/crs-th/censorship,Literature Censorship
+http://test.linked.data.gov.au/def/crs-th/literature-funding,,Literature Funding
+http://test.linked.data.gov.au/def/crs-th/loans,,Loans
+http://test.linked.data.gov.au/def/crs-th/logistics,,Logistics
+http://test.linked.data.gov.au/def/crs-th/logistics-air-force,,Logistics (Air Force)
+http://test.linked.data.gov.au/def/crs-th/logistics-army,,Logistics (Army)
+http://test.linked.data.gov.au/def/crs-th/logistics-defence,,Logistics (Defence)
+http://test.linked.data.gov.au/def/crs-th/logos,http://test.linked.data.gov.au/def/crs-th/copyright,Logos
+http://test.linked.data.gov.au/def/crs-th/mail-services,http://test.linked.data.gov.au/def/crs-th/postal-services,Mail Services
+http://test.linked.data.gov.au/def/crs-th/maintenance,,Maintenance
+http://test.linked.data.gov.au/def/crs-th/management-of-records,http://test.linked.data.gov.au/def/crs-th/archives-administration,Management Of Records
+http://test.linked.data.gov.au/def/crs-th/manufacturing-industries,http://test.linked.data.gov.au/def/crs-th/secondary-industries,Manufacturing Industries
+http://test.linked.data.gov.au/def/crs-th/mapping,http://test.linked.data.gov.au/def/crs-th/survey-and-mapping,Mapping
+http://test.linked.data.gov.au/def/crs-th/marine-authorities,http://test.linked.data.gov.au/def/crs-th/sea-transport,Marine Authorities
+http://test.linked.data.gov.au/def/crs-th/marine-science,,Marine Science
+http://test.linked.data.gov.au/def/crs-th/marine-transport,http://test.linked.data.gov.au/def/crs-th/sea-transport,Marine Transport
+http://test.linked.data.gov.au/def/crs-th/maritime-commands-navy,,Maritime Commands (Navy)
+http://test.linked.data.gov.au/def/crs-th/maritime-marine,http://test.linked.data.gov.au/def/crs-th/sea-transport,Maritime Marine
+http://test.linked.data.gov.au/def/crs-th/market-concentration,http://test.linked.data.gov.au/def/crs-th/corporate-affairs,Market Concentration
+http://test.linked.data.gov.au/def/crs-th/market-regulation,,Market Regulation
+http://test.linked.data.gov.au/def/crs-th/marketing,,Marketing
+http://test.linked.data.gov.au/def/crs-th/maternity-allowance,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,Maternity Allowance
+http://test.linked.data.gov.au/def/crs-th/mcdonald-islands,http://test.linked.data.gov.au/def/crs-th/territory-administration,Mcdonald Islands
+http://test.linked.data.gov.au/def/crs-th/media,http://test.linked.data.gov.au/def/crs-th/communications,Media
+http://test.linked.data.gov.au/def/crs-th/medical-aids,http://test.linked.data.gov.au/def/crs-th/pharmaceuticals-and-medical-aids,Medical Aids
+http://test.linked.data.gov.au/def/crs-th/medical-insurance-schemes,http://test.linked.data.gov.au/def/crs-th/health-insurance,Medical Insurance Schemes
+http://test.linked.data.gov.au/def/crs-th/medical-research,,Medical Research
+http://test.linked.data.gov.au/def/crs-th/memorials,,Memorials
+http://test.linked.data.gov.au/def/crs-th/mental-institutions-benefits,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,Mental Institutions Benefits
+http://test.linked.data.gov.au/def/crs-th/mercantile,http://test.linked.data.gov.au/def/crs-th/trade,Mercantile
+http://test.linked.data.gov.au/def/crs-th/merchant-seamen,http://test.linked.data.gov.au/def/crs-th/sea-transport,Merchant Seamen
+http://test.linked.data.gov.au/def/crs-th/merchant-shipping,http://test.linked.data.gov.au/def/crs-th/sea-transport,Merchant Shipping
+http://test.linked.data.gov.au/def/crs-th/metals,,Metals
+http://test.linked.data.gov.au/def/crs-th/meteorology,,Meteorology
+http://test.linked.data.gov.au/def/crs-th/migrant-accommodation,http://test.linked.data.gov.au/def/crs-th/migrant-services,Migrant Accommodation
+http://test.linked.data.gov.au/def/crs-th/migrant-camps,http://test.linked.data.gov.au/def/crs-th/migrant-services,Migrant Camps
+http://test.linked.data.gov.au/def/crs-th/migrant-documentation,http://test.linked.data.gov.au/def/crs-th/migrant-services,Migrant Documentation
+http://test.linked.data.gov.au/def/crs-th/migrant-hostels,http://test.linked.data.gov.au/def/crs-th/migrant-services,Migrant Hostels
+http://test.linked.data.gov.au/def/crs-th/migrant-services,,Migrant Services
+http://test.linked.data.gov.au/def/crs-th/migration,,Migration
+http://test.linked.data.gov.au/def/crs-th/military,http://test.linked.data.gov.au/def/crs-th/defence-forces,Military
+http://test.linked.data.gov.au/def/crs-th/military-action,http://test.linked.data.gov.au/def/crs-th/defence-forces,Military Action
+http://test.linked.data.gov.au/def/crs-th/military-intelligence,http://test.linked.data.gov.au/def/crs-th/defence-intelligence,Military Intelligence
+http://test.linked.data.gov.au/def/crs-th/military-police,http://test.linked.data.gov.au/def/crs-th/army-commands,Military Police
+http://test.linked.data.gov.au/def/crs-th/military-service,http://test.linked.data.gov.au/def/crs-th/defence-forces,Military Service
+http://test.linked.data.gov.au/def/crs-th/mining,,Mining
+http://test.linked.data.gov.au/def/crs-th/missions,http://test.linked.data.gov.au/def/crs-th/indigenous-settlements,Missions
+http://test.linked.data.gov.au/def/crs-th/monarchy,http://test.linked.data.gov.au/def/crs-th/governor-general,Monarchy
+http://test.linked.data.gov.au/def/crs-th/monopolies,http://test.linked.data.gov.au/def/crs-th/corporate-affairs,Monopolies
+http://test.linked.data.gov.au/def/crs-th/monuments,http://test.linked.data.gov.au/def/crs-th/memorials,Monuments
+http://test.linked.data.gov.au/def/crs-th/motor-vehicle-national-certification,http://test.linked.data.gov.au/def/crs-th/road-transport,Motor Vehicle National Certification
+http://test.linked.data.gov.au/def/crs-th/multiculturalism,,Multiculturalism
+http://test.linked.data.gov.au/def/crs-th/munitions,,Munitions
+http://test.linked.data.gov.au/def/crs-th/museums,http://test.linked.data.gov.au/def/crs-th/collection-management,Museums
+http://test.linked.data.gov.au/def/crs-th/music,http://test.linked.data.gov.au/def/crs-th/arts-development,Music
+http://test.linked.data.gov.au/def/crs-th/national-capital,http://test.linked.data.gov.au/def/crs-th/territory-administration,National Capital
+http://test.linked.data.gov.au/def/crs-th/national-collections,http://test.linked.data.gov.au/def/crs-th/collection-management,National Collections
+http://test.linked.data.gov.au/def/crs-th/national-estate,http://test.linked.data.gov.au/def/crs-th/national-heritage,National Estate
+http://test.linked.data.gov.au/def/crs-th/national-events,,National Events
+http://test.linked.data.gov.au/def/crs-th/national-fitness,,National Fitness
+http://test.linked.data.gov.au/def/crs-th/national-heritage,,National Heritage
+http://test.linked.data.gov.au/def/crs-th/national-information-policy,http://test.linked.data.gov.au/def/crs-th/government-media,National Information Policy
+http://test.linked.data.gov.au/def/crs-th/national-land-use,,National Land Use
+http://test.linked.data.gov.au/def/crs-th/national-law-enforcement,http://test.linked.data.gov.au/def/crs-th/police-administration,National Law Enforcement
+http://test.linked.data.gov.au/def/crs-th/national-parks,,National Parks
+http://test.linked.data.gov.au/def/crs-th/national-pension-schemes,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,National Pension Schemes
+http://test.linked.data.gov.au/def/crs-th/national-security,http://test.linked.data.gov.au/def/crs-th/wartime-security,National Security
+http://test.linked.data.gov.au/def/crs-th/national-service,,National Service
+http://test.linked.data.gov.au/def/crs-th/native-affairs,http://test.linked.data.gov.au/def/crs-th/indigenous-affairs,Native Affairs
+http://test.linked.data.gov.au/def/crs-th/native-title-claims,http://test.linked.data.gov.au/def/crs-th/indigenous-land-rights,Native Title Claims
+http://test.linked.data.gov.au/def/crs-th/natives,http://test.linked.data.gov.au/def/crs-th/indigenous-affairs,Natives
+http://test.linked.data.gov.au/def/crs-th/natural-disasters,,Natural Disasters
+http://test.linked.data.gov.au/def/crs-th/natural-resources,http://test.linked.data.gov.au/def/crs-th/resources,Natural Resources
+http://test.linked.data.gov.au/def/crs-th/naturalization,http://test.linked.data.gov.au/def/crs-th/citizenship,Naturalization
+http://test.linked.data.gov.au/def/crs-th/nauru,http://test.linked.data.gov.au/def/crs-th/territory-administration,Nauru
+http://test.linked.data.gov.au/def/crs-th/naval-police,http://test.linked.data.gov.au/def/crs-th/navy-support,Naval Police
+http://test.linked.data.gov.au/def/crs-th/navigation,,Navigation
+http://test.linked.data.gov.au/def/crs-th/navy,,Navy
+http://test.linked.data.gov.au/def/crs-th/navy-administration,,Navy Administration
+http://test.linked.data.gov.au/def/crs-th/navy-commands,,Navy Commands
+http://test.linked.data.gov.au/def/crs-th/navy-intelligence,http://test.linked.data.gov.au/def/crs-th/defence-intelligence,Navy Intelligence
+http://test.linked.data.gov.au/def/crs-th/navy-support,,Navy Support
+http://test.linked.data.gov.au/def/crs-th/new-britain,http://test.linked.data.gov.au/def/crs-th/territory-administration,New Britain
+http://test.linked.data.gov.au/def/crs-th/new-guinea,http://test.linked.data.gov.au/def/crs-th/territory-administration,New Guinea
+http://test.linked.data.gov.au/def/crs-th/new-hebrides,http://test.linked.data.gov.au/def/crs-th/territory-administration,New Hebrides
+http://test.linked.data.gov.au/def/crs-th/nightwatchmen,http://test.linked.data.gov.au/def/crs-th/protective-services,Nightwatchmen
+http://test.linked.data.gov.au/def/crs-th/norfolk-island,http://test.linked.data.gov.au/def/crs-th/territory-administration,Norfolk Island
+http://test.linked.data.gov.au/def/crs-th/northern-territory,,Northern Territory
+http://test.linked.data.gov.au/def/crs-th/nuclear,http://test.linked.data.gov.au/def/crs-th/energy,Nuclear
+http://test.linked.data.gov.au/def/crs-th/nursing-services,,Nursing Services
+http://test.linked.data.gov.au/def/crs-th/occupational-health-and-safety,,Occupational Health And Safety
+http://test.linked.data.gov.au/def/crs-th/oil,http://test.linked.data.gov.au/def/crs-th/energy,Oil
+http://test.linked.data.gov.au/def/crs-th/old-age-pensions,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,Old Age Pensions
+http://test.linked.data.gov.au/def/crs-th/ombudsman,,Ombudsman
+http://test.linked.data.gov.au/def/crs-th/opera,http://test.linked.data.gov.au/def/crs-th/arts-development,Opera
+http://test.linked.data.gov.au/def/crs-th/ordnance,,Ordnance
+http://test.linked.data.gov.au/def/crs-th/overseas-aid-programs,,Overseas Aid Programs
+http://test.linked.data.gov.au/def/crs-th/overseas-qualifications,http://test.linked.data.gov.au/def/crs-th/migration,Overseas Qualifications
+http://test.linked.data.gov.au/def/crs-th/pacific-islands,http://test.linked.data.gov.au/def/crs-th/territory-administration,Pacific Islands
+http://test.linked.data.gov.au/def/crs-th/painting,http://test.linked.data.gov.au/def/crs-th/arts-development,Painting
+http://test.linked.data.gov.au/def/crs-th/papua,http://test.linked.data.gov.au/def/crs-th/territory-administration,Papua
+http://test.linked.data.gov.au/def/crs-th/papua-new-guinea,http://test.linked.data.gov.au/def/crs-th/territory-administration,Papua New Guinea
+http://test.linked.data.gov.au/def/crs-th/parks,,Parks
+http://test.linked.data.gov.au/def/crs-th/parliament,http://test.linked.data.gov.au/def/crs-th/parliamentary-matters,Parliament
+http://test.linked.data.gov.au/def/crs-th/parliamentary-buildings,http://test.linked.data.gov.au/def/crs-th/parliamentary-matters,Parliamentary Buildings
+http://test.linked.data.gov.au/def/crs-th/parliamentary-chamber-administration,,Parliamentary Chamber Administration
+http://test.linked.data.gov.au/def/crs-th/parliamentary-chambers,http://test.linked.data.gov.au/def/crs-th/parliamentary-chamber-administration,Parliamentary Chambers
+http://test.linked.data.gov.au/def/crs-th/parliamentary-committees,,Parliamentary Committees
+http://test.linked.data.gov.au/def/crs-th/parliamentary-departments,http://test.linked.data.gov.au/def/crs-th/parliamentary-matters,Parliamentary Departments
+http://test.linked.data.gov.au/def/crs-th/parliamentary-library,http://test.linked.data.gov.au/def/crs-th/collection-management,Parliamentary Library
+http://test.linked.data.gov.au/def/crs-th/parliamentary-matters,,Parliamentary Matters
+http://test.linked.data.gov.au/def/crs-th/passenger-entry-control,,Passenger Entry Control
+http://test.linked.data.gov.au/def/crs-th/passports,,Passports
+http://test.linked.data.gov.au/def/crs-th/pastoral,,Pastoral
+http://test.linked.data.gov.au/def/crs-th/patents,http://test.linked.data.gov.au/def/crs-th/patents-and-trademarks,Patents
+http://test.linked.data.gov.au/def/crs-th/patents-and-trademarks,,Patents And Trademarks
+http://test.linked.data.gov.au/def/crs-th/pathology,,Pathology
+http://test.linked.data.gov.au/def/crs-th/patriotic-funds,http://test.linked.data.gov.au/def/crs-th/veterans-affairs,Patriotic Funds
+http://test.linked.data.gov.au/def/crs-th/peace-keeping-forces,http://test.linked.data.gov.au/def/crs-th/international-relations,Peace Keeping Forces
+http://test.linked.data.gov.au/def/crs-th/peace-treaties,http://test.linked.data.gov.au/def/crs-th/international-relations,Peace Treaties
+http://test.linked.data.gov.au/def/crs-th/pensions,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,Pensions
+http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,,Pensions And Benefits
+http://test.linked.data.gov.au/def/crs-th/performing-arts,http://test.linked.data.gov.au/def/crs-th/arts-development,Performing Arts
+http://test.linked.data.gov.au/def/crs-th/personal-case-administration,,Personal Case Administration
+http://test.linked.data.gov.au/def/crs-th/personnel,,Personnel
+http://test.linked.data.gov.au/def/crs-th/petroleum,http://test.linked.data.gov.au/def/crs-th/energy,Petroleum
+http://test.linked.data.gov.au/def/crs-th/pharmaceuticals-and-medical-aids,,Pharmaceuticals And Medical Aids
+http://test.linked.data.gov.au/def/crs-th/planning,,Planning
+http://test.linked.data.gov.au/def/crs-th/plant-quarantine,http://test.linked.data.gov.au/def/crs-th/quarantine,Plant Quarantine
+http://test.linked.data.gov.au/def/crs-th/police,http://test.linked.data.gov.au/def/crs-th/police-administration,Police
+http://test.linked.data.gov.au/def/crs-th/police-administration,,Police Administration
+http://test.linked.data.gov.au/def/crs-th/police-station,,Police Station
+http://test.linked.data.gov.au/def/crs-th/police-stations,http://test.linked.data.gov.au/def/crs-th/police-administration,Police Stations
+http://test.linked.data.gov.au/def/crs-th/policy-development,,Policy Development
+http://test.linked.data.gov.au/def/crs-th/pollution,http://test.linked.data.gov.au/def/crs-th/environmental-monitoring,Pollution
+http://test.linked.data.gov.au/def/crs-th/port-authorities,,Port Authorities
+http://test.linked.data.gov.au/def/crs-th/port-regulation,,Port Regulation
+http://test.linked.data.gov.au/def/crs-th/ports,http://test.linked.data.gov.au/def/crs-th/port-regulation,Ports
+http://test.linked.data.gov.au/def/crs-th/post-office,http://test.linked.data.gov.au/def/crs-th/postal-services,Post Office
+http://test.linked.data.gov.au/def/crs-th/post-war-reconstruction,http://test.linked.data.gov.au/def/crs-th/repatriation,Post War Reconstruction
+http://test.linked.data.gov.au/def/crs-th/postal-services,,Postal Services
+http://test.linked.data.gov.au/def/crs-th/pre-federation,http://test.linked.data.gov.au/def/crs-th/colonial-administration,Pre Federation
+http://test.linked.data.gov.au/def/crs-th/preschool-education,,Preschool Education
+http://test.linked.data.gov.au/def/crs-th/preschools,http://test.linked.data.gov.au/def/crs-th/preschool-education,Preschools
+http://test.linked.data.gov.au/def/crs-th/press-censorship,http://test.linked.data.gov.au/def/crs-th/censorship,Press Censorship
+http://test.linked.data.gov.au/def/crs-th/price-control,http://test.linked.data.gov.au/def/crs-th/rationing-and-price-control,Price Control
+http://test.linked.data.gov.au/def/crs-th/price-fixing,http://test.linked.data.gov.au/def/crs-th/rationing-and-price-control,Price Fixing
+http://test.linked.data.gov.au/def/crs-th/price-surveillance,http://test.linked.data.gov.au/def/crs-th/rationing-and-price-control,Price Surveillance
+http://test.linked.data.gov.au/def/crs-th/primary-education,,Primary Education
+http://test.linked.data.gov.au/def/crs-th/primary-industries,,Primary Industries
+http://test.linked.data.gov.au/def/crs-th/primary-schooling,http://test.linked.data.gov.au/def/crs-th/primary-education,Primary Schooling
+http://test.linked.data.gov.au/def/crs-th/primary-schools,http://test.linked.data.gov.au/def/crs-th/primary-education,Primary Schools
+http://test.linked.data.gov.au/def/crs-th/printing,http://test.linked.data.gov.au/def/crs-th/publishing-and-printing,Printing
+http://test.linked.data.gov.au/def/crs-th/prisoners-of-war,,Prisoners Of War
+http://test.linked.data.gov.au/def/crs-th/privacy,http://test.linked.data.gov.au/def/crs-th/human-rights,Privacy
+http://test.linked.data.gov.au/def/crs-th/promotional-activities,http://test.linked.data.gov.au/def/crs-th/government-media,Promotional Activities
+http://test.linked.data.gov.au/def/crs-th/propaganda,http://test.linked.data.gov.au/def/crs-th/wartime-security,Propaganda
+http://test.linked.data.gov.au/def/crs-th/property,http://test.linked.data.gov.au/def/crs-th/property-management,Property
+http://test.linked.data.gov.au/def/crs-th/property-management,,Property Management
+http://test.linked.data.gov.au/def/crs-th/protective-services,,Protective Services
+http://test.linked.data.gov.au/def/crs-th/protocol,http://test.linked.data.gov.au/def/crs-th/international-relations,Protocol
+http://test.linked.data.gov.au/def/crs-th/public-borrowing,,Public Borrowing
+http://test.linked.data.gov.au/def/crs-th/public-health,http://test.linked.data.gov.au/def/crs-th/health-services,Public Health
+http://test.linked.data.gov.au/def/crs-th/public-records,http://test.linked.data.gov.au/def/crs-th/archives-administration,Public Records
+http://test.linked.data.gov.au/def/crs-th/public-service,,Public Service
+http://test.linked.data.gov.au/def/crs-th/public-utilities,,Public Utilities
+http://test.linked.data.gov.au/def/crs-th/public-works,http://test.linked.data.gov.au/def/crs-th/works,Public Works
+http://test.linked.data.gov.au/def/crs-th/publicity,http://test.linked.data.gov.au/def/crs-th/government-media,Publicity
+http://test.linked.data.gov.au/def/crs-th/publishing-and-printing,,Publishing And Printing
+http://test.linked.data.gov.au/def/crs-th/purchasing,http://test.linked.data.gov.au/def/crs-th/goods-and-services,Purchasing
+http://test.linked.data.gov.au/def/crs-th/quarantine,,Quarantine
+http://test.linked.data.gov.au/def/crs-th/queens-representative,http://test.linked.data.gov.au/def/crs-th/governor-general,Queen'S Representative
+http://test.linked.data.gov.au/def/crs-th/racial-discrimination,http://test.linked.data.gov.au/def/crs-th/human-rights,Racial Discrimination
+http://test.linked.data.gov.au/def/crs-th/radio,http://test.linked.data.gov.au/def/crs-th/radio-broadcasting,Radio
+http://test.linked.data.gov.au/def/crs-th/radio-broadcasting,,Radio Broadcasting
+http://test.linked.data.gov.au/def/crs-th/radio-censorship,http://test.linked.data.gov.au/def/crs-th/censorship,Radio Censorship
+http://test.linked.data.gov.au/def/crs-th/radio-licences,http://test.linked.data.gov.au/def/crs-th/radio-broadcasting,Radio Licences
+http://test.linked.data.gov.au/def/crs-th/rail-transport,,Rail Transport
+http://test.linked.data.gov.au/def/crs-th/railway-construction,http://test.linked.data.gov.au/def/crs-th/civil-engineering,Railway Construction
+http://test.linked.data.gov.au/def/crs-th/railways,http://test.linked.data.gov.au/def/crs-th/rail-transport,Railways
+http://test.linked.data.gov.au/def/crs-th/rationing-and-price-control,,Rationing And Price Control
+http://test.linked.data.gov.au/def/crs-th/recordkeeping,http://test.linked.data.gov.au/def/crs-th/archives-administration,Recordkeeping
+http://test.linked.data.gov.au/def/crs-th/records-management,http://test.linked.data.gov.au/def/crs-th/archives-administration,Records Management
+http://test.linked.data.gov.au/def/crs-th/records-of-the-government,,Records Of The Government
+http://test.linked.data.gov.au/def/crs-th/recreation,,Recreation
+http://test.linked.data.gov.au/def/crs-th/recruiting,http://test.linked.data.gov.au/def/crs-th/recruitment,Recruiting
+http://test.linked.data.gov.au/def/crs-th/recruitment,,Recruitment
+http://test.linked.data.gov.au/def/crs-th/referendums,http://test.linked.data.gov.au/def/crs-th/electoral-matters,Referendums
+http://test.linked.data.gov.au/def/crs-th/refining-and-chemical-programs,http://test.linked.data.gov.au/def/crs-th/secondary-industries,Refining And Chemical Programs
+http://test.linked.data.gov.au/def/crs-th/refugees,,Refugees
+http://test.linked.data.gov.au/def/crs-th/regal,http://test.linked.data.gov.au/def/crs-th/governor-general,Regal
+http://test.linked.data.gov.au/def/crs-th/regiment,http://test.linked.data.gov.au/def/crs-th/army-commands,Regiment
+http://test.linked.data.gov.au/def/crs-th/regional-development,,Regional Development
+http://test.linked.data.gov.au/def/crs-th/rehabilitation,,Rehabilitation
+http://test.linked.data.gov.au/def/crs-th/removals,,Removals
+http://test.linked.data.gov.au/def/crs-th/remuneration,http://test.linked.data.gov.au/def/crs-th/administrative-law,Remuneration
+http://test.linked.data.gov.au/def/crs-th/repatriation,,Repatriation
+http://test.linked.data.gov.au/def/crs-th/repatriation-clinics,http://test.linked.data.gov.au/def/crs-th/repatriation-hospitals,Repatriation Clinics
+http://test.linked.data.gov.au/def/crs-th/repatriation-hospitals,,Repatriation Hospitals
+http://test.linked.data.gov.au/def/crs-th/rescue-coordination,,Rescue Coordination
+http://test.linked.data.gov.au/def/crs-th/research,,Research
+http://test.linked.data.gov.au/def/crs-th/research-and-development,,Research And Development
+http://test.linked.data.gov.au/def/crs-th/resources,,Resources
+http://test.linked.data.gov.au/def/crs-th/reviews,http://test.linked.data.gov.au/def/crs-th/committees-of-inquiry,Reviews
+http://test.linked.data.gov.au/def/crs-th/road-construction,http://test.linked.data.gov.au/def/crs-th/civil-engineering,Road Construction
+http://test.linked.data.gov.au/def/crs-th/road-safety,,Road Safety
+http://test.linked.data.gov.au/def/crs-th/road-transport,,Road Transport
+http://test.linked.data.gov.au/def/crs-th/roads,http://test.linked.data.gov.au/def/crs-th/road-transport,Roads
+http://test.linked.data.gov.au/def/crs-th/royal-commissions,,Royal Commissions
+http://test.linked.data.gov.au/def/crs-th/royal-visits,http://test.linked.data.gov.au/def/crs-th/governor-general,Royal Visits
+http://test.linked.data.gov.au/def/crs-th/rubbish-collection,http://test.linked.data.gov.au/def/crs-th/waste-disposal,Rubbish Collection
+http://test.linked.data.gov.au/def/crs-th/rural,http://test.linked.data.gov.au/def/crs-th/regional-development,Rural
+http://test.linked.data.gov.au/def/crs-th/satellites,http://test.linked.data.gov.au/def/crs-th/telecommunications,Satellites
+http://test.linked.data.gov.au/def/crs-th/scholarships,http://test.linked.data.gov.au/def/crs-th/student-assistance,Scholarships
+http://test.linked.data.gov.au/def/crs-th/science,,Science
+http://test.linked.data.gov.au/def/crs-th/scientific-research,,Scientific Research
+http://test.linked.data.gov.au/def/crs-th/sea-safety,,Sea Safety
+http://test.linked.data.gov.au/def/crs-th/sea-transport,,Sea Transport
+http://test.linked.data.gov.au/def/crs-th/seaboard-survey,,Seaboard Survey
+http://test.linked.data.gov.au/def/crs-th/seamens-war-pensions,http://test.linked.data.gov.au/def/crs-th/veterans-affairs,Seamens' War Pensions
+http://test.linked.data.gov.au/def/crs-th/seat-of-government,,Seat Of Government
+http://test.linked.data.gov.au/def/crs-th/secondary-education,,Secondary Education
+http://test.linked.data.gov.au/def/crs-th/secondary-industries,,Secondary Industries
+http://test.linked.data.gov.au/def/crs-th/secondary-schools,http://test.linked.data.gov.au/def/crs-th/secondary-education,Secondary Schools
+http://test.linked.data.gov.au/def/crs-th/securities-corporate,http://test.linked.data.gov.au/def/crs-th/corporate-affairs,Securities (Corporate)
+http://test.linked.data.gov.au/def/crs-th/security,http://test.linked.data.gov.au/def/crs-th/security-and-intelligence,Security
+http://test.linked.data.gov.au/def/crs-th/security-and-intelligence,,Security And Intelligence
+http://test.linked.data.gov.au/def/crs-th/security-guards,http://test.linked.data.gov.au/def/crs-th/protective-services,Security Guards
+http://test.linked.data.gov.au/def/crs-th/select-committees,http://test.linked.data.gov.au/def/crs-th/parliamentary-matters,Select Committees
+http://test.linked.data.gov.au/def/crs-th/senate,http://test.linked.data.gov.au/def/crs-th/parliamentary-chamber-administration,Senate
+http://test.linked.data.gov.au/def/crs-th/senate-committees,,Senate Committees
+http://test.linked.data.gov.au/def/crs-th/service-pensions,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,Service Pensions
+http://test.linked.data.gov.au/def/crs-th/sewerage,http://test.linked.data.gov.au/def/crs-th/public-utilities,Sewerage
+http://test.linked.data.gov.au/def/crs-th/shipbuilding,,Shipbuilding
+http://test.linked.data.gov.au/def/crs-th/shipping,http://test.linked.data.gov.au/def/crs-th/sea-transport,Shipping
+http://test.linked.data.gov.au/def/crs-th/sickness-benefits,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,Sickness Benefits
+http://test.linked.data.gov.au/def/crs-th/signals,http://test.linked.data.gov.au/def/crs-th/army-commands,Signals
+http://test.linked.data.gov.au/def/crs-th/social-and-economic-research,,Social And Economic Research
+http://test.linked.data.gov.au/def/crs-th/social-security,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,Social Security
+http://test.linked.data.gov.au/def/crs-th/social-services,http://test.linked.data.gov.au/def/crs-th/community-services,Social Services
+http://test.linked.data.gov.au/def/crs-th/social-welfare,,Social Welfare
+http://test.linked.data.gov.au/def/crs-th/soldiers-children-education-schemes,http://test.linked.data.gov.au/def/crs-th/veterans-affairs,Soldiers' Children Education Schemes
+http://test.linked.data.gov.au/def/crs-th/soldiers-settlement-schemes,http://test.linked.data.gov.au/def/crs-th/repatriation,Soldiers' Settlement Schemes
+http://test.linked.data.gov.au/def/crs-th/soldiers-trust-funds,http://test.linked.data.gov.au/def/crs-th/veterans-affairs,Soldiers' Trust Funds
+http://test.linked.data.gov.au/def/crs-th/sound-archives,http://test.linked.data.gov.au/def/crs-th/archives-administration,Sound Archives
+http://test.linked.data.gov.au/def/crs-th/space-science,,Space Science
+http://test.linked.data.gov.au/def/crs-th/sport,,Sport
+http://test.linked.data.gov.au/def/crs-th/staffing,http://test.linked.data.gov.au/def/crs-th/personnel,Staffing
+http://test.linked.data.gov.au/def/crs-th/stamps-production-and-printing,http://test.linked.data.gov.au/def/crs-th/postal-services,Stamps (Production And Printing)
+http://test.linked.data.gov.au/def/crs-th/standard-setting,,Standard Setting
+http://test.linked.data.gov.au/def/crs-th/standing-committees,http://test.linked.data.gov.au/def/crs-th/parliamentary-matters,Standing Committees
+http://test.linked.data.gov.au/def/crs-th/state-commonwealth-relations,http://test.linked.data.gov.au/def/crs-th/commonwealth-state-relations,State Commonwealth Relations
+http://test.linked.data.gov.au/def/crs-th/statistics,,Statistics
+http://test.linked.data.gov.au/def/crs-th/steamship-lines,http://test.linked.data.gov.au/def/crs-th/sea-transport,Steamship Lines
+http://test.linked.data.gov.au/def/crs-th/stevedoring,http://test.linked.data.gov.au/def/crs-th/sea-transport,Stevedoring
+http://test.linked.data.gov.au/def/crs-th/storage,,Storage
+http://test.linked.data.gov.au/def/crs-th/student-assistance,,Student Assistance
+http://test.linked.data.gov.au/def/crs-th/students,http://test.linked.data.gov.au/def/crs-th/student-assistance,Students
+http://test.linked.data.gov.au/def/crs-th/superannuation,,Superannuation
+http://test.linked.data.gov.au/def/crs-th/supply,http://test.linked.data.gov.au/def/crs-th/logistics-defence,Supply
+http://test.linked.data.gov.au/def/crs-th/support,http://test.linked.data.gov.au/def/crs-th/navy-support,Support
+http://test.linked.data.gov.au/def/crs-th/supreme-court-law,,Supreme Court Law
+http://test.linked.data.gov.au/def/crs-th/supreme-courts,http://test.linked.data.gov.au/def/crs-th/supreme-law,Supreme Courts
+http://test.linked.data.gov.au/def/crs-th/surveillance,,Surveillance
+http://test.linked.data.gov.au/def/crs-th/surveillance-electronic,,"Surveillance, Electronic"
+http://test.linked.data.gov.au/def/crs-th/survey-and-mapping,,Survey And Mapping
+http://test.linked.data.gov.au/def/crs-th/symbols,http://test.linked.data.gov.au/def/crs-th/copyright,Symbols
+http://test.linked.data.gov.au/def/crs-th/tariff,,Tariff
+http://test.linked.data.gov.au/def/crs-th/tariff-regulation,,Tariff Regulation
+http://test.linked.data.gov.au/def/crs-th/tariffs,http://test.linked.data.gov.au/def/crs-th/tariff-regulation,Tariffs
+http://test.linked.data.gov.au/def/crs-th/tax,http://test.linked.data.gov.au/def/crs-th/taxation,Tax
+http://test.linked.data.gov.au/def/crs-th/taxation,,Taxation
+http://test.linked.data.gov.au/def/crs-th/teaching,http://test.linked.data.gov.au/def/crs-th/curriculum-development,Teaching
+http://test.linked.data.gov.au/def/crs-th/telecommunications,,Telecommunications
+http://test.linked.data.gov.au/def/crs-th/telegraphic-services,http://test.linked.data.gov.au/def/crs-th/telecommunications,Telegraphic Services
+http://test.linked.data.gov.au/def/crs-th/telephones,http://test.linked.data.gov.au/def/crs-th/telecommunications,Telephones
+http://test.linked.data.gov.au/def/crs-th/television,http://test.linked.data.gov.au/def/crs-th/television-broadcasting,Television
+http://test.linked.data.gov.au/def/crs-th/television-broadcasting,,Television Broadcasting
+http://test.linked.data.gov.au/def/crs-th/television-censorship,http://test.linked.data.gov.au/def/crs-th/censorship,Television Censorship
+http://test.linked.data.gov.au/def/crs-th/territorial-administration,http://test.linked.data.gov.au/def/crs-th/territory-administration,Territorial Administration
+http://test.linked.data.gov.au/def/crs-th/territories,http://test.linked.data.gov.au/def/crs-th/territory-administration,Territories
+http://test.linked.data.gov.au/def/crs-th/territory,http://test.linked.data.gov.au/def/crs-th/territory-administration,Territory
+http://test.linked.data.gov.au/def/crs-th/territory-administration,,Territory Administration
+http://test.linked.data.gov.au/def/crs-th/tertiary-education,,Tertiary Education
+http://test.linked.data.gov.au/def/crs-th/tertiary-institutions,http://test.linked.data.gov.au/def/crs-th/tertiary-education,Tertiary Institutions
+http://test.linked.data.gov.au/def/crs-th/theatre,http://test.linked.data.gov.au/def/crs-th/arts-development,Theatre
+http://test.linked.data.gov.au/def/crs-th/timber,http://test.linked.data.gov.au/def/crs-th/forestry-regulation,Timber
+http://test.linked.data.gov.au/def/crs-th/torres-strait-islanders,http://test.linked.data.gov.au/def/crs-th/indigenous-affairs,Torres Strait Islanders
+http://test.linked.data.gov.au/def/crs-th/tourism,,Tourism
+http://test.linked.data.gov.au/def/crs-th/town-planning,http://test.linked.data.gov.au/def/crs-th/urban-development,Town Planning
+http://test.linked.data.gov.au/def/crs-th/trade,,Trade
+http://test.linked.data.gov.au/def/crs-th/trade-agreements,http://test.linked.data.gov.au/def/crs-th/international-relations,Trade Agreements
+http://test.linked.data.gov.au/def/crs-th/trade-marks,http://test.linked.data.gov.au/def/crs-th/patents-and-trademarks,Trade Marks
+http://test.linked.data.gov.au/def/crs-th/trade-practices,,Trade Practices
+http://test.linked.data.gov.au/def/crs-th/trade-representations,http://test.linked.data.gov.au/def/crs-th/government-representation-overseas,Trade Representations
+http://test.linked.data.gov.au/def/crs-th/trade-skills-assessment,,Trade Skills Assessment
+http://test.linked.data.gov.au/def/crs-th/trade-union-training,,Trade Union Training
+http://test.linked.data.gov.au/def/crs-th/trademarks,http://test.linked.data.gov.au/def/crs-th/patents-and-trademarks,Trademarks
+http://test.linked.data.gov.au/def/crs-th/training,,Training
+http://test.linked.data.gov.au/def/crs-th/training-air-force,,Training (Air Force)
+http://test.linked.data.gov.au/def/crs-th/training-army,,Training (Army)
+http://test.linked.data.gov.au/def/crs-th/transport,,Transport
+http://test.linked.data.gov.au/def/crs-th/transport-and-storage,,Transport And Storage
+http://test.linked.data.gov.au/def/crs-th/transport-economics,http://test.linked.data.gov.au/def/crs-th/transport,Transport Economics
+http://test.linked.data.gov.au/def/crs-th/treasury,http://test.linked.data.gov.au/def/crs-th/financial-matters,Treasury
+http://test.linked.data.gov.au/def/crs-th/treaties,http://test.linked.data.gov.au/def/crs-th/international-relations,Treaties
+http://test.linked.data.gov.au/def/crs-th/tribunals,http://test.linked.data.gov.au/def/crs-th/administrative-law,Tribunals
+http://test.linked.data.gov.au/def/crs-th/unemployment,http://test.linked.data.gov.au/def/crs-th/employment,Unemployment
+http://test.linked.data.gov.au/def/crs-th/unemployment-benefits,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,Unemployment Benefits
+http://test.linked.data.gov.au/def/crs-th/united-nations,http://test.linked.data.gov.au/def/crs-th/international-relations,United Nations
+http://test.linked.data.gov.au/def/crs-th/urban-development,,Urban Development
+http://test.linked.data.gov.au/def/crs-th/urban-or-regional-development,,Urban Or Regional Development
+http://test.linked.data.gov.au/def/crs-th/utilities,http://test.linked.data.gov.au/def/crs-th/public-utilities,Utilities
+http://test.linked.data.gov.au/def/crs-th/valuation,,Valuation
+http://test.linked.data.gov.au/def/crs-th/vanuatu,http://test.linked.data.gov.au/def/crs-th/territory-administration,Vanuatu
+http://test.linked.data.gov.au/def/crs-th/veterans-affairs,,Veterans' Affairs
+http://test.linked.data.gov.au/def/crs-th/vice-regal,http://test.linked.data.gov.au/def/crs-th/governor-general,Vice Regal
+http://test.linked.data.gov.au/def/crs-th/visas,,Visas
+http://test.linked.data.gov.au/def/crs-th/viticulture,,Viticulture
+http://test.linked.data.gov.au/def/crs-th/vocational-training-schemes,,Vocational Training Schemes
+http://test.linked.data.gov.au/def/crs-th/war,http://test.linked.data.gov.au/def/crs-th/defence-forces,War
+http://test.linked.data.gov.au/def/crs-th/war-gratuities,http://test.linked.data.gov.au/def/crs-th/veterans-affairs,War Gratuities
+http://test.linked.data.gov.au/def/crs-th/war-graves,http://test.linked.data.gov.au/def/crs-th/war-memorials,War Graves
+http://test.linked.data.gov.au/def/crs-th/war-memorials,,War Memorials
+http://test.linked.data.gov.au/def/crs-th/war-pensions,http://test.linked.data.gov.au/def/crs-th/veterans-affairs,War Pensions
+http://test.linked.data.gov.au/def/crs-th/war-service,http://test.linked.data.gov.au/def/crs-th/veterans-affairs,War Service
+http://test.linked.data.gov.au/def/crs-th/war-service-home-schemes,http://test.linked.data.gov.au/def/crs-th/defence-service-home-schemes,War Service Home Schemes
+http://test.linked.data.gov.au/def/crs-th/wartime-controls,http://test.linked.data.gov.au/def/crs-th/wartime-security,Wartime Controls
+http://test.linked.data.gov.au/def/crs-th/wartime-security,,Wartime Security
+http://test.linked.data.gov.au/def/crs-th/waste-disposal,,Waste Disposal
+http://test.linked.data.gov.au/def/crs-th/water,http://test.linked.data.gov.au/def/crs-th/water-resources,Water
+http://test.linked.data.gov.au/def/crs-th/water-resources,,Water Resources
+http://test.linked.data.gov.au/def/crs-th/water-services,http://test.linked.data.gov.au/def/crs-th/public-utilities,Water Services
+http://test.linked.data.gov.au/def/crs-th/weights-and-measures,,Weights And Measures
+http://test.linked.data.gov.au/def/crs-th/wheat,http://test.linked.data.gov.au/def/crs-th/agriculture,Wheat
+http://test.linked.data.gov.au/def/crs-th/white-australia-policy,http://test.linked.data.gov.au/def/crs-th/migration,White Australia Policy
+http://test.linked.data.gov.au/def/crs-th/widows-pensions,http://test.linked.data.gov.au/def/crs-th/pensions-and-benefits,Widows Pensions
+http://test.linked.data.gov.au/def/crs-th/wireless,http://test.linked.data.gov.au/def/crs-th/radio-broadcasting,Wireless
+http://test.linked.data.gov.au/def/crs-th/wireless-telegraphy,http://test.linked.data.gov.au/def/crs-th/radio-broadcasting,Wireless Telegraphy
+http://test.linked.data.gov.au/def/crs-th/workers-compensation,http://test.linked.data.gov.au/def/crs-th/compensation-schemes,Workers Compensation
+http://test.linked.data.gov.au/def/crs-th/working-conditions,http://test.linked.data.gov.au/def/crs-th/employment,Working Conditions
+http://test.linked.data.gov.au/def/crs-th/works,,Works
+http://test.linked.data.gov.au/def/crs-th/world-heritage,http://test.linked.data.gov.au/def/crs-th/national-heritage,World Heritage
+http://test.linked.data.gov.au/def/crs-th/zoology,,Zoology
