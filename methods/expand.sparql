@@ -11,23 +11,38 @@ PREFIX loci: <http://linked.data.gov.au/def/loci#>
 PREFIX time: <http://www.w3.org/2006/time>
 PREFIX m1: <http://linked.data.gov.au/linkset/agiftcrsth/method/1>
 
-CONSTRUCT {
-[]
-  a rdf:Statement ;
-  rdf:subject ?s ;
-  rdf:predicate ?p ;
-  rdf:object ?o ;
-  dct:created "2019-04-05"^^xsd:date ;
-  loci:validFor [
-    time:hasBeginning [
-      time:inXSDDate "1901-01-01"^^xsd:date ;
-    ] ;
-  ] ;
-  loci:hadGenerationMethod m1: ;
-.
-} 
-WHERE { 
-    GRAPH <http://data.com> {
+# 'Expands' - reifies - triples with skos:Concept instances as the subjects and predicates
+# and SKOS mapping properties as the predicates
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX agift: <https://data.naa.gov.au/def/agift/>
+PREFIX crsth: <http://linked.data.gov.au/def/crsth/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX loci: <http://linked.data.gov.au/def/loci#>
+PREFIX time: <http://www.w3.org/2006/time>
+PREFIX m1: <http://linked.data.gov.au/linkset/agiftcrsth/method/1>
+
+INSERT {
+    GRAPH <http://linked.data.gov.au/linkset/agiftcrsth> {
+        []
+          a rdf:Statement ;
+          rdf:subject ?s ;
+          rdf:predicate ?p ;
+          rdf:object ?o ;
+          dct:created "2019-04-05"^^xsd:date ;
+          loci:validFor [
+            time:hasBeginning [
+              time:inXSDDate "1901-01-01"^^xsd:date ;
+            ] ;
+          ] ;
+          loci:hadGenerationMethod m1: ;
+        .
+	}
+}
+WHERE {
+    GRAPH <http://linked.data.gov.au/linkset/agiftcrsth-flat> {
         ?s ?p ?o .
         ?s (skos:exactMatch | skos:closeMatch | skos:narrowMatch | skos:broadMatch) ?o .
     }

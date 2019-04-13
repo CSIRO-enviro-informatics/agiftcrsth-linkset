@@ -59,866 +59,3283 @@ _:marcus a vcard:Individual ;
     vcard:fn "Nicholas Car" ;
     vcard:hasEmail <mailto:nicholas.car@csiro.au> .
 
+
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
     rdf:object crsth:administrative-law ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Administrative-law .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:citizenship ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Citizenship .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:community-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Community-support .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:conservation ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Conservation-programs .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:consumer-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Consumer-protection .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:copyright ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Copyright-regulation .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:cultural-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Cultural-artefact-repatriation .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:cultural-institutions ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Cultural-artefact-repatriation .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:cultural-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Cultural-awards-and-scholarships-- .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:cultural-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Cultural-centre-management .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:cultural-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Cultural-festivals-- .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:collection-management ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Collection-management-- .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:consular-services ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Consular-services .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:corrective-services ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Corrective-services .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:court-reporting ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Court-reporting .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:criminology ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :criminology ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Criminology .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :high-commissions ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Commissions-of-inquiry .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :royal-commissions ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Commissions-of-inquiry .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :national-law-enforcement ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Law-enforcement .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-intelligence ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Australian-Defence-Forces .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-industries ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Australian-Defence-Forces .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-research ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Australian-Defence-Forces .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-committees ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Australian-Defence-Forces .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Australian-Defence-Forces .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-cooperation ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Australian-Defence-Forces .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-security ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Australian-Defence-Forces .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :electoral-matters ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Electoral-matters .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :expeditionary-forces ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Australian-Defence-Forces .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :peace-keeping-forces ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Australian-Defence-Forces .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-service-home-schemes ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Australian-Defence-Forces .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-coordination ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Australian-Defence-Forces .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-intelligence ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Intelligence .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :communications-intelligence ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Intelligence .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :security-and-intelligence ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Intelligence .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :military-intelligence ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Intelligence .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :navy-intelligence ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Intelligence .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :logistics-defence ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Logistics .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :foreign-investment-control ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Foreign-investment-control .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :logistics-air-force ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Logistics .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :logistics-army ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Logistics .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :social-and-economic-research ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Social-research .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :medical-research ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Medical-and-health-sciences .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :migrant-accommodation ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Migrant-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :migrant-camps ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Migrant-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :migrant-documentation ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Migrant-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :migrant-hostels ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Migrant-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :foreign-investment-control ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Investment-scheme-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :air-navigation ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Navigation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :intelligence ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Intelligence .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :publishing-and-printing ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Publishing .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :film-censorship ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Censorship-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :literature-censorship ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Censorship-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :press-censorship ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Censorship-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :radio-censorship ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Censorship-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :television-censorship ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Censorship-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :government-accommodation-and-catering ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Accommodation-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :migrant-accommodation ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Accommodation-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :cable-television ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Television-broadcasting .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :television-censorship ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Television-broadcasting .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :labour-market-programs ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Labour-market-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :radio-broadcasting ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Broadcasting .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :television-broadcasting ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Broadcasting .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :air-force-administration ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Air-Force .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :air-force-commands ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Air-Force .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :air-transport ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Air-transport .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :air-navigation ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Air-transport .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :air-training-units ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Air-transport .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :air-operations ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Air-transport .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :air-safety ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Air-transport .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :aboriginal-reserves ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Reserves .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :logistics ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Logistics .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :army-commands ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Army .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :army-aviation ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Army .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :army-administration ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Army .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :interstate-transport ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Interstate-trade-agreements .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :tertiary-institutions ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Tertiary-education .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :international-relations ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:International-affairs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :international-agreements ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:International-affairs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :forestry-regulation ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Forestry-industry .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :indigenous-land-rights ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Indigenous-land-management .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :export-incentives ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Export-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :medical-research ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Medical-research .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :export-insurance ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Export-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :export-marketing ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Export-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :export-support ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Export-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :animal-quarantine ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Quarantine .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :human-quarantine ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Quarantine .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :plant-quarantine ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Quarantine .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :radio-censorship ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Radio-broadcasting .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :radio-licences ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Radio-broadcasting .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :waste-disposal ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Waste-management .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :civil-engineering ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Engineering-and-technology-sciences .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :citizenship ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Citizenship .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :engineering ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Engineering-and-technology-sciences .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :emergency-services ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Emergency-management .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :fisheries-regulation ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Fisheries-industry .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :civil-engineering ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Engineering-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :engineering ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Engineering-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :social-and-economic-research ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Economic-research .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :export-insurance ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Export-promotion .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :export-support ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Export-promotion .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :pensions-and-benefits ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Benefits .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :benefits-for-students ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Benefits .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :police-administration ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Police-administration .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :funeral-benefits ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Benefits .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :hospital-benefits ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Benefits .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :mental-institutions-benefits ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Benefits .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :sickness-benefits ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Benefits .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :unemployment-benefits ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Benefits .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :migrant-camps ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Migrant-accommodation-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :migrant-hostels ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Migrant-accommodation-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :navy-support ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Navy .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :navy-intelligence ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Navy .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :navy-administration ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Navy .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :rail-transport ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Rail-transport .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :navy-commands ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Navy .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :arts-development ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Arts-funding-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :arts ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Arts-funding-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :arts ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Arts-development-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :bankruptcy ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Bankruptcy-proceedings .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :public-health ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Public-health-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :building ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Building-acoustics .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :communications ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Communications-infrastructure .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :community-services ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Community-policing .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :law ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Law-enforcement .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
     rdf:object crsth:accommodation ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Accommodation-services .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:advertising ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Advertising-campaigns_2 .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:air-safety ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Air-transport-safety .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:arts-subsidies ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Arts-funding-- .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:adoption-services ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :administrative-law ;
     rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Adoption-services .
+    rdf:subject agift:Administrative-law .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:arts-subsidies ;
-    rdf:predicate skos:closeMatch ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-college-training .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-college-training .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :military ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Military-education-and-training .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-efficiency-review .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-efficiency-review .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-strategic-development .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-strategic-development .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-force-commands .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-forces ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-force-commands .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Australian-Defence-Forces .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :honours-and-awards ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Honours-and-awards-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-reform-program .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-reform-program .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :electoral-matters ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Electoral-boundary-assessment .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :employment ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Employment-advocacy-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :financial-matters ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Financial-system-monitoring .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :financial-matters ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Financial-system-management .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :foreign-policy ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Foreign-investment-control .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :foreign-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Foreign-investment-control .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :international-relations ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:International-monetary-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :international-agreements ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:International-monetary-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :botany ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Botany .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :labour ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Labour-market-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :land ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Land-valuation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-strategic-support .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-strategic-support .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :medical-aids ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Medical-aids-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :medical-research ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Medical-research-funding .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :military ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Military-bands .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :rail-transport ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Rail-harmonisation-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :rail-transport ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Rail-land-acquisition-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :remuneration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Remuneration-review .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :migrant-services ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Migrant-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :rural ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Rural-field-day-promotion .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :radio ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Radio-communication .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :territories ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Territories-administration .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :trade ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Trade-practices-compliance .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :administrative-law ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Administrative-decision-review .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :administrative-law ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Administrative-decision-appeal .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :arts-development ;
+    rdf:predicate skos:broadMatch ;
     rdf:subject agift:Arts-incentive-schemes-- .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:arts-development ;
-    rdf:predicate skos:closeMatch ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :arts ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Arts-incentive-schemes-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :cultural-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Cultural-gifts-programs-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :arts ;
+    rdf:predicate skos:broadMatch ;
     rdf:subject agift:Arts-promotion-- .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:arts-subsidies ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Arts-promotion-- .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :navigation ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Navigation .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:armed-forces ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :collection-management ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Collection-promotion-- .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:defence-forces ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :sport ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Sport-and-fitness-development .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:ceremonial-functions ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Ceremonial-events-and-representation .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :information ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Information-security .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:collection-management ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Collection-access-- .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :national-information-policy ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Information-security .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:collection-management ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Collection-accessioning-- .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :conservation ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Conservation-programs .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:cultural-institutions ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Cultural-centre-management .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :building ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Building-preservation .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-industry .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :tourism ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Tourism-industry-development .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :commonwealth-state-relations ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Commonwealth-State-funding .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :state-commonwealth-relations ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Commonwealth-State-funding .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :native-title-claims ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Native-title-claims .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :cultural-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Cultural-artefact-repatriation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :cultural-institutions ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Cultural-artefact-repatriation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :indigenous-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Indigenous-cultural-heritage .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :cultural-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Cultural-awards-and-scholarships-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-cooperation-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-cooperation-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-liaison .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-liaison .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-estate-management .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-estate-management .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :collection-management ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Collection-management-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-housing .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-housing .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-personnel-exchanges .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-personnel-exchanges .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-cooperation ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-personnel-exchanges .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-force-careers .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-force-careers .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :health ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Health-protocol-administration .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :environmental-monitoring ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Environmental-impact-assessment .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :family-law ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Family-law-proceedings .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :public-borrowing ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Public-borrowing .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :financial-matters ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Financial-administration .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :financial-matters ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Financial-budgeting .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :intelligence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Intelligence-liaison .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :intelligence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Intelligence-support .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :security-and-intelligence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Intelligence-support .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :financial-matters ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Financial-investment .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :superannuation ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Superannuation-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :land ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Land-rehabilitation-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :legal ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Legal-aid-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :legal-services ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Legal-aid-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :public-service ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Public-service .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :legislation ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Legislation-review .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :insurance ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Insurance-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :media ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Media-ownership-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :broadcasting ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Broadcasting-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :native-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Native-title-settlement-negotiations .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :native-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Native-title-claims .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :native-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Native-title-mediation-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :collection-management ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Collection-storage-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :publishing-and-printing ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Publishing-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :censorship ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Censorship-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :earth-sciences ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Earth-sciences .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :rail-transport ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Rail-transport-safety .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :industry ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Industry-development .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :community-services ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Community-recreational-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :television ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Television-broadcasting .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :military ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Military-employment-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :trade ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Trade-measurement-compliance .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :weights-and-measures ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Weights-and-measures-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :transport ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Transport-accessibility .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :public-works ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Public-transport .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :transport ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Transport-access-schemes .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
     rdf:object crsth:government-accommodation-and-catering ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Accommodation-services .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:air-force ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :television-broadcasting ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Television-broadcasting .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :water ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Water-conservation-plans .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :water ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Water-resources .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :water ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Water-quality-monitoring .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :water ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Water-usage-management .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :community-services ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Community-support .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :air-transport ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Air-transport-safety .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :aircraft ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Aircraft-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :army ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Army-reserve-training .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :financial-matters ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Financial-assistance .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :nuclear ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Nuclear-sciences .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :broadcasting ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Broadcasting .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :military ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Military-operations .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :building ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Building-approval-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :land ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Land-use-zoning .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :land-use ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Land-use-zoning .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :recordkeeping ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Recordkeeping-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :cultural-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Cultural-centre-management .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :community-services ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Community-housing .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :building ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Building-regulations-and-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :consumer-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Consumer-protection .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :advertising ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Advertising-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :water-resources ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Water-resources .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :copyright ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Copyright-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :parliamentary-matters ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Parliamentary-papers .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :collection-management ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Collection-acquisition-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-community-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-community-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-science-and-technology .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-research ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-science-and-technology .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :military ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Military-law .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :employment ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Employment-services-marketing .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :industry ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Industry-collaboration .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :adoption-services ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Adoption-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :publicity ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Publicity-programs-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :energy ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Energy-resources .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :health-services ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Health-insurance-schemes .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :health ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Health-insurance-schemes .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :health-insurance ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Health-insurance-schemes .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :parliamentary-chambers ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Parliamentary-chamber-support .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :parliamentary-matters ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Parliamentary-committee-and-member-support .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :health ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Health-hazard-prevention .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :public-health ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Health-hazard-prevention .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :health ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Health-promotion .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :government-media ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Government-media .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :housing-programs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Housing-industry-policy .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :housing ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Housing-industry-policy .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :land ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Land-use-planning .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :taxation ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Taxation-compliance .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :indigenous-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Indigenous-advocacy .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :indigenous-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Indigenous-reconciliation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :indigenous-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Indigenous-enterprise-development .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :indigenous-enterprises ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Indigenous-enterprise-development .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :indigenous-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Indigenous-heritage-conservation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :international-relations ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:International-trade-agreements .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :air-force ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Air-Force .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :international-agreements ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:International-trade-agreements .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :international-relations ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:International-treaties .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :international-agreements ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:International-treaties .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :indigenous-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Indigenous-land-management .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :military ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Military-exercises .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :nuclear ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Nuclear-safeguards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :energy ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Energy-supply .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :public-health ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Public-fitness-promotion .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :radio ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Radio-broadcasting .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :rural ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Rural-partnership-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :airport-services ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Airport-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :rural ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Rural-community-development .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :trade ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Trade-development-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :road-transport ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Road-traffic-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :veterans-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Veterans-health-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :veterans-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Veterans-entitlements .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :transport ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Transport-infrastructure-development .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :cultural-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Cultural-festivals-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :information ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Information-management-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :national-information-policy ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Information-management-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :information ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Information-technology-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :army ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Army .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :national-information-policy ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Information-technology-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-attaches .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-attaches .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-strategic-policy .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-strategic-policy .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :military ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Military-advisors .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-career-development .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-administration ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Defence-career-development .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :intellectual-property ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Intellectual-property-management .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :trade ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Trade-expositions .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :occupational-health-and-safety ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Occupational-health-and-safety .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :natural-resources ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Natural-heritage-protection .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :national-estate ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:National-park-management .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :financial-matters ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Financial-institutions-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :food-services ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Food-hygiene-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :food-services ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Food-quality-assurance .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :workers-compensation ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Workers-compensation-schemes .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :historic-memorials ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Historic-relic-protection .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :indigenous-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Indigenous-health-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :indigenous-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Indigenous-welfare-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :industry ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Industry-assistance-schemes .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :town-planning ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Town-planning .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :migrant-services ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Migrant-accommodation-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :migrant-services ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Migrant-settlement-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :public-health ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Health-disaster-preparedness .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :overseas-aid-programs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Overseas-student-scholarship-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :personnel ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Personnel-safety-standards .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :sea-transport ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Sea-passengers .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :transport ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Transport-network-maintenance .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :recruitment ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Recruitment-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :road-construction ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Road-surface-maintenance .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :statistics ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Statistics-dissemination .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
     rdf:object crsth:migrant-accommodation ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Accommodation-services .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:air-force-administration ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Air-Force .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:air-force-commands ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Air-Force .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:air-navigation ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Air-transport .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:air-operations ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Air-transport .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:air-safety ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Air-transport .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:air-training-units ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Air-transport .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:air-transport ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Air-transport .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:army-administration ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Army .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:army-aviation ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Army .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:airport-services ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :port-regulation ;
     rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Airport-services .
+    rdf:subject agift:Port-regulation .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:army-commands ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Army .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :tariff ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Tariff-regulation .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:arts-subsidies ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Arts-development-- .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :arts ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Arts-education .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :community-services ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Community-health-services .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:defence-committees ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :road-safety ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Road-safety-awareness .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:defence-cooperation ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :road-transport ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Road-transport-safety .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:defence-coordination ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :emergency-services ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Emergency-accommodation .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:defence-industries ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :human-rights ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Human-rights-obligations .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:defence-intelligence ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :urban-or-regional-development ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Regional-development .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:defence-research ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :freight ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Freight-movement-regulation .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:defence-security ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :freight-and-cartage ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:Freight-movement-regulation .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:army ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :natural-disasters ;
     rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Army .
+    rdf:subject agift:Natural-disasters .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:defence-service-home-schemes ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :external-affairs ;
+    rdf:predicate skos:broadMatch ;
+    rdf:subject agift:External-security .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:expeditionary-forces ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:peace-keeping-forces ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:benefits-for-students ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Benefits .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:funeral-benefits ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Benefits .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:hospital-benefits ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Benefits .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:mental-institutions-benefits ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Benefits .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:pensions-and-benefits ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Benefits .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:sickness-benefits ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Benefits .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:unemployment-benefits ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Benefits .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:arts-development ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :corrective-services ;
     rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Arts-development-- .
+    rdf:subject agift:Corrective-services .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:radio-broadcasting ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Broadcasting .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :currency ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Currency .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:television-broadcasting ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Broadcasting .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :court-reporting ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Court-reporting .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:film-censorship ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Censorship-standards .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :curriculum-development ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Curriculum-development .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:literature-censorship ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Censorship-standards .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :tertiary-education ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Tertiary-education .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:press-censorship ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Censorship-standards .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :consular-services ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Consular-services .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:radio-censorship ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Censorship-standards .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :health-promotion ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Health-promotion .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:television-censorship ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Censorship-standards .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :taxation ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Taxation .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:high-commissions ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Commissions-of-inquiry .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:royal-commissions ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Commissions-of-inquiry .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
     rdf:object crsth:administrative-law ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Administrative-decision-appeal .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:benefits ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :land-councils ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Land-councils .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :quarantine ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Quarantine .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :protective-services ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Protective-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :radio-broadcasting ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Radio-broadcasting .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :rescue-coordination ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Rescue-coordination .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :emergency-services ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Emergency-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :road-transport ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Road-transport .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :national-security ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:National-security .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :privacy ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Privacy .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :economic-research ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Economic-research .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :arts-development ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Arts-development-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :benefits ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Benefits .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:administrative-law ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Administrative-decision-review .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:advertising ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Advertising-standards .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:air-transport ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Air-transport-safety .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:aircraft ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Aircraft-standards .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:army ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Army-reserve-training .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:arts ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Arts-development-- .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:arts ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Arts-education .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:arts ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Arts-funding-- .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:arts-development ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Arts-funding-- .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:arts ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Arts-incentive-schemes-- .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:botany ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :deportation ;
     rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Botany .
+    rdf:subject agift:Deportation .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:arts-development ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Arts-incentive-schemes-- .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :overseas-aid-programs ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Overseas-aid-programs .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:arts ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Arts-promotion-- .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :navy ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Navy .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :tariff-regulation ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Tariff-regulation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :regional-development ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Regional-development .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :external-security ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:External-security .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :arts-subsidies ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Arts-funding-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-forces ;
+    rdf:predicate skos:closeMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:bankruptcy ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Bankruptcy-proceedings .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :armed-forces ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Australian-Defence-Forces .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:broadcasting ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Broadcasting-standards .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:building ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Building-acoustics .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:building ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Building-approval-services .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:building ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Building-preservation .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:building ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Building-regulations-and-standards .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:censorship ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Censorship-standards .
-
-[] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:broadcasting ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :telecommunications ;
     rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Broadcasting .
+    rdf:subject agift:Telecommunications .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:collection-management ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Collection-acquisition-- .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :dental-health ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Dental-health-services .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:collection-management ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Collection-promotion-- .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :dental-services ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Dental-health-services .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:collection-management ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Collection-storage-- .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :vocational-training-schemes ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Vocational-education .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:commonwealth-state-relations ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Commonwealth-State-funding .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :radio-broadcasting ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Radio-communication .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:state-commonwealth-relations ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Commonwealth-State-funding .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :world-heritage ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:World-heritage-listings .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:communications ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Communications-infrastructure .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :arts-subsidies ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Arts-incentive-schemes-- .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:community-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Community-health-services .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :arts-development ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Arts-promotion-- .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:community-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Community-housing .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :arts-subsidies ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Arts-promotion-- .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:community-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Community-policing .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-industries ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Defence-industry .
 
 [] a rdf:Statement ;
-    loci:hadGenerationMethod m1: ;
-    loci:validFor [ ns1:timehasBeginning [ ns1:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-05"^^xsd:date ;
-    rdf:object crsth:community-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Community-recreational-programs .
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :defence-cooperation ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Defence-cooperation-programs .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :law-enforcement ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Law-enforcement .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :overseas-qualifications ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Overseas-skills-recognition .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :accommodation ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Accommodation-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :advertising ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Advertising-campaigns_2 .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :air-safety ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Air-transport-safety .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :cultural-institutions ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Cultural-centre-management .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :collection-management ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Collection-access-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :collection-management ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Collection-accessioning-- .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :forestry ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Forestry-industry .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :parliamentary-chamber-administration ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Parliamentary-chamber-support .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :disarmament ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Disarmament-and-arms-control .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :postal-services ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject agift:Postal-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :railway-construction ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Railway-maintenance .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :motor-vehicle-national-certification ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Vehicle-registration .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :fisheries ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Fisheries-industry .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :ceremonial-functions ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Ceremonial-events-and-representation .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :export-incentives ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Export-promotion .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :export-marketing ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Export-promotion .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :national-parks ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:National-park-management .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :migrant-accommodation ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Migrant-accommodation-services .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :pastoral ;
+    rdf:predicate skos:closeMatch ;
+    rdf:subject agift:Pastoral-industry .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod <http://linked.data.gov.au/linkset/agiftcrsth/method/1> ;
+    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
+    dct:created "2019-04-13"^^xsd:date ;
+    rdf:object :arts-subsidies ;
+    rdf:predicate skos:narrowMatch ;
+    rdf:subject agift:Arts-development-- .
