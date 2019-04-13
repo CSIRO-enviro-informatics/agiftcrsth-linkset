@@ -142,7 +142,7 @@ These statistics were calculated using SPARQL queries against the data in data.t
 No. of Links | 410
 Proportion of AGIFT Concepts linked | 0.45 (261/583)
 Proportion of CRS Th Concepts linked | 0.33 (239/727)
-Counts of Link type | `skos:exactMatch`: 66, `skos:closeMatch`: 33, `skos:croadMatch`: 221, `skos:narrowMatch`: 94
+Counts of Link type | `skos:exactMatch`: 66<br /> `skos:closeMatch`: 33<br /> `skos:croadMatch`: 221<br /> `skos:narrowMatch`: 94
 
 
 ## Rights & License
