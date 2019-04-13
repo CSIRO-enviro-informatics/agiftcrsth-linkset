@@ -138,7 +138,7 @@ A complete example of a link from this Linkset is, echoing a short example at th
 These statistics were calculated using SPARQL queries against the data in data.ttl stored in a triplestore. Some statistics require more information than just that in data.ttl: AGIFT & CRS Thesaurus themselves are needed for Statistic 2+.
 
 No. | Statistic | Value
---|--|--
+---|---|---
 1. | No. of Links | 410
 2. | Proportion of AGIFT Concepts linked | 0.45 (261/583)
 3. | Proportion of CRS Th Concepts linked | 0.33 (239/727)
