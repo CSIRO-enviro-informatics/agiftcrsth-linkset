@@ -137,15 +137,12 @@ A complete example of a link from this Linkset is, echoing a short example at th
 ### Linkset statistics
 These statistics were calculated using SPARQL queries against the data in data.ttl stored in a triplestore. Some statistics require more information than just that in data.ttl: AGIFT & CRS Thesaurus themselves are needed for Statistic 2+.
 
-**No.** | **Statistic** | **Value**
--- | -- | --
-1. | No. of Links | 410
-2. | Proportion of AGIFT Concepts linked | 0.45 (261/583)
-3. | Proportion of CRS Th Concepts linked | 0.33 (239/727)
-
-
-4. | Counts of Link type | `skos:exactMatch`: 66, `skos:closeMatch`: 33, `skos:croadMatch`: 221, `skos:narrowMatch`: 94
-
+**Statistic** | **Value**
+-- | --
+No. of Links | 410
+Proportion of AGIFT Concepts linked | 0.45 (261/583)
+Proportion of CRS Th Concepts linked | 0.33 (239/727)
+Counts of Link type | `skos:exactMatch`: 66, `skos:closeMatch`: 33, `skos:croadMatch`: 221, `skos:narrowMatch`: 94
 
 
 ## Rights & License
