@@ -12,11 +12,11 @@ Where the URIs for "Accommodation services" & "accommodation" are used and the S
 
 Another example is where "Administrative-law" in AGIFT is the same as "administrative-law" in the CRS Thesaurus hence:
 
-`agift:Administrative-law skos:exactMatch crsthadministrative-law .`
+`agift:Administrative-law skos:exactMatch crsth:administrative-law .`
 
 Finally, AGIFT's "Accommodation services" is similar to, but not exactly the same as CRS Thesaurus' "accomodation" hence:
 
-`agift:Accommodation-services skos:closeMatch crsthaccommodation .`
+`agift:Accommodation-services skos:closeMatch crsth:accommodation .`
 
 
 ### Linkset definition
@@ -133,6 +133,17 @@ A complete example of a link from this Linkset is, echoing a short example at th
                                  #is the same method for all links in this Linkset
 .
 ```
+
+### Linkset statistics
+These statistics were calculated using SPARQL queries against the data in data.ttl stored in a triplestore. Some statistics require more information than just that in data.ttl: AGIFT & CRS Thesaurus themselves are needed for Statistic 2+.
+
+No. | Statistic | Value
+--|--|--
+1. | No. of Links | 410
+2. | Proportion of AGIFT Concepts linked | 0.45 (261/583)
+3. | Proportion of CRS Th Concepts linked | 0.33 (239/727)
+4. | Counts of Link type | `skos:exactMatch`: 66<br />`skos:closeMatch`: 33<br />`skos:croadMatch`: 221<br />`skos:narrowMatch`: 94
+
 
 ## Rights & License
 The content of this repository is owned and published by the [National Archives of Australia](http://naa.gov.au) and licensed for use under the [Creative Commons 4.0 License](https://creativecommons.org/licenses/by/4.0/). See the [license deed](LICENSE) all details.
