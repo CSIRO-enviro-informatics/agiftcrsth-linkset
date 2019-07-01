@@ -1,7 +1,7 @@
 # AGIFT / CRS Thesaurus Linkset
 This code repository contains a Linkset - a specialised Dataset linking objects in two other Datasets.
 
-This Linkset contains [SKOS mapping properties](https://www.w3.org/TR/skos-reference/#mapping) between Concepts in the [AGIFT](http://data.naa.gov.au/def/agift) and Concepts in the [CRS Thesaurus](https://github.com/CSIRO-enviro-informatics/crsth) which are both vocabularies of Australian government functions.
+This Linkset contains [SKOS mapping properties](https://www.w3.org/TR/skos-reference/#mapping) between Concepts in the [AGIFT](http://data.naa.gov.au/def/agift) and Concepts in the [CRS Thesaurus](https://github.com/CSIRO-enviro-informatics/crs-th) which are both vocabularies of Australian government functions.
 
 ### Link examples
 The Concept "Advertising standards" in AGIFT has a broader match in the CRS Thesaurus with its Concept "advertising" so the link between the two, in this Linkset is as follows:
