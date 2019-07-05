@@ -1,28 +1,24 @@
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix loci: <http://linked.data.gov.au/def/loci#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix void: <http://rdfs.org/ns/void#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sdo: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 @prefix : <http://linked.data.gov.au/linkset/agiftcrsth/statement/> .
-@prefix s: <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> .
-@prefix p: <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> .
-@prefix o: <http://www.w3.org/1999/02/22-rdf-syntax-ns#object> .
-@prefix m: <http://linked.data.gov.au/def/loci/hadGenerationMethod> .
-@prefix m1: <http://linked.data.gov.au/linkset/agiftcrsth/method> .
+@prefix method: <http://linked.data.gov.au/linkset/agiftcrsth/method> .
+@prefix nick: <http://linked.data.gov.au/linkset/agiftcrsth/nick> .
 
 @prefix agift: <https://data.naa.gov.au/def/agift/> .
 @prefix crsth: <http://linked.data.gov.au/def/crs-th/> .
 
-<http://linked.data.gov.au/linkset/0854185c-a5d9-463b-b833-585dc82588f2>
+
+<http://linked.data.gov.au/dataset/agiftcrsth>
   a loci:Linkset ;
   dct:title "AGIFT CRS Thesaurus Linkset" ;
   dct:description """This Linkset contains [SKOS mapping properties](https://www.w3.org/TR/skos-reference/#mapping)
@@ -31,34 +27,34 @@ which are both vocabularies of Australian government functions.
 
 Only the following SKOS mapping properties are used as link predicates: `skos:mappingRelation`,
 `skos:closeMatch`, `skos:exactMatch`, `skos:broadMatch`, `skos:narrowMatch` and `skos:relatedMatch`."""@en ;
-    dct:publisher [
-        sdo:identifier <http://catalogue.linked.data.gov.au/org/naa> ;
-        sdo:name "National Archives of Australia" ;
+  dct:publisher [
+    sdo:identifier <http://catalogue.linked.data.gov.au/org/naa> ;
+    sdo:name "National Archives of Australia" ;
   ] ;
-  dcat:contactPoint :nick ;
+  dct:creator nick: ;
   dct:created "2019-04-05"^^xsd:date ;
   dct:issued "2019-04-05"^^xsd:date ;
-  dct:modified "2019-04-05"^^xsd:date ;
-  void:subjectsTarget <https://data.naa.gov.au/def/agift/> ;
+  dct:modified "2019-07-05"^^xsd:date ;
+  void:subjectsTarget <https://data.naa.gov.au/def/agift> ;
   void:linkPredicate skos:broadMatch , skos:closeMatch , skos:exactMatch , skos:narrowMatch , skos:relatedMatch ;
   void:objectsTarget <http://linked.data.gov.au/def/crs-th> ;
   prov:wasGeneratedBy _:act .
 
-_:act a prov:Activity;
+_:act a prov:Activity ;
     prov:qualifiedAssociation [
-        a prov:Association;
-        prov:agent   _:nick;
-        prov:hadPlan :method
+        a prov:Association ;
+        prov:agent   nick: ;
+        prov:hadPlan method: ;
     ] .
 
-:method a prov:Plan ;
+method: a prov:Plan ;
     rdfs:label "Scripted and manual label comparison" ;
     prov:value <https://github.com/CSIRO-enviro-informatics/agiftcrsth-linkset/method> ;
     rdfs:comment "The method used to create this linkset, described in text." ;
     prov:wasAttributedTo :nick ;
     prov:generatedAtTime "2019-04-05"^^xsd:date .
 
-:nick
+nick:
     a owl:NamedIndividual , sdo:Person ;
     sdo:email "nicholas.car@csiro.au" ;
     sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;

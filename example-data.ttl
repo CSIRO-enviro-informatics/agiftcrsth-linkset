@@ -1,15 +1,3 @@
-@prefix : <http://linked.data.gov.au/linkset/agiftcrsth/statement/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix time: <http://www.w3.org/2006/time> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix agift: <https://data.naa.gov.au/def/agift/> .
-@prefix crsth: <http://linked.data.gov.au/def/crsth/> .
-@prefix loci: <http://linked.data.gov.au/def/loci#> .
-@prefix m1: <http://linked.data.gov.au/linkset/agiftcrsth/method/1> .
-
-
 :s1
   a rdf:Statement ;
   rdf:subject agift:Accommodation-services ;
