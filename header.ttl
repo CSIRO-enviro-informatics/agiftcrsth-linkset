@@ -7,6 +7,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
@@ -16,7 +17,7 @@
 @prefix p: <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> .
 @prefix o: <http://www.w3.org/1999/02/22-rdf-syntax-ns#object> .
 @prefix m: <http://linked.data.gov.au/def/loci/hadGenerationMethod> .
-@prefix m1: <http://linked.data.gov.au/linkset/agiftcrsth/method/1> .
+@prefix m1: <http://linked.data.gov.au/linkset/agiftcrsth/method> .
 
 @prefix agift: <https://data.naa.gov.au/def/agift/> .
 @prefix crsth: <http://linked.data.gov.au/def/crs-th/> .
@@ -30,14 +31,16 @@ which are both vocabularies of Australian government functions.
 
 Only the following SKOS mapping properties are used as link predicates: `skos:mappingRelation`,
 `skos:closeMatch`, `skos:exactMatch`, `skos:broadMatch`, `skos:narrowMatch` and `skos:relatedMatch`."""@en ;
-  dct:publisher <http://catalogue.linked.data.gov.au/org/O-000790> ;
-  dc:publisher "National Archives of Australia" ;
-  dcat:contactPoint _:marcus ;
+    dct:publisher [
+        sdo:identifier <http://catalogue.linked.data.gov.au/org/naa> ;
+        sdo:name "National Archives of Australia" ;
+  ] ;
+  dcat:contactPoint :nick ;
   dct:created "2019-04-05"^^xsd:date ;
   dct:issued "2019-04-05"^^xsd:date ;
   dct:modified "2019-04-05"^^xsd:date ;
-  dct:contributor _:shane ;
   void:subjectsTarget <https://data.naa.gov.au/def/agift/> ;
+  void:linkPredicate skos:broadMatch , skos:closeMatch , skos:exactMatch , skos:narrowMatch , skos:relatedMatch ;
   void:objectsTarget <http://linked.data.gov.au/def/crs-th> ;
   prov:wasGeneratedBy _:act .
 
@@ -45,16 +48,22 @@ _:act a prov:Activity;
     prov:qualifiedAssociation [
         a prov:Association;
         prov:agent   _:nick;
-        prov:hadPlan _:m1
+        prov:hadPlan :method
     ] .
 
-m1: a prov:Plan ;
-    rdfs:label "coded and manual label comparison" ;
+:method a prov:Plan ;
+    rdfs:label "Scripted and manual label comparison" ;
     prov:value <https://github.com/CSIRO-enviro-informatics/agiftcrsth-linkset/method> ;
     rdfs:comment "The method used to create this linkset, described in text." ;
-    prov:wasAttributedTo _:nick ;
+    prov:wasAttributedTo :nick ;
     prov:generatedAtTime "2019-04-05"^^xsd:date .
 
-_:marcus a vcard:Individual ;
-    vcard:fn "Nicholas Car" ;
-    vcard:hasEmail <mailto:nicholas.car@csiro.au> .
+:nick
+    a owl:NamedIndividual , sdo:Person ;
+    sdo:email "nicholas.car@csiro.au" ;
+    sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
+    sdo:memberOf [
+        sdo:identifier <http://catalogue.linked.data.gov.au/org/csiro> ;
+        sdo:name "CSIRO"
+    ] ;
+    sdo:name "Nicholas J. Car" .
