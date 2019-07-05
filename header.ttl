@@ -10,9 +10,9 @@
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-@prefix : <http://linked.data.gov.au/linkset/agiftcrsth/statement/> .
-@prefix method: <http://linked.data.gov.au/linkset/agiftcrsth/method> .
-@prefix nick: <http://linked.data.gov.au/linkset/agiftcrsth/nick> .
+@prefix : <http://linked.data.gov.au/dataset/agiftcrsth/statement/> .
+@prefix method: <http://linked.data.gov.au/dataset/agiftcrsth/method> .
+@prefix nick: <http://linked.data.gov.au/dataset/agiftcrsth/nick> .
 
 @prefix agift: <https://data.naa.gov.au/def/agift/> .
 @prefix crsth: <http://linked.data.gov.au/def/crs-th/> .
