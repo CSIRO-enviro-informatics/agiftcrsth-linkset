@@ -1,3 +1,9 @@
+# baseURI: http://linked.data.gov.au/dataset/agiftcofoga
+# imports: http://linked.data.gov.au/def/cofog-a
+# imports: https://data.naa.gov.au/def/agift
+
+@prefix agift: <https://data.naa.gov.au/def/agift/> .
+@prefix cofoga: <http://linked.data.gov.au/def/cofog-a/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix loci: <http://linked.data.gov.au/def/loci#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -6,3749 +12,1812 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sdo: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix time: <http://www.w3.org/2006/time#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://linked.data.gov.au/dataset/agiftcofoga> .
 
-@prefix : <http://linked.data.gov.au/dataset/agiftcrsth/statement/> .
-@prefix method: <http://linked.data.gov.au/dataset/agiftcrsth/method> .
-@prefix nick: <http://linked.data.gov.au/dataset/agiftcrsth/nick> .
-
-@prefix agift: <https://data.naa.gov.au/def/agift/> .
-@prefix crsth: <http://linked.data.gov.au/def/crs-th/> .
-
-
-<http://linked.data.gov.au/dataset/agiftcrsth>
+<http://linked.data.gov.au/dataset/agiftcofoga>
   a loci:Linkset ;
-  dct:title "AGIFT CRS Thesaurus Linkset" ;
-  dct:description """This Linkset contains [SKOS mapping properties](https://www.w3.org/TR/skos-reference/#mapping)
-between Concepts in the [AGIFT](http://data.naa.gov.au/def/agift) and Concepts in the [CRS Thesaurus](https://github.com/CSIRO-enviro-informatics/crsth)
-which are both vocabularies of Australian government functions.
+  owl:imports <https://data.naa.gov.au/def/agift> ;
+  owl:imports <http://linked.data.gov.au/def/cofog-a> ;  
+  dct:created "2019-07-01"^^xsd:date ;
+  dct:creator <nick> ;
+  dct:description """This Linkset contains [SKOS mapping properties](https://www.w3.org/TR/skos-reference/#mapping) between Concepts in the [AGIFT](http://data.naa.gov.au/def/agift) and Concepts in the [COFOG-A](http://linked.data.gov.au/def/cofog) vocabularies.
 
-Only the following SKOS mapping properties are used as link predicates: `skos:mappingRelation`,
-`skos:closeMatch`, `skos:exactMatch`, `skos:broadMatch`, `skos:narrowMatch` and `skos:relatedMatch`."""@en ;
+AGIFT, \"Australian Governments' Interactive Functions Thesaurus\", from the [National Archives of Australia (NAA)](http://www.naa.gov.au), is a \"three-level hierarchical thesaurus that describes the business functions carried out across Commonwealth, state and local governments in Australia\".
+
+The COFOG-A is an Australian version of the UN's Statistical office's COFOG, \"Classification of the Functions of Government\", issued by the from the [Australian Bureau of Statistics](http://www.abs.gov.au) in the [Australian System of Government Finance Statistics: Concepts, Sources and Methods](http://www.ausstats.abs.gov.au/ausstats/subscriber.nsf/0/418BDDEBD088A012CA257F230019D433/$File/55140_2015.pdf) which is represented as a SKOS vocabulary online at <http://linked.data.gov.au/def/cofog-a>."""@en ;
+  dct:modified "2019-12-30"^^xsd:date ;
   dct:publisher [
-    sdo:identifier <http://catalogue.linked.data.gov.au/org/naa> ;
-    sdo:name "National Archives of Australia" ;
+      sdo:identifier <http://linked.data.gov.au/org/csiro> ;
+      sdo:name "CSIRO" ;
+    ] ;
+  dct:provenance "This Linkset was created by Nicholas J. Car while a member of CSIRO and has been slightly updated by him since then while a member of SURROUND Australia Pty Ltd." ;
+  dct:title "AGIFT / COFOG-A Linkset" ;
+  loci:hadGenerationMethod [
+    a prov:Plan ;
+    rdfs:comment "The method used to create this linkset, described in the code repository housing the Linkset data" ;
+    rdfs:label "Python and Excel processing" ;
+    rdfs:seeAlso <https://github.com/CSIRO-enviro-informatics/agiftcofoga-linkset/tree/master/methods> ;
+    prov:generatedAtTime "2019-07-01"^^xsd:date ;
+    prov:wasAttributedTo <nick> ;    
   ] ;
-  dct:creator nick: ;
-  dct:created "2019-04-05"^^xsd:date ;
-  dct:issued "2019-04-05"^^xsd:date ;
-  dct:modified "2019-07-05"^^xsd:date ;
   void:subjectsTarget <https://data.naa.gov.au/def/agift> ;
   void:linkPredicate skos:broadMatch , skos:closeMatch , skos:exactMatch , skos:narrowMatch , skos:relatedMatch ;
-  void:objectsTarget <http://linked.data.gov.au/def/crs-th> ;
-  prov:wasGeneratedBy _:act .
-
-_:act a prov:Activity ;
-    prov:qualifiedAssociation [
-        a prov:Association ;
-        prov:agent   nick: ;
-        prov:hadPlan method: ;
-    ] .
-
-method: a prov:Plan ;
-    rdfs:label "Scripted and manual label comparison" ;
-    prov:value <https://github.com/CSIRO-enviro-informatics/agiftcrsth-linkset/method> ;
-    rdfs:comment "The method used to create this linkset, described in text." ;
-    prov:wasAttributedTo :nick ;
-    prov:generatedAtTime "2019-04-05"^^xsd:date .
-
-nick:
-    a owl:NamedIndividual , sdo:Person ;
-    sdo:email "nicholas.car@csiro.au" ;
-    sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
-    sdo:memberOf [
-        sdo:identifier <http://catalogue.linked.data.gov.au/org/csiro> ;
-        sdo:name "CSIRO"
+  void:objectsTarget <http://linked.data.gov.au/def/cofog-a> ;  
+.
+<nick>
+  a owl:NamedIndividual ;
+  a sdo:Person ;
+  sdo:email <mailto:nicholas.car@surroundaustralia.com> ;
+  sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
+  sdo:memberOf [
+      sdo:identifier <https://surroundaustralia.com> ;
+      sdo:name "SURROUND Australia Pty Ltd" ;
     ] ;
-    sdo:name "Nicholas J. Car" .
-:001
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:administrative-law ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Administrative-law .
-
-:002
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:criminology ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Criminology .
-
-:003
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:high-commissions ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Commissions-of-inquiry .
-
-:004
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:royal-commissions ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Commissions-of-inquiry .
-
-:005
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:national-law-enforcement ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Law-enforcement .
-
-:006
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-intelligence ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-:007
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-industries ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-:008
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-research ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-:009
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-committees ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-:010
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-:011
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-cooperation ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-:012
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-security ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-:013
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:electoral-matters ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Electoral-matters .
-
-:014
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:expeditionary-forces ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-:015
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:peace-keeping-forces ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-:016
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-service-home-schemes ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-:017
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-coordination ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-:018
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-intelligence ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Intelligence .
-
-:019
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:communications-intelligence ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Intelligence .
-
-:020
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:security-and-intelligence ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Intelligence .
-
-:021
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military-intelligence ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Intelligence .
-
-:022
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:navy-intelligence ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Intelligence .
-
-:023
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:logistics-defence ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Logistics .
-
-:024
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:foreign-investment-control ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Foreign-investment-control .
-
-:025
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:logistics-air-force ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Logistics .
-
-:026
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:logistics-army ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Logistics .
-
-:027
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:social-and-economic-research ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Social-research .
-
-:028
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:medical-research ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Medical-and-health-sciences .
-
-:029
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-accommodation ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Migrant-services .
-
-:030
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-camps ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Migrant-services .
-
-:031
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-documentation ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Migrant-services .
-
-:032
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-hostels ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Migrant-services .
-
-:033
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:foreign-investment-control ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Investment-scheme-regulation .
-
-:034
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-navigation ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Navigation .
-
-:035
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:intelligence ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Intelligence .
-
-:036
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:publishing-and-printing ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Publishing .
-
-:037
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:film-censorship ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Censorship-standards .
-
-:038
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:literature-censorship ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Censorship-standards .
-
-:039
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:press-censorship ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Censorship-standards .
-
-:040
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio-censorship ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Censorship-standards .
-
-:041
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:television-censorship ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Censorship-standards .
-
-:042
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:government-accommodation-and-catering ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Accommodation-services .
-
-:043
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-accommodation ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Accommodation-services .
-
-:044
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cable-television ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Television-broadcasting .
-
-:045
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:television-censorship ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Television-broadcasting .
-
-:046
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:labour-market-programs ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Labour-market-programs .
-
-:047
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio-broadcasting ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Broadcasting .
-
-:048
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:television-broadcasting ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Broadcasting .
-
-:049
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-force-administration ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Air-Force .
-
-:050
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-force-commands ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Air-Force .
-
-:051
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-transport ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Air-transport .
-
-:052
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-navigation ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Air-transport .
-
-:053
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-training-units ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Air-transport .
-
-:054
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-operations ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Air-transport .
-
-:055
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-safety ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Air-transport .
-
-:056
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:aboriginal-reserves ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Reserves .
-
-:057
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:logistics ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Logistics .
-
-:058
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:army-commands ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Army .
-
-:059
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:army-aviation ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Army .
-
-:060
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:army-administration ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Army .
-
-:061
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:interstate-transport ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Interstate-trade-agreements .
-
-:062
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:tertiary-institutions ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Tertiary-education .
-
-:063
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-relations ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:International-affairs .
-
-:064
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-agreements ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:International-affairs .
-
-:065
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:forestry-regulation ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Forestry-industry .
-
-:066
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-land-rights ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Indigenous-land-management .
-
-:067
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-incentives ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Export-regulation .
-
-:068
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:medical-research ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Medical-research .
-
-:069
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-insurance ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Export-regulation .
-
-:070
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-marketing ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Export-regulation .
-
-:071
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-support ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Export-regulation .
-
-:072
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:animal-quarantine ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Quarantine .
-
-:073
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:human-quarantine ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Quarantine .
-
-:074
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:plant-quarantine ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Quarantine .
-
-:075
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio-censorship ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Radio-broadcasting .
-
-:076
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio-licences ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Radio-broadcasting .
-
-:077
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:waste-disposal ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Waste-management .
-
-:078
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:civil-engineering ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Engineering-and-technology-sciences .
-
-:079
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:citizenship ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Citizenship .
-
-:080
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:engineering ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Engineering-and-technology-sciences .
-
-:081
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:emergency-services ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Emergency-management .
-
-:082
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:fisheries-regulation ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Fisheries-industry .
-
-:083
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:civil-engineering ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Engineering-services .
-
-:084
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:engineering ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Engineering-services .
-
-:085
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:social-and-economic-research ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Economic-research .
-
-:086
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-insurance ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Export-promotion .
-
-:087
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-support ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Export-promotion .
-
-:088
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:pensions-and-benefits ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Benefits .
-
-:089
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:benefits-for-students ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Benefits .
-
-:090
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:police-administration ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Police-administration .
-
-:091
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:funeral-benefits ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Benefits .
-
-:092
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:hospital-benefits ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Benefits .
-
-:093
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:mental-institutions-benefits ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Benefits .
-
-:094
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:sickness-benefits ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Benefits .
-
-:095
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:unemployment-benefits ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Benefits .
-
-:096
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-camps ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Migrant-accommodation-services .
-
-:097
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-hostels ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Migrant-accommodation-services .
-
-:098
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:navy-support ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Navy .
-
-:099
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:navy-intelligence ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Navy .
-
-:100
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:navy-administration ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Navy .
-
-:101
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rail-transport ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Rail-transport .
-
-:102
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:navy-commands ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Navy .
-
-:103
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-development ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Arts-funding-- .
-
-:104
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Arts-funding-- .
-
-:105
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Arts-development-- .
-
-:106
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:bankruptcy ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Bankruptcy-proceedings .
-
-:107
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:public-health ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Public-health-services .
-
-:108
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:building ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Building-acoustics .
-
-:109
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:communications ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Communications-infrastructure .
-
-:110
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:community-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Community-policing .
-
-:111
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:law ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Law-enforcement .
-
-:112
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:accommodation ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Accommodation-services .
-
-:113
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:administrative-law ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Administrative-law .
-
-:114
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-college-training .
-
-:115
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-college-training .
-
-:116
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Military-education-and-training .
-
-:117
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-efficiency-review .
-
-:118
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-efficiency-review .
-
-:119
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-strategic-development .
-
-:120
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-strategic-development .
-
-:121
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-force-commands .
-
-:122
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-forces ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-force-commands .
-
-:123
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-:124
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:honours-and-awards ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Honours-and-awards-programs .
-
-:125
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-reform-program .
-
-:126
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-reform-program .
-
-:127
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:electoral-matters ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Electoral-boundary-assessment .
-
-:128
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:employment ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Employment-advocacy-services .
-
-:129
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:financial-matters ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Financial-system-monitoring .
-
-:130
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:financial-matters ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Financial-system-management .
-
-:131
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:foreign-policy ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Foreign-investment-control .
-
-:132
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:foreign-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Foreign-investment-control .
-
-:133
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-relations ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:International-monetary-regulation .
-
-:134
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-agreements ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:International-monetary-regulation .
-
-:135
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:botany ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Botany .
-
-:136
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:labour ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Labour-market-programs .
-
-:137
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:land ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Land-valuation .
-
-:138
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-strategic-support .
-
-:139
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-strategic-support .
-
-:140
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:medical-aids ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Medical-aids-regulation .
-
-:141
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:medical-research ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Medical-research-funding .
-
-:142
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Military-bands .
-
-:143
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rail-transport ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Rail-harmonisation-standards .
-
-:144
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rail-transport ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Rail-land-acquisition-regulation .
-
-:145
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:remuneration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Remuneration-review .
-
-:146
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-services ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Migrant-services .
-
-:147
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rural ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Rural-field-day-promotion .
-
-:148
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Radio-communication .
-
-:149
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:territories ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Territories-administration .
-
-:150
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:trade ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Trade-practices-compliance .
-
-:151
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:administrative-law ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Administrative-decision-review .
-
-:152
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:administrative-law ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Administrative-decision-appeal .
-
-:153
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-development ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Arts-incentive-schemes-- .
-
-:154
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Arts-incentive-schemes-- .
-
-:155
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cultural-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Cultural-gifts-programs-- .
-
-:156
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Arts-promotion-- .
-
-:157
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:navigation ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Navigation .
-
-:158
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:collection-management ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Collection-promotion-- .
-
-:159
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:sport ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Sport-and-fitness-development .
-
-:160
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:information ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Information-security .
-
-:161
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:national-information-policy ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Information-security .
-
-:162
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:conservation ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Conservation-programs .
-
-:163
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:building ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Building-preservation .
-
-:164
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-industry .
-
-:165
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:tourism ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Tourism-industry-development .
-
-:166
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:commonwealth-state-relations ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Commonwealth-State-funding .
-
-:167
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:state-commonwealth-relations ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Commonwealth-State-funding .
-
-:168
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:native-title-claims ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Native-title-claims .
-
-:169
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cultural-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Cultural-artefact-repatriation .
-
-:170
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cultural-institutions ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Cultural-artefact-repatriation .
-
-:171
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Indigenous-cultural-heritage .
-
-:172
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cultural-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Cultural-awards-and-scholarships-- .
-
-:173
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-cooperation-programs .
-
-:174
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-cooperation-programs .
-
-:174
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-liaison .
-
-:176
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-liaison .
-
-:177
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-estate-management .
-
-:178
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-estate-management .
-
-:179
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:collection-management ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Collection-management-- .
-
-:180
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-housing .
-
-:181
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-housing .
-
-:182
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-personnel-exchanges .
-
-:183
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-personnel-exchanges .
-
-:184
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-cooperation ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-personnel-exchanges .
-
-:185
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-force-careers .
-
-:186
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-force-careers .
-
-:187
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:health ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Health-protocol-administration .
-
-:188
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:environmental-monitoring ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Environmental-impact-assessment .
-
-:189
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:family-law ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Family-law-proceedings .
-
-:190
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:public-borrowing ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Public-borrowing .
-
-:191
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:financial-matters ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Financial-administration .
-
-:192
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:financial-matters ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Financial-budgeting .
-
-:193
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:intelligence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Intelligence-liaison .
-
-:194
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:intelligence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Intelligence-support .
-
-:195
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:security-and-intelligence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Intelligence-support .
-
-:196
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:financial-matters ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Financial-investment .
-
-:197
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:superannuation ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Superannuation-regulation .
-
-:198
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:land ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Land-rehabilitation-programs .
-
-:199
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:legal ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Legal-aid-services .
-
-:200
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:legal-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Legal-aid-services .
-
-:201
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:public-service ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Public-service .
-
-:202
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:legislation ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Legislation-review .
-
-:203
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:insurance ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Insurance-regulation .
-
-:204
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:media ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Media-ownership-regulation .
-
-:205
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:broadcasting ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Broadcasting-standards .
-
-:206
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:native-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Native-title-settlement-negotiations .
-
-:207
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:native-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Native-title-claims .
-
-:208
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:native-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Native-title-mediation-programs .
-
-:209
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:collection-management ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Collection-storage-- .
-
-:210
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:publishing-and-printing ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Publishing-standards .
-
-:211
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:censorship ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Censorship-standards .
-
-:212
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:earth-sciences ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Earth-sciences .
-
-:213
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rail-transport ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Rail-transport-safety .
-
-:214
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:industry ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Industry-development .
-
-:215
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:community-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Community-recreational-programs .
-
-:216
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:television ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Television-broadcasting .
-
-:217
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Military-employment-services .
-
-:218
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:trade ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Trade-measurement-compliance .
-
-:219
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:weights-and-measures ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Weights-and-measures-standards .
-
-:220
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:transport ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Transport-accessibility .
-
-:221
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:public-works ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Public-transport .
-
-:222
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:transport ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Transport-access-schemes .
-
-:223
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:government-accommodation-and-catering ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Accommodation-services .
-
-:224
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:television-broadcasting ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Television-broadcasting .
-
-:225
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:water ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Water-conservation-plans .
-
-:226
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:water ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Water-resources .
-
-:227
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:water ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Water-quality-monitoring .
-
-:228
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:water ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Water-usage-management .
-
-:229
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:community-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Community-support .
-
-:230
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-transport ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Air-transport-safety .
-
-:231
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:aircraft ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Aircraft-standards .
-
-:232
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:army ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Army-reserve-training .
-
-:233
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:financial-matters ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Financial-assistance .
-
-:234
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:nuclear ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Nuclear-sciences .
-
-:235
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:broadcasting ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Broadcasting .
-
-:236
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Military-operations .
-
-:237
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:building ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Building-approval-services .
-
-:238
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:land ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Land-use-zoning .
-
-:239
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:land-use ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Land-use-zoning .
-
-:240
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:recordkeeping ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Recordkeeping-standards .
-
-:241
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cultural-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Cultural-centre-management .
-
-:242
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:community-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Community-housing .
-
-:243
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:building ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Building-regulations-and-standards .
-
-:244
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:consumer-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Consumer-protection .
-
-:245
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:advertising ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Advertising-standards .
-
-:246
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:water-resources ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Water-resources .
-
-:247
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:copyright ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Copyright-regulation .
-
-:248
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:parliamentary-matters ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Parliamentary-papers .
-
-:249
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:collection-management ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Collection-acquisition-- .
-
-:250
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-community-programs .
-
-:251
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-community-programs .
-
-:252
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-science-and-technology .
-
-:253
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-research ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-science-and-technology .
-
-:254
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Military-law .
-
-:255
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:employment ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Employment-services-marketing .
-
-:256
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:industry ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Industry-collaboration .
-
-:257
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:adoption-services ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Adoption-services .
-
-:258
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:publicity ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Publicity-programs-- .
-
-:259
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:energy ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Energy-resources .
-
-:260
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:health-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Health-insurance-schemes .
-
-:261
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:health ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Health-insurance-schemes .
-
-:262
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:health-insurance ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Health-insurance-schemes .
-
-:263
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:parliamentary-chambers ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Parliamentary-chamber-support .
-
-:264
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:parliamentary-matters ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Parliamentary-committee-and-member-support .
-
-:265
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:health ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Health-hazard-prevention .
-
-:266
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:public-health ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Health-hazard-prevention .
-
-:267
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:health ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Health-promotion .
-
-:268
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:government-media ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Government-media .
-
-:269
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:housing-programs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Housing-industry-policy .
-
-:270
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:housing ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Housing-industry-policy .
-
-:271
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:land ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Land-use-planning .
-
-:272
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:taxation ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Taxation-compliance .
-
-:273
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Indigenous-advocacy .
-
-:274
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Indigenous-reconciliation .
-
-:275
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Indigenous-enterprise-development .
-
-:276
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-enterprises ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Indigenous-enterprise-development .
-
-:277
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Indigenous-heritage-conservation .
-
-:278
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-relations ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:International-trade-agreements .
-
-:279
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-force ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Air-Force .
-
-:280
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-agreements ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:International-trade-agreements .
-
-:281
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-relations ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:International-treaties .
-
-:282
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-agreements ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:International-treaties .
-
-:283
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Indigenous-land-management .
-
-:284
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Military-exercises .
-
-:285
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:nuclear ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Nuclear-safeguards .
-
-:286
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:energy ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Energy-supply .
-
-:287
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:public-health ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Public-fitness-promotion .
-
-:288
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Radio-broadcasting .
-
-:289
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rural ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Rural-partnership-programs .
-
-:290
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:airport-services ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Airport-services .
-
-:291
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rural ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Rural-community-development .
-
-:292
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:trade ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Trade-development-programs .
-
-:293
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:road-transport ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Road-traffic-regulation .
-
-:294
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:veterans-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Veterans-health-services .
-
-:295
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:veterans-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Veterans-entitlements .
-
-:296
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:transport ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Transport-infrastructure-development .
-
-:297
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cultural-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Cultural-festivals-- .
-
-:298
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:information ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Information-management-standards .
-
-:299
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:national-information-policy ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Information-management-standards .
-
-:300
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:information ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Information-technology-standards .
-
-:301
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:army ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Army .
-
-:302
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:national-information-policy ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Information-technology-standards .
-
-:303
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-attaches .
-
-:304
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-attaches .
-
-:305
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-strategic-policy .
-
-:306
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-strategic-policy .
-
-:307
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Military-advisors .
-
-:308
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-career-development .
-
-:309
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Defence-career-development .
-
-:310
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:intellectual-property ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Intellectual-property-management .
-
-:311
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:trade ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Trade-expositions .
-
-:312
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:occupational-health-and-safety ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Occupational-health-and-safety .
-
-:313
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:natural-resources ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Natural-heritage-protection .
-
-:314
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:national-estate ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:National-park-management .
-
-:315
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:financial-matters ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Financial-institutions-regulation .
-
-:316
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:food-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Food-hygiene-regulation .
-
-:317
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:food-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Food-quality-assurance .
-
-:318
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:workers-compensation ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Workers-compensation-schemes .
-
-:319
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:historic-memorials ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Historic-relic-protection .
-
-:320
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Indigenous-health-services .
-
-:321
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Indigenous-welfare-programs .
-
-:322
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:industry ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Industry-assistance-schemes .
-
-:323
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:town-planning ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Town-planning .
-
-:324
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Migrant-accommodation-services .
-
-:325
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Migrant-settlement-programs .
-
-:326
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:public-health ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Health-disaster-preparedness .
-
-:327
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:overseas-aid-programs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Overseas-student-scholarship-programs .
-
-:328
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:personnel ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Personnel-safety-standards .
-
-:329
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:sea-transport ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Sea-passengers .
-
-:330
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:transport ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Transport-network-maintenance .
-
-:331
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:recruitment ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Recruitment-programs .
-
-:332
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:road-construction ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Road-surface-maintenance .
-
-:333
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:statistics ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Statistics-dissemination .
-
-:334
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-accommodation ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Accommodation-services .
-
-:335
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:port-regulation ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Port-regulation .
-
-:336
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:tariff ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Tariff-regulation .
-
-:337
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Arts-education .
-
-:338
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:community-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Community-health-services .
-
-:339
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:road-safety ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Road-safety-awareness .
-
-:340
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:road-transport ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Road-transport-safety .
-
-:341
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:emergency-services ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Emergency-accommodation .
-
-:342
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:human-rights ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Human-rights-obligations .
-
-:343
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:urban-or-regional-development ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Regional-development .
-
-:344
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:freight ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Freight-movement-regulation .
-
-:345
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:freight-and-cartage ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Freight-movement-regulation .
-
-:346
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:natural-disasters ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Natural-disasters .
-
-:347
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:external-affairs ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:External-security .
-
-:348
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:corrective-services ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Corrective-services .
-
-:349
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:currency ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Currency .
-
-:350
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:court-reporting ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Court-reporting .
-
-:351
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:curriculum-development ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Curriculum-development .
-
-:352
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:tertiary-education ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Tertiary-education .
-
-:353
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:consular-services ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Consular-services .
-
-:354
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:health-promotion ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Health-promotion .
-
-:355
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:taxation ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Taxation .
-
-:356
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:administrative-law ;
-    rdf:predicate skos:broadMatch ;
-    rdf:subject agift:Administrative-decision-appeal .
-
-:357
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:land-councils ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Land-councils .
-
-:358
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:quarantine ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Quarantine .
-
-:359
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:protective-services ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Protective-services .
-
-:360
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio-broadcasting ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Radio-broadcasting .
-
-:361
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rescue-coordination ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Rescue-coordination .
-
-:362
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:emergency-services ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Emergency-services .
-
-:363
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:road-transport ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Road-transport .
-
-:364
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:national-security ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:National-security .
-
-:365
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:privacy ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Privacy .
-
-:366
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:economic-research ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Economic-research .
-
-:367
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-development ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Arts-development-- .
-
-:368
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:benefits ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Benefits .
-
-:369
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:deportation ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Deportation .
-
-:370
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:overseas-aid-programs ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Overseas-aid-programs .
-
-:371
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:navy ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Navy .
-
-:372
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:tariff-regulation ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Tariff-regulation .
-
-:373
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:regional-development ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Regional-development .
-
-:374
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:external-security ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:External-security .
-
-:375
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-subsidies ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Arts-funding-- .
-
-:376
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-forces ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-:377
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:armed-forces ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Australian-Defence-Forces .
-
-:378
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:telecommunications ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Telecommunications .
-
-:379
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:dental-health ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Dental-health-services .
-
-:380
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:dental-services ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Dental-health-services .
-
-:381
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:vocational-training-schemes ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Vocational-education .
-
-:382
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio-broadcasting ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Radio-communication .
-
-:383
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:world-heritage ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:World-heritage-listings .
-
-:384
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-subsidies ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Arts-incentive-schemes-- .
-
-:385
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-development ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Arts-promotion-- .
-
-:386
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-subsidies ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Arts-promotion-- .
-
-:387
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-industries ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Defence-industry .
-
-:388
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-cooperation ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Defence-cooperation-programs .
-
-:389
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:law-enforcement ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Law-enforcement .
-
-:390
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:overseas-qualifications ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Overseas-skills-recognition .
-
-:391
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:accommodation ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Accommodation-services .
-
-:392
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:advertising ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Advertising-campaigns_2 .
-
-:393
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-safety ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Air-transport-safety .
-
-:394
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cultural-institutions ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Cultural-centre-management .
-
-:395
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:collection-management ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Collection-access-- .
-
-:396
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:collection-management ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Collection-accessioning-- .
-
-:397
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:forestry ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Forestry-industry .
-
-:398
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:parliamentary-chamber-administration ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Parliamentary-chamber-support .
-
-:399
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:disarmament ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Disarmament-and-arms-control .
-
-:400
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:postal-services ;
-    rdf:predicate skos:exactMatch ;
-    rdf:subject agift:Postal-services .
-
-:401
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:railway-construction ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Railway-maintenance .
-
-:402
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:motor-vehicle-national-certification ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Vehicle-registration .
-
-:403
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:fisheries ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Fisheries-industry .
-
-:404
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:ceremonial-functions ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Ceremonial-events-and-representation .
-
-:405
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-incentives ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Export-promotion .
-
-:406
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-marketing ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Export-promotion .
-
-:407
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:national-parks ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:National-park-management .
-
-:408
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-accommodation ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Migrant-accommodation-services .
-
-:409
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:pastoral ;
-    rdf:predicate skos:closeMatch ;
-    rdf:subject agift:Pastoral-industry .
-
-:410
-    a rdf:Statement ;
-    loci:hadGenerationMethod :method ;
-    loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-subsidies ;
-    rdf:predicate skos:narrowMatch ;
-    rdf:subject agift:Arts-development-- .
+  sdo:name "Nicholas J. Car" ;
+.
+<001>
+  a rdf:Statement ;
+  rdf:object cofoga:c0299 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-strategic-policy ;
+.
+<002>
+  a rdf:Statement ;
+  rdf:object cofoga:c0799 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Health-disaster-preparedness ;
+.
+<003>
+  a rdf:Statement ;
+  rdf:object cofoga:c0112 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Financial-system-monitoring ;
+.
+<004>
+  a rdf:Statement ;
+  rdf:object cofoga:c11 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Transport-network-maintenance ;
+.
+<005>
+  a rdf:Statement ;
+  rdf:object cofoga:c0521 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Waste-management ;
+.
+<006>
+  a rdf:Statement ;
+  rdf:object cofoga:c02 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:DEFENCE ;
+.
+<007>
+  a rdf:Statement ;
+  rdf:object cofoga:c111 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:Road-transport ;
+.
+<008>
+  a rdf:Statement ;
+  rdf:object cofoga:c1091 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Health-disaster-preparedness ;
+.
+<009>
+  a rdf:Statement ;
+  rdf:object cofoga:c0112 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Financial-investment ;
+.
+<010>
+  a rdf:Statement ;
+  rdf:object cofoga:c0211 ;
+  rdf:predicate skos:narrowerMatch ;
+  rdf:subject agift:DEFENCE ;
+.
+<011>
+  a rdf:Statement ;
+  rdf:object cofoga:c0441 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Mining-regulations ;
+.
+<012>
+  a rdf:Statement ;
+  rdf:object cofoga:c0132 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:STATISTICAL-SERVICES ;
+.
+<013>
+  a rdf:Statement ;
+  rdf:object cofoga:c075 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:COMMUNITY-SERVICES ;
+.
+<014>
+  a rdf:Statement ;
+  rdf:object cofoga:c01 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Public-health-services ;
+.
+<015>
+  a rdf:Statement ;
+  rdf:object cofoga:c0551 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Marine-life-protection-programs ;
+.
+<016>
+  a rdf:Statement ;
+  rdf:object cofoga:c11 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Transport-infrastructure-development ;
+.
+<017>
+  a rdf:Statement ;
+  rdf:object cofoga:c016 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Public-debt ;
+.
+<018>
+  a rdf:Statement ;
+  rdf:object cofoga:c082 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:COMMUNITY-SERVICES ;
+.
+<019>
+  a rdf:Statement ;
+  rdf:object cofoga:c0932 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Workplace-training ;
+.
+<020>
+  a rdf:Statement ;
+  rdf:object cofoga:c076 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Mental-health-services ;
+.
+<021>
+  a rdf:Statement ;
+  rdf:object cofoga:c0211 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Military-employment-services ;
+.
+<022>
+  a rdf:Statement ;
+  rdf:object cofoga:c0621 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Community-support ;
+.
+<023>
+  a rdf:Statement ;
+  rdf:object cofoga:c0299 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-reform-program ;
+.
+<024>
+  a rdf:Statement ;
+  rdf:object cofoga:c0631 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Water-quality-monitoring ;
+.
+<025>
+  a rdf:Statement ;
+  rdf:object cofoga:c033 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Law-enforcement ;
+.
+<026>
+  a rdf:Statement ;
+  rdf:object cofoga:c0829 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Cultural-artefact-repatriation ;
+.
+<027>
+  a rdf:Statement ;
+  rdf:object cofoga:c082 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Cultural-artefact-repatriation ;
+.
+<028>
+  a rdf:Statement ;
+  rdf:object cofoga:c063 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Water-usage-management ;
+.
+<029>
+  a rdf:Statement ;
+  rdf:object cofoga:c079 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Dental-health-services ;
+.
+<030>
+  a rdf:Statement ;
+  rdf:object cofoga:c0621 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:INDIGENOUS-AFFAIRS ;
+.
+<031>
+  a rdf:Statement ;
+  rdf:object cofoga:c0829 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Cultural-gifts-programs ;
+.
+<032>
+  a rdf:Statement ;
+  rdf:object cofoga:c082 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Cultural-gifts-programs ;
+.
+<033>
+  a rdf:Statement ;
+  rdf:object cofoga:c0631 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Water-resources ;
+.
+<034>
+  a rdf:Statement ;
+  rdf:object cofoga:c0771 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Doping-detection-research ;
+.
+<035>
+  a rdf:Statement ;
+  rdf:object cofoga:c0231 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Defence-science-and-technology ;
+.
+<036>
+  a rdf:Statement ;
+  rdf:object cofoga:c011 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Financial-administration ;
+.
+<037>
+  a rdf:Statement ;
+  rdf:object cofoga:c0471 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Economic-research ;
+.
+<038>
+  a rdf:Statement ;
+  rdf:object cofoga:c062 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Indigenous-enterprise-development ;
+.
+<039>
+  a rdf:Statement ;
+  rdf:object cofoga:c0391 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Feral-pest-control ;
+.
+<040>
+  a rdf:Statement ;
+  rdf:object cofoga:c0829 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:CULTURAL-AFFAIRS ;
+.
+<041>
+  a rdf:Statement ;
+  rdf:object cofoga:c082 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:CULTURAL-AFFAIRS ;
+.
+<042>
+  a rdf:Statement ;
+  rdf:object cofoga:c077 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Medical-research-funding ;
+.
+<043>
+  a rdf:Statement ;
+  rdf:object cofoga:c043 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Fossil-fuel-management ;
+.
+<044>
+  a rdf:Statement ;
+  rdf:object cofoga:c0132 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Building-approval-services ;
+.
+<045>
+  a rdf:Statement ;
+  rdf:object cofoga:c079 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Health-hazard-prevention ;
+.
+<046>
+  a rdf:Statement ;
+  rdf:object cofoga:c03 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Personnel-safety-standards ;
+.
+<047>
+  a rdf:Statement ;
+  rdf:object cofoga:c0476 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Biotechnology-development ;
+.
+<048>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Occupational-health-and-safety ;
+.
+<049>
+  a rdf:Statement ;
+  rdf:object cofoga:c073 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Ambulance-services ;
+.
+<050>
+  a rdf:Statement ;
+  rdf:object cofoga:c0433 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Nuclear-sciences ;
+.
+<051>
+  a rdf:Statement ;
+  rdf:object cofoga:c055 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Population-based-research ;
+.
+<052>
+  a rdf:Statement ;
+  rdf:object cofoga:c031 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Police-administration ;
+.
+<053>
+  a rdf:Statement ;
+  rdf:object cofoga:c0112 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Financial-administration ;
+.
+<054>
+  a rdf:Statement ;
+  rdf:object cofoga:c029 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-community-programs ;
+.
+<055>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Health-promotion ;
+.
+<056>
+  a rdf:Statement ;
+  rdf:object cofoga:c0761 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:Public-health-services ;
+.
+<057>
+  a rdf:Statement ;
+  rdf:object cofoga:c0723 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Dental-health-services ;
+.
+<058>
+  a rdf:Statement ;
+  rdf:object cofoga:c0411 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:General-insurance ;
+.
+<059>
+  a rdf:Statement ;
+  rdf:object cofoga:c032 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Emergency-services ;
+.
+<060>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Medical-quarantine-services ;
+.
+<061>
+  a rdf:Statement ;
+  rdf:object cofoga:c062 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Development-assistance-programs ;
+.
+<062>
+  a rdf:Statement ;
+  rdf:object cofoga:c1143 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Passenger-services ;
+.
+<063>
+  a rdf:Statement ;
+  rdf:object cofoga:c0299 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-personnel-exchanges ;
+.
+<064>
+  a rdf:Statement ;
+  rdf:object cofoga:c0629 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Rural-community-development ;
+.
+<065>
+  a rdf:Statement ;
+  rdf:object cofoga:c0331 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Civil-law ;
+.
+<066>
+  a rdf:Statement ;
+  rdf:object cofoga:c1091 ;
+  rdf:predicate skos:narrowerMatch ;
+  rdf:subject agift:Natural-disasters ;
+.
+<067>
+  a rdf:Statement ;
+  rdf:object cofoga:c02 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-community-programs ;
+.
+<068>
+  a rdf:Statement ;
+  rdf:object cofoga:c0521 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Water-usage-management ;
+.
+<069>
+  a rdf:Statement ;
+  rdf:object cofoga:c1151 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:Air-transport ;
+.
+<070>
+  a rdf:Statement ;
+  rdf:object cofoga:c062 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:COMMUNITY-SERVICES ;
+.
+<071>
+  a rdf:Statement ;
+  rdf:object cofoga:c014 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Medical-research ;
+.
+<072>
+  a rdf:Statement ;
+  rdf:object cofoga:c076 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:Public-health-services ;
+.
+<073>
+  a rdf:Statement ;
+  rdf:object cofoga:c09 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Vocational-education ;
+.
+<074>
+  a rdf:Statement ;
+  rdf:object cofoga:c0741 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Mental-health-services ;
+.
+<075>
+  a rdf:Statement ;
+  rdf:object cofoga:c02 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-efficiency-review ;
+.
+<076>
+  a rdf:Statement ;
+  rdf:object cofoga:c013 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Integrated-services-planning ;
+.
+<077>
+  a rdf:Statement ;
+  rdf:object cofoga:c04 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Economic-research ;
+.
+<078>
+  a rdf:Statement ;
+  rdf:object cofoga:c063 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Water-resources ;
+.
+<079>
+  a rdf:Statement ;
+  rdf:object cofoga:c031 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Corrective-services ;
+.
+<080>
+  a rdf:Statement ;
+  rdf:object cofoga:c118 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Transport-infrastructure-development ;
+.
+<081>
+  a rdf:Statement ;
+  rdf:object cofoga:c083 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Climate-information-services ;
+.
+<082>
+  a rdf:Statement ;
+  rdf:object cofoga:c0731 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Hospital-services ;
+.
+<083>
+  a rdf:Statement ;
+  rdf:object cofoga:c01 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Postal-services ;
+.
+<084>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Patent-rights-management ;
+.
+<085>
+  a rdf:Statement ;
+  rdf:object cofoga:c0141 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Population-based-research ;
+.
+<086>
+  a rdf:Statement ;
+  rdf:object cofoga:c0599 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Marine-life-protection-programs ;
+.
+<087>
+  a rdf:Statement ;
+  rdf:object cofoga:c0322 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Firefighting-services ;
+.
+<088>
+  a rdf:Statement ;
+  rdf:object cofoga:c06 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Community-housing ;
+.
+<089>
+  a rdf:Statement ;
+  rdf:object cofoga:c012 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Overseas-aid-programs ;
+.
+<090>
+  a rdf:Statement ;
+  rdf:object cofoga:c077 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Doping-detection-research ;
+.
+<091>
+  a rdf:Statement ;
+  rdf:object cofoga:c0141 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Medical-research ;
+.
+<092>
+  a rdf:Statement ;
+  rdf:object cofoga:c0621 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Indigenous-welfare-programs ;
+.
+<093>
+  a rdf:Statement ;
+  rdf:object cofoga:c1111 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:Road-surface-maintenance ;
+.
+<094>
+  a rdf:Statement ;
+  rdf:object cofoga:c118 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Navigation-systems-development ;
+.
+<095>
+  a rdf:Statement ;
+  rdf:object cofoga:c021 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-attaches ;
+.
+<096>
+  a rdf:Statement ;
+  rdf:object cofoga:c1091 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Disaster-recovery ;
+.
+<097>
+  a rdf:Statement ;
+  rdf:object cofoga:c1181 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Transport-infrastructure-development ;
+.
+<098>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Clinical-health-services ;
+.
+<099>
+  a rdf:Statement ;
+  rdf:object cofoga:c0829 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Cultural-centre-management ;
+.
+<100>
+  a rdf:Statement ;
+  rdf:object cofoga:c1131 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Passenger-services ;
+.
+<101>
+  a rdf:Statement ;
+  rdf:object cofoga:c1181 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Navigation-systems-development ;
+.
+<102>
+  a rdf:Statement ;
+  rdf:object cofoga:c077 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Medical-research ;
+.
+<103>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:HEALTH-CARE ;
+.
+<104>
+  a rdf:Statement ;
+  rdf:object cofoga:c075 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:Community-health-services ;
+.
+<105>
+  a rdf:Statement ;
+  rdf:object cofoga:c0231 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Defence-strategic-policy ;
+.
+<106>
+  a rdf:Statement ;
+  rdf:object cofoga:c047 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Population-based-research ;
+.
+<107>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Health-protocol-administration ;
+.
+<108>
+  a rdf:Statement ;
+  rdf:object cofoga:c0761 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Mental-health-services ;
+.
+<109>
+  a rdf:Statement ;
+  rdf:object cofoga:c0811 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Caravan-and-camping-services ;
+.
+<110>
+  a rdf:Statement ;
+  rdf:object cofoga:c029 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-personnel-exchanges ;
+.
+<111>
+  a rdf:Statement ;
+  rdf:object cofoga:c0799 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Dental-health-services ;
+.
+<112>
+  a rdf:Statement ;
+  rdf:object cofoga:c0112 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Fiscal-policy ;
+.
+<113>
+  a rdf:Statement ;
+  rdf:object cofoga:c02 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-career-development ;
+.
+<114>
+  a rdf:Statement ;
+  rdf:object cofoga:c055 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Marine-life-protection-programs ;
+.
+<115>
+  a rdf:Statement ;
+  rdf:object cofoga:c09 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Adult-migrant-education ;
+.
+<116>
+  a rdf:Statement ;
+  rdf:object cofoga:c0599 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Environmental-impact-assessment ;
+.
+<117>
+  a rdf:Statement ;
+  rdf:object cofoga:c0519 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Waste-management ;
+.
+<118>
+  a rdf:Statement ;
+  rdf:object cofoga:c1091 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Disaster-support ;
+.
+<119>
+  a rdf:Statement ;
+  rdf:object cofoga:c052 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Water-usage-management ;
+.
+<120>
+  a rdf:Statement ;
+  rdf:object cofoga:c0759 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:COMMUNITY-SERVICES ;
+.
+<121>
+  a rdf:Statement ;
+  rdf:object cofoga:c029 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-estate-management ;
+.
+<122>
+  a rdf:Statement ;
+  rdf:object cofoga:c0829 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Cultural-festivals ;
+.
+<123>
+  a rdf:Statement ;
+  rdf:object cofoga:c0161 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Public-debt ;
+.
+<124>
+  a rdf:Statement ;
+  rdf:object cofoga:c082 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Cultural-centre-management ;
+.
+<125>
+  a rdf:Statement ;
+  rdf:object cofoga:c0621 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Indigenous-enterprise-development ;
+.
+<126>
+  a rdf:Statement ;
+  rdf:object cofoga:c047 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Economic-research ;
+.
+<127>
+  a rdf:Statement ;
+  rdf:object cofoga:c02 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-strategic-policy ;
+.
+<128>
+  a rdf:Statement ;
+  rdf:object cofoga:c0391 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Cargo-control ;
+.
+<129>
+  a rdf:Statement ;
+  rdf:object cofoga:c0932 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Adult-education-programs ;
+.
+<130>
+  a rdf:Statement ;
+  rdf:object cofoga:c0699 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Civil-community-assistance ;
+.
+<131>
+  a rdf:Statement ;
+  rdf:object cofoga:c062 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Community-education ;
+.
+<132>
+  a rdf:Statement ;
+  rdf:object cofoga:c0311 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Corrective-services ;
+.
+<133>
+  a rdf:Statement ;
+  rdf:object cofoga:c0621 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Rural-community-development ;
+.
+<134>
+  a rdf:Statement ;
+  rdf:object cofoga:c0211 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Military-exercises ;
+.
+<135>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Patient-care ;
+.
+<136>
+  a rdf:Statement ;
+  rdf:object cofoga:c061 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Community-housing ;
+.
+<137>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Medical-radiation-services ;
+.
+<138>
+  a rdf:Statement ;
+  rdf:object cofoga:c05 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Marine-life-protection-programs ;
+.
+<139>
+  a rdf:Statement ;
+  rdf:object cofoga:c02 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-reform-program ;
+.
+<140>
+  a rdf:Statement ;
+  rdf:object cofoga:c081 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Caravan-and-camping-services ;
+.
+<141>
+  a rdf:Statement ;
+  rdf:object cofoga:c0441 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Water-resources ;
+.
+<142>
+  a rdf:Statement ;
+  rdf:object cofoga:c02 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-college-training ;
+.
+<143>
+  a rdf:Statement ;
+  rdf:object cofoga:c0211 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Military-education-and-training ;
+.
+<144>
+  a rdf:Statement ;
+  rdf:object cofoga:c059 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Environmental-impact-assessment ;
+.
+<145>
+  a rdf:Statement ;
+  rdf:object cofoga:c119 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Transport-infrastructure-development ;
+.
+<146>
+  a rdf:Statement ;
+  rdf:object cofoga:c023 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Defence-science-and-technology ;
+.
+<147>
+  a rdf:Statement ;
+  rdf:object cofoga:c0829 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:COMMUNITY-SERVICES ;
+.
+<148>
+  a rdf:Statement ;
+  rdf:object cofoga:c043 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Energy-supply ;
+.
+<149>
+  a rdf:Statement ;
+  rdf:object cofoga:c02 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-strategic-development ;
+.
+<150>
+  a rdf:Statement ;
+  rdf:object cofoga:c076 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Hospital-services ;
+.
+<151>
+  a rdf:Statement ;
+  rdf:object cofoga:c0529 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Water-quality-monitoring ;
+.
+<152>
+  a rdf:Statement ;
+  rdf:object cofoga:c1199 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Transport-infrastructure-development ;
+.
+<153>
+  a rdf:Statement ;
+  rdf:object cofoga:c02 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-strategic-support ;
+.
+<154>
+  a rdf:Statement ;
+  rdf:object cofoga:c0761 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Hospital-services ;
+.
+<155>
+  a rdf:Statement ;
+  rdf:object cofoga:c075 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Dental-health-services ;
+.
+<156>
+  a rdf:Statement ;
+  rdf:object cofoga:c06 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:COMMUNITY-SERVICES ;
+.
+<157>
+  a rdf:Statement ;
+  rdf:object cofoga:c115 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:Air-transport ;
+.
+<158>
+  a rdf:Statement ;
+  rdf:object cofoga:c0799 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Veterans-health-services ;
+.
+<159>
+  a rdf:Statement ;
+  rdf:object cofoga:c02 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-science-and-technology ;
+.
+<160>
+  a rdf:Statement ;
+  rdf:object cofoga:c09 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Community-education ;
+.
+<161>
+  a rdf:Statement ;
+  rdf:object cofoga:c0199 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Public-health-services ;
+.
+<162>
+  a rdf:Statement ;
+  rdf:object cofoga:c075 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Counselling-services ;
+.
+<163>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Health-insurance-schemes ;
+.
+<164>
+  a rdf:Statement ;
+  rdf:object cofoga:c082 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Interpreter-services ;
+.
+<165>
+  a rdf:Statement ;
+  rdf:object cofoga:c051 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:Waste-management ;
+.
+<166>
+  a rdf:Statement ;
+  rdf:object cofoga:c01 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Park-and-reserve-services ;
+.
+<167>
+  a rdf:Statement ;
+  rdf:object cofoga:c0331 ;
+  rdf:predicate skos:realtedMatch ;
+  rdf:subject agift:Law-enforcement ;
+.
+<168>
+  a rdf:Statement ;
+  rdf:object cofoga:c013 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Independent-living-services ;
+.
+<169>
+  a rdf:Statement ;
+  rdf:object cofoga:c039 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Product-safety ;
+.
+<170>
+  a rdf:Statement ;
+  rdf:object cofoga:c0811 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Park-and-reserve-services ;
+.
+<171>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Health-disaster-preparedness ;
+.
+<172>
+  a rdf:Statement ;
+  rdf:object cofoga:c0113 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:International-affairs ;
+.
+<173>
+  a rdf:Statement ;
+  rdf:object cofoga:c029 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-strategic-policy ;
+.
+<174>
+  a rdf:Statement ;
+  rdf:object cofoga:c096 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Curriculum-development ;
+.
+<175>
+  a rdf:Statement ;
+  rdf:object cofoga:c093 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Vocational-education ;
+.
+<176>
+  a rdf:Statement ;
+  rdf:object cofoga:c0932 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:EDUCATION-AND-TRAINING ;
+.
+<177>
+  a rdf:Statement ;
+  rdf:object cofoga:c029 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-strategic-support ;
+.
+<178>
+  a rdf:Statement ;
+  rdf:object cofoga:c0841 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:COMMUNITY-SERVICES ;
+.
+<179>
+  a rdf:Statement ;
+  rdf:object cofoga:c1142 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Freight-movement-regulation ;
+.
+<180>
+  a rdf:Statement ;
+  rdf:object cofoga:c0721 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Mental-health-services ;
+.
+<181>
+  a rdf:Statement ;
+  rdf:object cofoga:c0211 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Military-bands ;
+.
+<182>
+  a rdf:Statement ;
+  rdf:object cofoga:c0751 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:COMMUNITY-SERVICES ;
+.
+<183>
+  a rdf:Statement ;
+  rdf:object cofoga:c042 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Forestry-industry ;
+.
+<184>
+  a rdf:Statement ;
+  rdf:object cofoga:c02 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-force-careers ;
+.
+<185>
+  a rdf:Statement ;
+  rdf:object cofoga:c081 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Community-recreational-programs ;
+.
+<186>
+  a rdf:Statement ;
+  rdf:object cofoga:c029 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-strategic-development ;
+.
+<187>
+  a rdf:Statement ;
+  rdf:object cofoga:c0211 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Military-advisors ;
+.
+<188>
+  a rdf:Statement ;
+  rdf:object cofoga:c063 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Water-conservation-plans ;
+.
+<189>
+  a rdf:Statement ;
+  rdf:object cofoga:c0832 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Electronic-publishing ;
+.
+<190>
+  a rdf:Statement ;
+  rdf:object cofoga:c0759 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Public-health-services ;
+.
+<191>
+  a rdf:Statement ;
+  rdf:object cofoga:c082 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Cultural-festivals ;
+.
+<192>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Community-health-services ;
+.
+<193>
+  a rdf:Statement ;
+  rdf:object cofoga:c093 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:Tertiary-education ;
+.
+<194>
+  a rdf:Statement ;
+  rdf:object cofoga:c0732 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Hospital-services ;
+.
+<195>
+  a rdf:Statement ;
+  rdf:object cofoga:c059 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Marine-life-protection-programs ;
+.
+<196>
+  a rdf:Statement ;
+  rdf:object cofoga:c062 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Rural-community-development ;
+.
+<197>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Mental-health-services ;
+.
+<198>
+  a rdf:Statement ;
+  rdf:object cofoga:c022 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Overseas-aid-programs ;
+.
+<199>
+  a rdf:Statement ;
+  rdf:object cofoga:c0529 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Water-usage-management ;
+.
+<200>
+  a rdf:Statement ;
+  rdf:object cofoga:c044 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Mining-regulations ;
+.
+<201>
+  a rdf:Statement ;
+  rdf:object cofoga:c0474 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Mining-regulations ;
+.
+<202>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Veterans-health-services ;
+.
+<203>
+  a rdf:Statement ;
+  rdf:object cofoga:c091 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:Early-childhood-education ;
+.
+<204>
+  a rdf:Statement ;
+  rdf:object cofoga:c0433 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Nuclear-safeguards ;
+.
+<205>
+  a rdf:Statement ;
+  rdf:object cofoga:c09 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Early-childhood-education ;
+.
+<206>
+  a rdf:Statement ;
+  rdf:object cofoga:c054 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Marine-life-protection-programs ;
+.
+<207>
+  a rdf:Statement ;
+  rdf:object cofoga:c035 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Personnel-safety-standards ;
+.
+<208>
+  a rdf:Statement ;
+  rdf:object cofoga:c073 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:Hospital-services ;
+.
+<209>
+  a rdf:Statement ;
+  rdf:object cofoga:c014 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Population-based-research ;
+.
+<210>
+  a rdf:Statement ;
+  rdf:object cofoga:c079 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Health-disaster-preparedness ;
+.
+<211>
+  a rdf:Statement ;
+  rdf:object cofoga:c09 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Arts-education ;
+.
+<212>
+  a rdf:Statement ;
+  rdf:object cofoga:c113 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Waterway-management ;
+.
+<213>
+  a rdf:Statement ;
+  rdf:object cofoga:c052 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Waste-management ;
+.
+<214>
+  a rdf:Statement ;
+  rdf:object cofoga:c0431 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Mineral-exploration ;
+.
+<215>
+  a rdf:Statement ;
+  rdf:object cofoga:c1132 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Passenger-services ;
+.
+<216>
+  a rdf:Statement ;
+  rdf:object cofoga:c029 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-force-careers ;
+.
+<217>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Dental-health-services ;
+.
+<218>
+  a rdf:Statement ;
+  rdf:object cofoga:c10 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Border-protection ;
+.
+<219>
+  a rdf:Statement ;
+  rdf:object cofoga:c0599 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Wilderness-area-management ;
+.
+<220>
+  a rdf:Statement ;
+  rdf:object cofoga:c0432 ;
+  rdf:predicate skos:narrowerMatch ;
+  rdf:subject agift:NATURAL-RESOURCES ;
+.
+<221>
+  a rdf:Statement ;
+  rdf:object cofoga:c0431 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Mineral-resources ;
+.
+<222>
+  a rdf:Statement ;
+  rdf:object cofoga:c0751 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Gambling-support-services ;
+.
+<223>
+  a rdf:Statement ;
+  rdf:object cofoga:c0651 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Community-housing ;
+.
+<224>
+  a rdf:Statement ;
+  rdf:object cofoga:c09 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:EDUCATION-AND-TRAINING ;
+.
+<225>
+  a rdf:Statement ;
+  rdf:object cofoga:c029 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-reform-program ;
+.
+<226>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Hospital-services ;
+.
+<227>
+  a rdf:Statement ;
+  rdf:object cofoga:c033 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Civil-law ;
+.
+<228>
+  a rdf:Statement ;
+  rdf:object cofoga:c0529 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Waste-management ;
+.
+<229>
+  a rdf:Statement ;
+  rdf:object cofoga:c0721 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Medical-aids-regulation ;
+.
+<230>
+  a rdf:Statement ;
+  rdf:object cofoga:c02 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-personnel-exchanges ;
+.
+<231>
+  a rdf:Statement ;
+  rdf:object cofoga:c043 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Energy-resources ;
+.
+<232>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Medical-and-health-sciences ;
+.
+<233>
+  a rdf:Statement ;
+  rdf:object cofoga:c075 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Public-health-services ;
+.
+<234>
+  a rdf:Statement ;
+  rdf:object cofoga:c062 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Community-support ;
+.
+<235>
+  a rdf:Statement ;
+  rdf:object cofoga:c0122 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Overseas-aid-programs ;
+.
+<236>
+  a rdf:Statement ;
+  rdf:object cofoga:c052 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Water-quality-monitoring ;
+.
+<237>
+  a rdf:Statement ;
+  rdf:object cofoga:c0599 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Wildlife-sanctuary-management ;
+.
+<238>
+  a rdf:Statement ;
+  rdf:object cofoga:c0811 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Community-recreational-programs ;
+.
+<239>
+  a rdf:Statement ;
+  rdf:object cofoga:c074 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Mental-health-services ;
+.
+<240>
+  a rdf:Statement ;
+  rdf:object cofoga:c0751 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:Mental-health-services ;
+.
+<241>
+  a rdf:Statement ;
+  rdf:object cofoga:c0221 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Overseas-aid-programs ;
+.
+<242>
+  a rdf:Statement ;
+  rdf:object cofoga:c0771 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Medical-research-funding ;
+.
+<243>
+  a rdf:Statement ;
+  rdf:object cofoga:c0112 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Financial-system-management ;
+.
+<244>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Indigenous-health-services ;
+.
+<245>
+  a rdf:Statement ;
+  rdf:object cofoga:c0631 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Water-conservation-plans ;
+.
+<246>
+  a rdf:Statement ;
+  rdf:object cofoga:c0799 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Health-hazard-prevention ;
+.
+<247>
+  a rdf:Statement ;
+  rdf:object cofoga:c1051 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Community-housing ;
+.
+<248>
+  a rdf:Statement ;
+  rdf:object cofoga:c09 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Adult-education-programs ;
+.
+<249>
+  a rdf:Statement ;
+  rdf:object cofoga:c054 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Endangered-species-protection ;
+.
+<250>
+  a rdf:Statement ;
+  rdf:object cofoga:c082 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Cultural-awards-and-scholarships ;
+.
+<251>
+  a rdf:Statement ;
+  rdf:object cofoga:c0829 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Cultural-awards-and-scholarships ;
+.
+<252>
+  a rdf:Statement ;
+  rdf:object cofoga:c0211 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Military-operations ;
+.
+<253>
+  a rdf:Statement ;
+  rdf:object cofoga:c0299 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-force-careers ;
+.
+<254>
+  a rdf:Statement ;
+  rdf:object cofoga:c084 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:COMMUNITY-SERVICES ;
+.
+<255>
+  a rdf:Statement ;
+  rdf:object cofoga:c0771 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Medical-research ;
+.
+<256>
+  a rdf:Statement ;
+  rdf:object cofoga:c063 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Water-quality-monitoring ;
+.
+<257>
+  a rdf:Statement ;
+  rdf:object cofoga:c0121 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Overseas-aid-programs ;
+.
+<258>
+  a rdf:Statement ;
+  rdf:object cofoga:c1141 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Passenger-services ;
+.
+<259>
+  a rdf:Statement ;
+  rdf:object cofoga:c079 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Veterans-health-services ;
+.
+<260>
+  a rdf:Statement ;
+  rdf:object cofoga:c1151 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Air-transport-safety ;
+.
+<261>
+  a rdf:Statement ;
+  rdf:object cofoga:c0472 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Forestry-industry ;
+.
+<262>
+  a rdf:Statement ;
+  rdf:object cofoga:c083 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Mobile-telephone-services ;
+.
+<263>
+  a rdf:Statement ;
+  rdf:object cofoga:c0113 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:INTERNATIONAL-RELATIONS ;
+.
+<264>
+  a rdf:Statement ;
+  rdf:object cofoga:c0631 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Water-usage-management ;
+.
+<265>
+  a rdf:Statement ;
+  rdf:object cofoga:c1091 ;
+  rdf:predicate skos:exactMatch ;
+  rdf:subject agift:Disaster-relief ;
+.
+<266>
+  a rdf:Statement ;
+  rdf:object cofoga:c05 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Environmental-impact-assessment ;
+.
+<267>
+  a rdf:Statement ;
+  rdf:object cofoga:c075 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Gambling-support-services ;
+.
+<268>
+  a rdf:Statement ;
+  rdf:object cofoga:c1051 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-housing ;
+.
+<269>
+  a rdf:Statement ;
+  rdf:object cofoga:c115 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Air-transport-safety ;
+.
+<270>
+  a rdf:Statement ;
+  rdf:object cofoga:c039 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Personnel-safety-standards ;
+.
+<271>
+  a rdf:Statement ;
+  rdf:object cofoga:c065 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Community-housing ;
+.
+<272>
+  a rdf:Statement ;
+  rdf:object cofoga:c0441 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Mineral-exploration ;
+.
+<273>
+  a rdf:Statement ;
+  rdf:object cofoga:c02 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-housing ;
+.
+<274>
+  a rdf:Statement ;
+  rdf:object cofoga:c029 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-efficiency-review ;
+.
+<275>
+  a rdf:Statement ;
+  rdf:object cofoga:c0211 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Military-law ;
+.
+<276>
+  a rdf:Statement ;
+  rdf:object cofoga:c0422 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Forestry-industry ;
+.
+<277>
+  a rdf:Statement ;
+  rdf:object cofoga:c075 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Veterans-health-services ;
+.
+<278>
+  a rdf:Statement ;
+  rdf:object cofoga:c0541 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Marine-life-protection-programs ;
+.
+<279>
+  a rdf:Statement ;
+  rdf:object cofoga:c1132 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Freight-movement-regulation ;
+.
+<280>
+  a rdf:Statement ;
+  rdf:object cofoga:c0351 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Personnel-safety-standards ;
+.
+<281>
+  a rdf:Statement ;
+  rdf:object cofoga:c081 ;
+  rdf:predicate skos:closeMatch ;
+  rdf:subject agift:Park-and-reserve-services ;
+.
+<282>
+  a rdf:Statement ;
+  rdf:object cofoga:c0412 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Labour-market-programs ;
+.
+<283>
+  a rdf:Statement ;
+  rdf:object cofoga:c0441 ;
+  rdf:predicate skos:narrowMatch ;
+  rdf:subject agift:Mineral-resources ;
+.
+<284>
+  a rdf:Statement ;
+  rdf:object cofoga:c021 ;
+  rdf:predicate skos:narrowerMatch ;
+  rdf:subject agift:DEFENCE ;
+.
+<285>
+  a rdf:Statement ;
+  rdf:object cofoga:c0441 ;
+  rdf:predicate skos:narrowerMatch ;
+  rdf:subject agift:NATURAL-RESOURCES ;
+.
+<286>
+  a rdf:Statement ;
+  rdf:object cofoga:c0299 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-strategic-development ;
+.
+<287>
+  a rdf:Statement ;
+  rdf:object cofoga:c03 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Product-safety ;
+.
+<288>
+  a rdf:Statement ;
+  rdf:object cofoga:c07 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Health-hazard-prevention ;
+.
+<289>
+  a rdf:Statement ;
+  rdf:object cofoga:c0961 ;
+  rdf:predicate skos:relatedMatch ;
+  rdf:subject agift:Curriculum-development ;
+.
+<290>
+  a rdf:Statement ;
+  rdf:object cofoga:c02 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-estate-management ;
+.
+<291>
+  a rdf:Statement ;
+  rdf:object cofoga:c0112 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Financial-budgeting ;
+.
+<292>
+  a rdf:Statement ;
+  rdf:object cofoga:c0299 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Defence-strategic-support ;
+.
+<293>
+  a rdf:Statement ;
+  rdf:object cofoga:c082 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Indigenous-cultural-heritage ;
+.
+<294>
+  a rdf:Statement ;
+  rdf:object cofoga:c0311 ;
+  rdf:predicate skos:broadMatch ;
+  rdf:subject agift:Police-administration ;
+.
