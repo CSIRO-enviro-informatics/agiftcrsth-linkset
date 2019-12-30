@@ -1,3 +1,7 @@
+# baseURI http://linked.data.gov.au/dataset/agiftcrsth
+
+@prefix agift: <https://data.naa.gov.au/def/agift/> .
+@prefix crsth: <http://linked.data.gov.au/def/crs-th/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix loci: <http://linked.data.gov.au/def/loci#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -9,18 +13,13 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-@prefix : <http://linked.data.gov.au/dataset/agiftcrsth/statement/> .
-@prefix method: <http://linked.data.gov.au/dataset/agiftcrsth/method> .
-@prefix nick: <http://linked.data.gov.au/dataset/agiftcrsth/nick> .
-
-@prefix agift: <https://data.naa.gov.au/def/agift/> .
-@prefix crsth: <http://linked.data.gov.au/def/crs-th/> .
-
+@base <http://linked.data.gov.au/dataset/agiftcrsth> .
 
 <http://linked.data.gov.au/dataset/agiftcrsth>
   a loci:Linkset ;
-  dct:title "AGIFT CRS Thesaurus Linkset" ;
+  owl:imports <https://data.naa.gov.au/def/agift> ; 
+  owl:imports <http://linked.data.gov.au/def/crsth> ;   
+  dct:title "AGIFT / CRS Thesaurus Linkset" ;
   dct:description """This Linkset contains [SKOS mapping properties](https://www.w3.org/TR/skos-reference/#mapping)
 between Concepts in the [AGIFT](http://data.naa.gov.au/def/agift) and Concepts in the [CRS Thesaurus](https://github.com/CSIRO-enviro-informatics/crsth)
 which are both vocabularies of Australian government functions.
@@ -31,3724 +30,3309 @@ Only the following SKOS mapping properties are used as link predicates: `skos:ma
     sdo:identifier <http://catalogue.linked.data.gov.au/org/naa> ;
     sdo:name "National Archives of Australia" ;
   ] ;
-  dct:creator nick: ;
+  dct:creator <nick> ;
   dct:created "2019-04-05"^^xsd:date ;
   dct:issued "2019-04-05"^^xsd:date ;
-  dct:modified "2019-07-05"^^xsd:date ;
+  dct:modified "2019-12-30"^^xsd:date ;
+  dct:provenance "This Linkset was created by Nicholas J. Car while a member of CSIRO and has been slightly updated by him since then while a member of SURROUND Australia Pty Ltd." ;  
   void:subjectsTarget <https://data.naa.gov.au/def/agift> ;
   void:linkPredicate skos:broadMatch , skos:closeMatch , skos:exactMatch , skos:narrowMatch , skos:relatedMatch ;
   void:objectsTarget <http://linked.data.gov.au/def/crs-th> ;
-  prov:wasGeneratedBy _:act .
-
-_:act a prov:Activity ;
-    prov:qualifiedAssociation [
-        a prov:Association ;
-        prov:agent   nick: ;
-        prov:hadPlan method: ;
-    ] .
-
-method: a prov:Plan ;
+  loci:hadGenerationMethod [
+    a prov:Plan ;
     rdfs:label "Scripted and manual label comparison" ;
-    prov:value <https://github.com/CSIRO-enviro-informatics/agiftcrsth-linkset/method> ;
+    rdfs:seeAlso <https://github.com/CSIRO-enviro-informatics/agiftcrsth-linkset/tree/master/methods> ;
     rdfs:comment "The method used to create this linkset, described in text." ;
-    prov:wasAttributedTo :nick ;
-    prov:generatedAtTime "2019-04-05"^^xsd:date .
-
-nick:
-    a owl:NamedIndividual , sdo:Person ;
-    sdo:email "nicholas.car@csiro.au" ;
-    sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
-    sdo:memberOf [
-        sdo:identifier <http://catalogue.linked.data.gov.au/org/csiro> ;
-        sdo:name "CSIRO"
+    prov:generatedAtTime "2019-04-05"^^xsd:date ;
+    prov:wasAttributedTo <nick> ;      
+  ] .
+<nick>
+  a owl:NamedIndividual ;
+  a sdo:Person ;
+  sdo:email <mailto:nicholas.car@surroundaustralia.com> ;
+  sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
+  sdo:memberOf [
+      sdo:identifier <https://surroundaustralia.com> ;
+      sdo:name "SURROUND Australia Pty Ltd" ;
     ] ;
-    sdo:name "Nicholas J. Car" .
-:001
+  sdo:name "Nicholas J. Car" ;
+.
+<001>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
     rdf:object crsth:administrative-law ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Administrative-law .
 
-:002
+<002>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:criminology ;
+    rdf:object :criminology ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Criminology .
 
-:003
+<003>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:high-commissions ;
+    rdf:object :high-commissions ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Commissions-of-inquiry .
 
-:004
+<004>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:royal-commissions ;
+    rdf:object :royal-commissions ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Commissions-of-inquiry .
 
-:005
+<005>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:national-law-enforcement ;
+    rdf:object :national-law-enforcement ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Law-enforcement .
 
-:006
+<006>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-intelligence ;
+    rdf:object :defence-intelligence ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
-:007
+<007>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-industries ;
+    rdf:object :defence-industries ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
-:008
+<008>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-research ;
+    rdf:object :defence-research ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
-:009
+<009>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-committees ;
+    rdf:object :defence-committees ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
-:010
+<010>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
-:011
+<011>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-cooperation ;
+    rdf:object :defence-cooperation ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
-:012
+<012>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-security ;
+    rdf:object :defence-security ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
-:013
+<013>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:electoral-matters ;
+    rdf:object :electoral-matters ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Electoral-matters .
 
-:014
+<014>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:expeditionary-forces ;
+    rdf:object :expeditionary-forces ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
-:015
+<015>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:peace-keeping-forces ;
+    rdf:object :peace-keeping-forces ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
-:016
+<016>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-service-home-schemes ;
+    rdf:object :defence-service-home-schemes ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
-:017
+<017>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-coordination ;
+    rdf:object :defence-coordination ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
-:018
+<018>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-intelligence ;
+    rdf:object :defence-intelligence ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Intelligence .
 
-:019
+<019>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:communications-intelligence ;
+    rdf:object :communications-intelligence ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Intelligence .
 
-:020
+<020>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:security-and-intelligence ;
+    rdf:object :security-and-intelligence ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Intelligence .
 
-:021
+<021>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military-intelligence ;
+    rdf:object :military-intelligence ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Intelligence .
 
-:022
+<022>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:navy-intelligence ;
+    rdf:object :navy-intelligence ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Intelligence .
 
-:023
+<023>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:logistics-defence ;
+    rdf:object :logistics-defence ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Logistics .
 
-:024
+<024>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:foreign-investment-control ;
+    rdf:object :foreign-investment-control ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Foreign-investment-control .
 
-:025
+<025>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:logistics-air-force ;
+    rdf:object :logistics-air-force ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Logistics .
 
-:026
+<026>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:logistics-army ;
+    rdf:object :logistics-army ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Logistics .
 
-:027
+<027>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:social-and-economic-research ;
+    rdf:object :social-and-economic-research ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Social-research .
 
-:028
+<028>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:medical-research ;
+    rdf:object :medical-research ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Medical-and-health-sciences .
 
-:029
+<029>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-accommodation ;
+    rdf:object :migrant-accommodation ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Migrant-services .
 
-:030
+<030>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-camps ;
+    rdf:object :migrant-camps ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Migrant-services .
 
-:031
+<031>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-documentation ;
+    rdf:object :migrant-documentation ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Migrant-services .
 
-:032
+<032>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-hostels ;
+    rdf:object :migrant-hostels ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Migrant-services .
 
-:033
+<033>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:foreign-investment-control ;
+    rdf:object :foreign-investment-control ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Investment-scheme-regulation .
 
-:034
+<034>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-navigation ;
+    rdf:object :air-navigation ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Navigation .
 
-:035
+<035>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:intelligence ;
+    rdf:object :intelligence ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Intelligence .
 
-:036
+<036>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:publishing-and-printing ;
+    rdf:object :publishing-and-printing ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Publishing .
 
-:037
+<037>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:film-censorship ;
+    rdf:object :film-censorship ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Censorship-standards .
 
-:038
+<038>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:literature-censorship ;
+    rdf:object :literature-censorship ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Censorship-standards .
 
-:039
+<039>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:press-censorship ;
+    rdf:object :press-censorship ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Censorship-standards .
 
-:040
+<040>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio-censorship ;
+    rdf:object :radio-censorship ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Censorship-standards .
 
-:041
+<041>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:television-censorship ;
+    rdf:object :television-censorship ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Censorship-standards .
 
-:042
+<042>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:government-accommodation-and-catering ;
+    rdf:object :government-accommodation-and-catering ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Accommodation-services .
 
-:043
+<043>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-accommodation ;
+    rdf:object :migrant-accommodation ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Accommodation-services .
 
-:044
+<044>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cable-television ;
+    rdf:object :cable-television ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Television-broadcasting .
 
-:045
+<045>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:television-censorship ;
+    rdf:object :television-censorship ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Television-broadcasting .
 
-:046
+<046>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:labour-market-programs ;
+    rdf:object :labour-market-programs ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Labour-market-programs .
 
-:047
+<047>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio-broadcasting ;
+    rdf:object :radio-broadcasting ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Broadcasting .
 
-:048
+<048>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:television-broadcasting ;
+    rdf:object :television-broadcasting ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Broadcasting .
 
-:049
+<049>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-force-administration ;
+    rdf:object :air-force-administration ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Air-Force .
 
-:050
+<050>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-force-commands ;
+    rdf:object :air-force-commands ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Air-Force .
 
-:051
+<051>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-transport ;
+    rdf:object :air-transport ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Air-transport .
 
-:052
+<052>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-navigation ;
+    rdf:object :air-navigation ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Air-transport .
 
-:053
+<053>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-training-units ;
+    rdf:object :air-training-units ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Air-transport .
 
-:054
+<054>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-operations ;
+    rdf:object :air-operations ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Air-transport .
 
-:055
+<055>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-safety ;
+    rdf:object :air-safety ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Air-transport .
 
-:056
+<056>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:aboriginal-reserves ;
+    rdf:object :aboriginal-reserves ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Reserves .
 
-:057
+<057>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:logistics ;
+    rdf:object :logistics ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Logistics .
 
-:058
+<058>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:army-commands ;
+    rdf:object :army-commands ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Army .
 
-:059
+<059>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:army-aviation ;
+    rdf:object :army-aviation ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Army .
 
-:060
+<060>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:army-administration ;
+    rdf:object :army-administration ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Army .
 
-:061
+<061>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:interstate-transport ;
+    rdf:object :interstate-transport ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Interstate-trade-agreements .
 
-:062
+<062>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:tertiary-institutions ;
+    rdf:object :tertiary-institutions ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Tertiary-education .
 
-:063
+<063>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-relations ;
+    rdf:object :international-relations ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:International-affairs .
 
-:064
+<064>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-agreements ;
+    rdf:object :international-agreements ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:International-affairs .
 
-:065
+<065>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:forestry-regulation ;
+    rdf:object :forestry-regulation ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Forestry-industry .
 
-:066
+<066>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-land-rights ;
+    rdf:object :indigenous-land-rights ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Indigenous-land-management .
 
-:067
+<067>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-incentives ;
+    rdf:object :export-incentives ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Export-regulation .
 
-:068
+<068>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:medical-research ;
+    rdf:object :medical-research ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Medical-research .
 
-:069
+<069>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-insurance ;
+    rdf:object :export-insurance ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Export-regulation .
 
-:070
+<070>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-marketing ;
+    rdf:object :export-marketing ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Export-regulation .
 
-:071
+<071>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-support ;
+    rdf:object :export-support ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Export-regulation .
 
-:072
+<072>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:animal-quarantine ;
+    rdf:object :animal-quarantine ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Quarantine .
 
-:073
+<073>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:human-quarantine ;
+    rdf:object :human-quarantine ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Quarantine .
 
-:074
+<074>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:plant-quarantine ;
+    rdf:object :plant-quarantine ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Quarantine .
 
-:075
+<075>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio-censorship ;
+    rdf:object :radio-censorship ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Radio-broadcasting .
 
-:076
+<076>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio-licences ;
+    rdf:object :radio-licences ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Radio-broadcasting .
 
-:077
+<077>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:waste-disposal ;
+    rdf:object :waste-disposal ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Waste-management .
 
-:078
+<078>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:civil-engineering ;
+    rdf:object :civil-engineering ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Engineering-and-technology-sciences .
 
-:079
+<079>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:citizenship ;
+    rdf:object :citizenship ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Citizenship .
 
-:080
+<080>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:engineering ;
+    rdf:object :engineering ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Engineering-and-technology-sciences .
 
-:081
+<081>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:emergency-services ;
+    rdf:object :emergency-services ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Emergency-management .
 
-:082
+<082>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:fisheries-regulation ;
+    rdf:object :fisheries-regulation ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Fisheries-industry .
 
-:083
+<083>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:civil-engineering ;
+    rdf:object :civil-engineering ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Engineering-services .
 
-:084
+<084>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:engineering ;
+    rdf:object :engineering ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Engineering-services .
 
-:085
+<085>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:social-and-economic-research ;
+    rdf:object :social-and-economic-research ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Economic-research .
 
-:086
+<086>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-insurance ;
+    rdf:object :export-insurance ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Export-promotion .
 
-:087
+<087>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-support ;
+    rdf:object :export-support ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Export-promotion .
 
-:088
+<088>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:pensions-and-benefits ;
+    rdf:object :pensions-and-benefits ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Benefits .
 
-:089
+<089>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:benefits-for-students ;
+    rdf:object :benefits-for-students ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Benefits .
 
-:090
+<090>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:police-administration ;
+    rdf:object :police-administration ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Police-administration .
 
-:091
+<091>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:funeral-benefits ;
+    rdf:object :funeral-benefits ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Benefits .
 
-:092
+<092>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:hospital-benefits ;
+    rdf:object :hospital-benefits ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Benefits .
 
-:093
+<093>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:mental-institutions-benefits ;
+    rdf:object :mental-institutions-benefits ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Benefits .
 
-:094
+<094>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:sickness-benefits ;
+    rdf:object :sickness-benefits ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Benefits .
 
-:095
+<095>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:unemployment-benefits ;
+    rdf:object :unemployment-benefits ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Benefits .
 
-:096
+<096>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-camps ;
+    rdf:object :migrant-camps ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Migrant-accommodation-services .
 
-:097
+<097>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-hostels ;
+    rdf:object :migrant-hostels ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Migrant-accommodation-services .
 
-:098
+<098>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:navy-support ;
+    rdf:object :navy-support ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Navy .
 
-:099
+<099>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:navy-intelligence ;
+    rdf:object :navy-intelligence ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Navy .
 
-:100
+<100>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:navy-administration ;
+    rdf:object :navy-administration ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Navy .
 
-:101
+<101>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rail-transport ;
+    rdf:object :rail-transport ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Rail-transport .
 
-:102
+<102>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:navy-commands ;
+    rdf:object :navy-commands ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Navy .
 
-:103
+<103>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-development ;
+    rdf:object :arts-development ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Arts-funding-- .
 
-:104
+<104>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts ;
+    rdf:object :arts ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Arts-funding-- .
 
-:105
+<105>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts ;
+    rdf:object :arts ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Arts-development-- .
 
-:106
+<106>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:bankruptcy ;
+    rdf:object :bankruptcy ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Bankruptcy-proceedings .
 
-:107
+<107>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:public-health ;
+    rdf:object :public-health ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Public-health-services .
 
-:108
+<108>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:building ;
+    rdf:object :building ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Building-acoustics .
 
-:109
+<109>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:communications ;
+    rdf:object :communications ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Communications-infrastructure .
 
-:110
+<110>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:community-services ;
+    rdf:object :community-services ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Community-policing .
 
-:111
+<111>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:law ;
+    rdf:object :law ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Law-enforcement .
 
-:112
+<112>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
     rdf:object crsth:accommodation ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Accommodation-services .
 
-:113
+<113>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:administrative-law ;
+    rdf:object :administrative-law ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Administrative-law .
 
-:114
+<114>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-college-training .
 
-:115
+<115>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-college-training .
 
-:116
+<116>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military ;
+    rdf:object :military ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Military-education-and-training .
 
-:117
+<117>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-efficiency-review .
 
-:118
+<118>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-efficiency-review .
 
-:119
+<119>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-strategic-development .
 
-:120
+<120>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-strategic-development .
 
-:121
+<121>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-force-commands .
 
-:122
+<122>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-forces ;
+    rdf:object :defence-forces ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-force-commands .
 
-:123
+<123>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
-:124
+<124>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:honours-and-awards ;
+    rdf:object :honours-and-awards ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Honours-and-awards-programs .
 
-:125
+<125>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-reform-program .
 
-:126
+<126>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-reform-program .
 
-:127
+<127>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:electoral-matters ;
+    rdf:object :electoral-matters ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Electoral-boundary-assessment .
 
-:128
+<128>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:employment ;
+    rdf:object :employment ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Employment-advocacy-services .
 
-:129
+<129>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:financial-matters ;
+    rdf:object :financial-matters ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Financial-system-monitoring .
 
-:130
+<130>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:financial-matters ;
+    rdf:object :financial-matters ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Financial-system-management .
 
-:131
+<131>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:foreign-policy ;
+    rdf:object :foreign-policy ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Foreign-investment-control .
 
-:132
+<132>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:foreign-affairs ;
+    rdf:object :foreign-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Foreign-investment-control .
 
-:133
+<133>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-relations ;
+    rdf:object :international-relations ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:International-monetary-regulation .
 
-:134
+<134>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-agreements ;
+    rdf:object :international-agreements ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:International-monetary-regulation .
 
-:135
+<135>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:botany ;
+    rdf:object :botany ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Botany .
 
-:136
+<136>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:labour ;
+    rdf:object :labour ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Labour-market-programs .
 
-:137
+<137>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:land ;
+    rdf:object :land ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Land-valuation .
 
-:138
+<138>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-strategic-support .
 
-:139
+<139>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-strategic-support .
 
-:140
+<140>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:medical-aids ;
+    rdf:object :medical-aids ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Medical-aids-regulation .
 
-:141
+<141>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:medical-research ;
+    rdf:object :medical-research ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Medical-research-funding .
 
-:142
+<142>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military ;
+    rdf:object :military ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Military-bands .
 
-:143
+<143>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rail-transport ;
+    rdf:object :rail-transport ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Rail-harmonisation-standards .
 
-:144
+<144>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rail-transport ;
+    rdf:object :rail-transport ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Rail-land-acquisition-regulation .
 
-:145
+<145>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:remuneration ;
+    rdf:object :remuneration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Remuneration-review .
 
-:146
+<146>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-services ;
+    rdf:object :migrant-services ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Migrant-services .
 
-:147
+<147>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rural ;
+    rdf:object :rural ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Rural-field-day-promotion .
 
-:148
+<148>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio ;
+    rdf:object :radio ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Radio-communication .
 
-:149
+<149>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:territories ;
+    rdf:object :territories ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Territories-administration .
 
-:150
+<150>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:trade ;
+    rdf:object :trade ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Trade-practices-compliance .
 
-:151
+<151>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:administrative-law ;
+    rdf:object :administrative-law ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Administrative-decision-review .
 
-:152
+<152>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:administrative-law ;
+    rdf:object :administrative-law ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Administrative-decision-appeal .
 
-:153
+<153>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-development ;
+    rdf:object :arts-development ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Arts-incentive-schemes-- .
 
-:154
+<154>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts ;
+    rdf:object :arts ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Arts-incentive-schemes-- .
 
-:155
+<155>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cultural-affairs ;
+    rdf:object :cultural-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Cultural-gifts-programs-- .
 
-:156
+<156>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts ;
+    rdf:object :arts ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Arts-promotion-- .
 
-:157
+<157>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:navigation ;
+    rdf:object :navigation ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Navigation .
 
-:158
+<158>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:collection-management ;
+    rdf:object :collection-management ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Collection-promotion-- .
 
-:159
+<159>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:sport ;
+    rdf:object :sport ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Sport-and-fitness-development .
 
-:160
+<160>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:information ;
+    rdf:object :information ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Information-security .
 
-:161
+<161>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:national-information-policy ;
+    rdf:object :national-information-policy ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Information-security .
 
-:162
+<162>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:conservation ;
+    rdf:object :conservation ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Conservation-programs .
 
-:163
+<163>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:building ;
+    rdf:object :building ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Building-preservation .
 
-:164
+<164>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-industry .
 
-:165
+<165>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:tourism ;
+    rdf:object :tourism ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Tourism-industry-development .
 
-:166
+<166>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:commonwealth-state-relations ;
+    rdf:object :commonwealth-state-relations ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Commonwealth-State-funding .
 
-:167
+<167>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:state-commonwealth-relations ;
+    rdf:object :state-commonwealth-relations ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Commonwealth-State-funding .
 
-:168
+<168>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:native-title-claims ;
+    rdf:object :native-title-claims ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Native-title-claims .
 
-:169
+<169>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cultural-affairs ;
+    rdf:object :cultural-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Cultural-artefact-repatriation .
 
-:170
+<170>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cultural-institutions ;
+    rdf:object :cultural-institutions ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Cultural-artefact-repatriation .
 
-:171
+<171>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
+    rdf:object :indigenous-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Indigenous-cultural-heritage .
 
-:172
+<172>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cultural-affairs ;
+    rdf:object :cultural-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Cultural-awards-and-scholarships-- .
 
-:173
+<173>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-cooperation-programs .
 
-:174
+<174>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-cooperation-programs .
 
-:174
+<174>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-liaison .
 
-:176
+<176>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-liaison .
 
-:177
+<177>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-estate-management .
 
-:178
+<178>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-estate-management .
 
-:179
+<179>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:collection-management ;
+    rdf:object :collection-management ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Collection-management-- .
 
-:180
+<180>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-housing .
 
-:181
+<181>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-housing .
 
-:182
+<182>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-personnel-exchanges .
 
-:183
+<183>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-personnel-exchanges .
 
-:184
+<184>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-cooperation ;
+    rdf:object :defence-cooperation ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-personnel-exchanges .
 
-:185
+<185>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-force-careers .
 
-:186
+<186>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-force-careers .
 
-:187
+<187>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:health ;
+    rdf:object :health ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Health-protocol-administration .
 
-:188
+<188>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:environmental-monitoring ;
+    rdf:object :environmental-monitoring ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Environmental-impact-assessment .
 
-:189
+<189>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:family-law ;
+    rdf:object :family-law ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Family-law-proceedings .
 
-:190
+<190>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:public-borrowing ;
+    rdf:object :public-borrowing ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Public-borrowing .
 
-:191
+<191>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:financial-matters ;
+    rdf:object :financial-matters ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Financial-administration .
 
-:192
+<192>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:financial-matters ;
+    rdf:object :financial-matters ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Financial-budgeting .
 
-:193
+<193>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:intelligence ;
+    rdf:object :intelligence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Intelligence-liaison .
 
-:194
+<194>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:intelligence ;
+    rdf:object :intelligence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Intelligence-support .
 
-:195
+<195>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:security-and-intelligence ;
+    rdf:object :security-and-intelligence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Intelligence-support .
 
-:196
+<196>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:financial-matters ;
+    rdf:object :financial-matters ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Financial-investment .
 
-:197
+<197>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:superannuation ;
+    rdf:object :superannuation ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Superannuation-regulation .
 
-:198
+<198>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:land ;
+    rdf:object :land ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Land-rehabilitation-programs .
 
-:199
+<199>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:legal ;
+    rdf:object :legal ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Legal-aid-services .
 
-:200
+<200>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:legal-services ;
+    rdf:object :legal-services ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Legal-aid-services .
 
-:201
+<201>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:public-service ;
+    rdf:object :public-service ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Public-service .
 
-:202
+<202>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:legislation ;
+    rdf:object :legislation ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Legislation-review .
 
-:203
+<203>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:insurance ;
+    rdf:object :insurance ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Insurance-regulation .
 
-:204
+<204>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:media ;
+    rdf:object :media ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Media-ownership-regulation .
 
-:205
+<205>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:broadcasting ;
+    rdf:object :broadcasting ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Broadcasting-standards .
 
-:206
+<206>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:native-affairs ;
+    rdf:object :native-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Native-title-settlement-negotiations .
 
-:207
+<207>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:native-affairs ;
+    rdf:object :native-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Native-title-claims .
 
-:208
+<208>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:native-affairs ;
+    rdf:object :native-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Native-title-mediation-programs .
 
-:209
+<209>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:collection-management ;
+    rdf:object :collection-management ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Collection-storage-- .
 
-:210
+<210>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:publishing-and-printing ;
+    rdf:object :publishing-and-printing ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Publishing-standards .
 
-:211
+<211>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:censorship ;
+    rdf:object :censorship ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Censorship-standards .
 
-:212
+<212>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:earth-sciences ;
+    rdf:object :earth-sciences ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Earth-sciences .
 
-:213
+<213>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rail-transport ;
+    rdf:object :rail-transport ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Rail-transport-safety .
 
-:214
+<214>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:industry ;
+    rdf:object :industry ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Industry-development .
 
-:215
+<215>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:community-services ;
+    rdf:object :community-services ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Community-recreational-programs .
 
-:216
+<216>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:television ;
+    rdf:object :television ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Television-broadcasting .
 
-:217
+<217>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military ;
+    rdf:object :military ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Military-employment-services .
 
-:218
+<218>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:trade ;
+    rdf:object :trade ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Trade-measurement-compliance .
 
-:219
+<219>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:weights-and-measures ;
+    rdf:object :weights-and-measures ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Weights-and-measures-standards .
 
-:220
+<220>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:transport ;
+    rdf:object :transport ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Transport-accessibility .
 
-:221
+<221>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:public-works ;
+    rdf:object :public-works ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Public-transport .
 
-:222
+<222>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:transport ;
+    rdf:object :transport ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Transport-access-schemes .
 
-:223
+<223>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
     rdf:object crsth:government-accommodation-and-catering ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Accommodation-services .
 
-:224
+<224>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:television-broadcasting ;
+    rdf:object :television-broadcasting ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Television-broadcasting .
 
-:225
+<225>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:water ;
+    rdf:object :water ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Water-conservation-plans .
 
-:226
+<226>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:water ;
+    rdf:object :water ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Water-resources .
 
-:227
+<227>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:water ;
+    rdf:object :water ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Water-quality-monitoring .
 
-:228
+<228>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:water ;
+    rdf:object :water ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Water-usage-management .
 
-:229
+<229>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:community-services ;
+    rdf:object :community-services ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Community-support .
 
-:230
+<230>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-transport ;
+    rdf:object :air-transport ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Air-transport-safety .
 
-:231
+<231>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:aircraft ;
+    rdf:object :aircraft ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Aircraft-standards .
 
-:232
+<232>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:army ;
+    rdf:object :army ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Army-reserve-training .
 
-:233
+<233>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:financial-matters ;
+    rdf:object :financial-matters ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Financial-assistance .
 
-:234
+<234>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:nuclear ;
+    rdf:object :nuclear ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Nuclear-sciences .
 
-:235
+<235>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:broadcasting ;
+    rdf:object :broadcasting ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Broadcasting .
 
-:236
+<236>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military ;
+    rdf:object :military ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Military-operations .
 
-:237
+<237>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:building ;
+    rdf:object :building ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Building-approval-services .
 
-:238
+<238>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:land ;
+    rdf:object :land ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Land-use-zoning .
 
-:239
+<239>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:land-use ;
+    rdf:object :land-use ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Land-use-zoning .
 
-:240
+<240>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:recordkeeping ;
+    rdf:object :recordkeeping ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Recordkeeping-standards .
 
-:241
+<241>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cultural-affairs ;
+    rdf:object :cultural-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Cultural-centre-management .
 
-:242
+<242>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:community-services ;
+    rdf:object :community-services ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Community-housing .
 
-:243
+<243>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:building ;
+    rdf:object :building ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Building-regulations-and-standards .
 
-:244
+<244>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:consumer-affairs ;
+    rdf:object :consumer-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Consumer-protection .
 
-:245
+<245>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:advertising ;
+    rdf:object :advertising ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Advertising-standards .
 
-:246
+<246>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:water-resources ;
+    rdf:object :water-resources ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Water-resources .
 
-:247
+<247>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:copyright ;
+    rdf:object :copyright ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Copyright-regulation .
 
-:248
+<248>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:parliamentary-matters ;
+    rdf:object :parliamentary-matters ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Parliamentary-papers .
 
-:249
+<249>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:collection-management ;
+    rdf:object :collection-management ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Collection-acquisition-- .
 
-:250
+<250>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-community-programs .
 
-:251
+<251>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-community-programs .
 
-:252
+<252>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-science-and-technology .
 
-:253
+<253>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-research ;
+    rdf:object :defence-research ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-science-and-technology .
 
-:254
+<254>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military ;
+    rdf:object :military ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Military-law .
 
-:255
+<255>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:employment ;
+    rdf:object :employment ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Employment-services-marketing .
 
-:256
+<256>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:industry ;
+    rdf:object :industry ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Industry-collaboration .
 
-:257
+<257>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:adoption-services ;
+    rdf:object :adoption-services ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Adoption-services .
 
-:258
+<258>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:publicity ;
+    rdf:object :publicity ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Publicity-programs-- .
 
-:259
+<259>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:energy ;
+    rdf:object :energy ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Energy-resources .
 
-:260
+<260>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:health-services ;
+    rdf:object :health-services ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Health-insurance-schemes .
 
-:261
+<261>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:health ;
+    rdf:object :health ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Health-insurance-schemes .
 
-:262
+<262>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:health-insurance ;
+    rdf:object :health-insurance ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Health-insurance-schemes .
 
-:263
+<263>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:parliamentary-chambers ;
+    rdf:object :parliamentary-chambers ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Parliamentary-chamber-support .
 
-:264
+<264>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:parliamentary-matters ;
+    rdf:object :parliamentary-matters ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Parliamentary-committee-and-member-support .
 
-:265
+<265>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:health ;
+    rdf:object :health ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Health-hazard-prevention .
 
-:266
+<266>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:public-health ;
+    rdf:object :public-health ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Health-hazard-prevention .
 
-:267
+<267>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:health ;
+    rdf:object :health ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Health-promotion .
 
-:268
+<268>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:government-media ;
+    rdf:object :government-media ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Government-media .
 
-:269
+<269>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:housing-programs ;
+    rdf:object :housing-programs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Housing-industry-policy .
 
-:270
+<270>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:housing ;
+    rdf:object :housing ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Housing-industry-policy .
 
-:271
+<271>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:land ;
+    rdf:object :land ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Land-use-planning .
 
-:272
+<272>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:taxation ;
+    rdf:object :taxation ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Taxation-compliance .
 
-:273
+<273>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
+    rdf:object :indigenous-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Indigenous-advocacy .
 
-:274
+<274>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
+    rdf:object :indigenous-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Indigenous-reconciliation .
 
-:275
+<275>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
+    rdf:object :indigenous-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Indigenous-enterprise-development .
 
-:276
+<276>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-enterprises ;
+    rdf:object :indigenous-enterprises ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Indigenous-enterprise-development .
 
-:277
+<277>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
+    rdf:object :indigenous-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Indigenous-heritage-conservation .
 
-:278
+<278>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-relations ;
+    rdf:object :international-relations ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:International-trade-agreements .
 
-:279
+<279>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-force ;
+    rdf:object :air-force ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Air-Force .
 
-:280
+<280>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-agreements ;
+    rdf:object :international-agreements ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:International-trade-agreements .
 
-:281
+<281>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-relations ;
+    rdf:object :international-relations ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:International-treaties .
 
-:282
+<282>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:international-agreements ;
+    rdf:object :international-agreements ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:International-treaties .
 
-:283
+<283>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
+    rdf:object :indigenous-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Indigenous-land-management .
 
-:284
+<284>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military ;
+    rdf:object :military ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Military-exercises .
 
-:285
+<285>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:nuclear ;
+    rdf:object :nuclear ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Nuclear-safeguards .
 
-:286
+<286>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:energy ;
+    rdf:object :energy ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Energy-supply .
 
-:287
+<287>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:public-health ;
+    rdf:object :public-health ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Public-fitness-promotion .
 
-:288
+<288>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio ;
+    rdf:object :radio ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Radio-broadcasting .
 
-:289
+<289>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rural ;
+    rdf:object :rural ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Rural-partnership-programs .
 
-:290
+<290>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:airport-services ;
+    rdf:object :airport-services ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Airport-services .
 
-:291
+<291>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rural ;
+    rdf:object :rural ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Rural-community-development .
 
-:292
+<292>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:trade ;
+    rdf:object :trade ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Trade-development-programs .
 
-:293
+<293>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:road-transport ;
+    rdf:object :road-transport ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Road-traffic-regulation .
 
-:294
+<294>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:veterans-affairs ;
+    rdf:object :veterans-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Veterans-health-services .
 
-:295
+<295>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:veterans-affairs ;
+    rdf:object :veterans-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Veterans-entitlements .
 
-:296
+<296>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:transport ;
+    rdf:object :transport ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Transport-infrastructure-development .
 
-:297
+<297>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cultural-affairs ;
+    rdf:object :cultural-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Cultural-festivals-- .
 
-:298
+<298>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:information ;
+    rdf:object :information ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Information-management-standards .
 
-:299
+<299>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:national-information-policy ;
+    rdf:object :national-information-policy ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Information-management-standards .
 
-:300
+<300>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:information ;
+    rdf:object :information ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Information-technology-standards .
 
-:301
+<301>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:army ;
+    rdf:object :army ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Army .
 
-:302
+<302>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:national-information-policy ;
+    rdf:object :national-information-policy ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Information-technology-standards .
 
-:303
+<303>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-attaches .
 
-:304
+<304>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-attaches .
 
-:305
+<305>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-strategic-policy .
 
-:306
+<306>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-strategic-policy .
 
-:307
+<307>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:military ;
+    rdf:object :military ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Military-advisors .
 
-:308
+<308>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence ;
+    rdf:object :defence ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-career-development .
 
-:309
+<309>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-administration ;
+    rdf:object :defence-administration ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Defence-career-development .
 
-:310
+<310>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:intellectual-property ;
+    rdf:object :intellectual-property ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Intellectual-property-management .
 
-:311
+<311>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:trade ;
+    rdf:object :trade ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Trade-expositions .
 
-:312
+<312>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:occupational-health-and-safety ;
+    rdf:object :occupational-health-and-safety ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Occupational-health-and-safety .
 
-:313
+<313>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:natural-resources ;
+    rdf:object :natural-resources ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Natural-heritage-protection .
 
-:314
+<314>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:national-estate ;
+    rdf:object :national-estate ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:National-park-management .
 
-:315
+<315>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:financial-matters ;
+    rdf:object :financial-matters ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Financial-institutions-regulation .
 
-:316
+<316>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:food-services ;
+    rdf:object :food-services ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Food-hygiene-regulation .
 
-:317
+<317>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:food-services ;
+    rdf:object :food-services ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Food-quality-assurance .
 
-:318
+<318>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:workers-compensation ;
+    rdf:object :workers-compensation ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Workers-compensation-schemes .
 
-:319
+<319>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:historic-memorials ;
+    rdf:object :historic-memorials ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Historic-relic-protection .
 
-:320
+<320>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
+    rdf:object :indigenous-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Indigenous-health-services .
 
-:321
+<321>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:indigenous-affairs ;
+    rdf:object :indigenous-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Indigenous-welfare-programs .
 
-:322
+<322>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:industry ;
+    rdf:object :industry ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Industry-assistance-schemes .
 
-:323
+<323>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:town-planning ;
+    rdf:object :town-planning ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Town-planning .
 
-:324
+<324>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-services ;
+    rdf:object :migrant-services ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Migrant-accommodation-services .
 
-:325
+<325>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-services ;
+    rdf:object :migrant-services ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Migrant-settlement-programs .
 
-:326
+<326>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:public-health ;
+    rdf:object :public-health ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Health-disaster-preparedness .
 
-:327
+<327>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:overseas-aid-programs ;
+    rdf:object :overseas-aid-programs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Overseas-student-scholarship-programs .
 
-:328
+<328>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:personnel ;
+    rdf:object :personnel ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Personnel-safety-standards .
 
-:329
+<329>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:sea-transport ;
+    rdf:object :sea-transport ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Sea-passengers .
 
-:330
+<330>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:transport ;
+    rdf:object :transport ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Transport-network-maintenance .
 
-:331
+<331>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:recruitment ;
+    rdf:object :recruitment ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Recruitment-programs .
 
-:332
+<332>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:road-construction ;
+    rdf:object :road-construction ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Road-surface-maintenance .
 
-:333
+<333>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:statistics ;
+    rdf:object :statistics ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Statistics-dissemination .
 
-:334
+<334>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
     rdf:object crsth:migrant-accommodation ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Accommodation-services .
 
-:335
+<335>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:port-regulation ;
+    rdf:object :port-regulation ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Port-regulation .
 
-:336
+<336>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:tariff ;
+    rdf:object :tariff ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Tariff-regulation .
 
-:337
+<337>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts ;
+    rdf:object :arts ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Arts-education .
 
-:338
+<338>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:community-services ;
+    rdf:object :community-services ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Community-health-services .
 
-:339
+<339>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:road-safety ;
+    rdf:object :road-safety ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Road-safety-awareness .
 
-:340
+<340>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:road-transport ;
+    rdf:object :road-transport ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Road-transport-safety .
 
-:341
+<341>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:emergency-services ;
+    rdf:object :emergency-services ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Emergency-accommodation .
 
-:342
+<342>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:human-rights ;
+    rdf:object :human-rights ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Human-rights-obligations .
 
-:343
+<343>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:urban-or-regional-development ;
+    rdf:object :urban-or-regional-development ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Regional-development .
 
-:344
+<344>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:freight ;
+    rdf:object :freight ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Freight-movement-regulation .
 
-:345
+<345>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:freight-and-cartage ;
+    rdf:object :freight-and-cartage ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Freight-movement-regulation .
 
-:346
+<346>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:natural-disasters ;
+    rdf:object :natural-disasters ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Natural-disasters .
 
-:347
+<347>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:external-affairs ;
+    rdf:object :external-affairs ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:External-security .
 
-:348
+<348>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:corrective-services ;
+    rdf:object :corrective-services ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Corrective-services .
 
-:349
+<349>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:currency ;
+    rdf:object :currency ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Currency .
 
-:350
+<350>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:court-reporting ;
+    rdf:object :court-reporting ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Court-reporting .
 
-:351
+<351>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:curriculum-development ;
+    rdf:object :curriculum-development ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Curriculum-development .
 
-:352
+<352>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:tertiary-education ;
+    rdf:object :tertiary-education ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Tertiary-education .
 
-:353
+<353>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:consular-services ;
+    rdf:object :consular-services ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Consular-services .
 
-:354
+<354>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:health-promotion ;
+    rdf:object :health-promotion ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Health-promotion .
 
-:355
+<355>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:taxation ;
+    rdf:object :taxation ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Taxation .
 
-:356
+<356>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
     rdf:object crsth:administrative-law ;
     rdf:predicate skos:broadMatch ;
     rdf:subject agift:Administrative-decision-appeal .
 
-:357
+<357>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:land-councils ;
+    rdf:object :land-councils ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Land-councils .
 
-:358
+<358>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:quarantine ;
+    rdf:object :quarantine ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Quarantine .
 
-:359
+<359>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:protective-services ;
+    rdf:object :protective-services ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Protective-services .
 
-:360
+<360>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio-broadcasting ;
+    rdf:object :radio-broadcasting ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Radio-broadcasting .
 
-:361
+<361>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:rescue-coordination ;
+    rdf:object :rescue-coordination ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Rescue-coordination .
 
-:362
+<362>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:emergency-services ;
+    rdf:object :emergency-services ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Emergency-services .
 
-:363
+<363>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:road-transport ;
+    rdf:object :road-transport ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Road-transport .
 
-:364
+<364>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:national-security ;
+    rdf:object :national-security ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:National-security .
 
-:365
+<365>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:privacy ;
+    rdf:object :privacy ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Privacy .
 
-:366
+<366>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:economic-research ;
+    rdf:object :economic-research ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Economic-research .
 
-:367
+<367>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-development ;
+    rdf:object :arts-development ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Arts-development-- .
 
-:368
+<368>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:benefits ;
+    rdf:object :benefits ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Benefits .
 
-:369
+<369>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:deportation ;
+    rdf:object :deportation ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Deportation .
 
-:370
+<370>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:overseas-aid-programs ;
+    rdf:object :overseas-aid-programs ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Overseas-aid-programs .
 
-:371
+<371>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:navy ;
+    rdf:object :navy ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Navy .
 
-:372
+<372>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:tariff-regulation ;
+    rdf:object :tariff-regulation ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Tariff-regulation .
 
-:373
+<373>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:regional-development ;
+    rdf:object :regional-development ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Regional-development .
 
-:374
+<374>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:external-security ;
+    rdf:object :external-security ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:External-security .
 
-:375
+<375>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-subsidies ;
+    rdf:object :arts-subsidies ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Arts-funding-- .
 
-:376
+<376>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-forces ;
+    rdf:object :defence-forces ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
-:377
+<377>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:armed-forces ;
+    rdf:object :armed-forces ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Australian-Defence-Forces .
 
-:378
+<378>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:telecommunications ;
+    rdf:object :telecommunications ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Telecommunications .
 
-:379
+<379>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:dental-health ;
+    rdf:object :dental-health ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Dental-health-services .
 
-:380
+<380>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:dental-services ;
+    rdf:object :dental-services ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Dental-health-services .
 
-:381
+<381>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:vocational-training-schemes ;
+    rdf:object :vocational-training-schemes ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Vocational-education .
 
-:382
+<382>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:radio-broadcasting ;
+    rdf:object :radio-broadcasting ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Radio-communication .
 
-:383
+<383>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:world-heritage ;
+    rdf:object :world-heritage ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:World-heritage-listings .
 
-:384
+<384>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-subsidies ;
+    rdf:object :arts-subsidies ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Arts-incentive-schemes-- .
 
-:385
+<385>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-development ;
+    rdf:object :arts-development ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Arts-promotion-- .
 
-:386
+<386>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-subsidies ;
+    rdf:object :arts-subsidies ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Arts-promotion-- .
 
-:387
+<387>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-industries ;
+    rdf:object :defence-industries ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Defence-industry .
 
-:388
+<388>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:defence-cooperation ;
+    rdf:object :defence-cooperation ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Defence-cooperation-programs .
 
-:389
+<389>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:law-enforcement ;
+    rdf:object :law-enforcement ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Law-enforcement .
 
-:390
+<390>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:overseas-qualifications ;
+    rdf:object :overseas-qualifications ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Overseas-skills-recognition .
 
-:391
+<391>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:accommodation ;
+    rdf:object :accommodation ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Accommodation-services .
 
-:392
+<392>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:advertising ;
+    rdf:object :advertising ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Advertising-campaigns_2 .
 
-:393
+<393>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:air-safety ;
+    rdf:object :air-safety ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Air-transport-safety .
 
-:394
+<394>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:cultural-institutions ;
+    rdf:object :cultural-institutions ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Cultural-centre-management .
 
-:395
+<395>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:collection-management ;
+    rdf:object :collection-management ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Collection-access-- .
 
-:396
+<396>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:collection-management ;
+    rdf:object :collection-management ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Collection-accessioning-- .
 
-:397
+<397>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:forestry ;
+    rdf:object :forestry ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Forestry-industry .
 
-:398
+<398>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:parliamentary-chamber-administration ;
+    rdf:object :parliamentary-chamber-administration ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Parliamentary-chamber-support .
 
-:399
+<399>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:disarmament ;
+    rdf:object :disarmament ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Disarmament-and-arms-control .
 
-:400
+<400>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:postal-services ;
+    rdf:object :postal-services ;
     rdf:predicate skos:exactMatch ;
     rdf:subject agift:Postal-services .
 
-:401
+<401>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:railway-construction ;
+    rdf:object :railway-construction ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Railway-maintenance .
 
-:402
+<402>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:motor-vehicle-national-certification ;
+    rdf:object :motor-vehicle-national-certification ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Vehicle-registration .
 
-:403
+<403>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:fisheries ;
+    rdf:object :fisheries ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Fisheries-industry .
 
-:404
+<404>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:ceremonial-functions ;
+    rdf:object :ceremonial-functions ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Ceremonial-events-and-representation .
 
-:405
+<405>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-incentives ;
+    rdf:object :export-incentives ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Export-promotion .
 
-:406
+<406>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:export-marketing ;
+    rdf:object :export-marketing ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Export-promotion .
 
-:407
+<407>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:national-parks ;
+    rdf:object :national-parks ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:National-park-management .
 
-:408
+<408>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:migrant-accommodation ;
+    rdf:object :migrant-accommodation ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Migrant-accommodation-services .
 
-:409
+<409>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:pastoral ;
+    rdf:object :pastoral ;
     rdf:predicate skos:closeMatch ;
     rdf:subject agift:Pastoral-industry .
 
-:410
+<410>
     a rdf:Statement ;
     loci:hadGenerationMethod :method ;
     loci:validFor [ time:timehasBeginning [ time:timeinXSDDate "1901-01-01"^^xsd:date ] ] ;
-    dct:created "2019-04-13"^^xsd:date ;
-    rdf:object crsth:arts-subsidies ;
+    rdf:object :arts-subsidies ;
     rdf:predicate skos:narrowMatch ;
     rdf:subject agift:Arts-development-- .
